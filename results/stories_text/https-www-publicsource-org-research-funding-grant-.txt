@@ -1,0 +1,171 @@
+The shock of a Trump administration policy that would slash federal research funding is giving way to pain in Pittsburgh, with expected layoffs and career paths in jeopardy.
+
+A Feb. 7 memo, reportedly drafted by administration officials, said the National Institutes of Health would cap indirect costs — funding for research operating expenses — at 15% across all grants for research institutions.
+
+Pittsburgh institutions stand to lose nearly $141 million as a result of the cost cap, according to a calculator produced by Data for the Common Good, based at the University of Chicago, which used fiscal 2024 figures.
+
+“It would have a similar effect to the closing of a steel mill,” said Vaughn Cooper, a professor of microbiology at the University of Pittsburgh. “This is not a steel town anymore; it’s a biomedical research town, and those cuts would affect Pittsburgh perhaps more than any other city in the country.”
+
+Aggressive cutbacks and mass firings at federal agencies that fund research are part of the administration’s plan to downsize government and curb waste. A White House spokesperson wrote that “the amount of NIH funding isn’t changing, just the portion that goes to opaque indirect funding.
+
+“That means there will be more money for transparent direct funding, through which grants can be applied for as it relates to legitimate research-related expenses,” Deputy Press Secretary Kush Desai wrote in an email to PublicSource.
+
+Researchers and advocacy groups dispute this, noting indirect costs cover space, equipment, legal support and oversight — expenses direct costs don’t. A project’s direct costs, on the other hand, will pay for the research team’s salaries, health care, retirement benefits and other necessities.
+
+“Without support of [indirect costs], research labs would literally go dark,” according to a brief by the American Association of Medical Colleges and other groups.
+
+Indirect costs explained Research institutions have long negotiated indirect cost rates with the federal government. The average rate is nearly 30%, though the University of Pittsburgh’s is much higher at 59%. Pitt receives the sixth-highest amount of NIH funding among universities, which was about $660 million in fiscal year 2023. Carnegie Mellon University’s rate is 52% — payments it expects to receive as part of its nearly $137 million in grants from the agency.
+
+PublicSource interviewed a former staffer at the National Science Foundation who managed grants awarded to Carnegie Mellon University. He and 167 other staffers were fired last week, leaving some local researchers without a liaison to the agency.
+
+“NSF can exist on paper, but if there are no human beings in that building who can organize grant review panels, who can read your proposals, who can make funding recommendations and decisions, then it functionally doesn’t exist,” said the former staffer, whom PublicSource is not naming due to his fear of reprisal.
+
+Some are resisting the administration’s agenda. CMU joined a federal lawsuit in Boston with the Association of American Universities and 14 others— one of three suits aiming to block the NIH indirect cost cap. A judge issued a temporary restraining order that was extended Friday, preventing the administration from implementing the cap.
+
+Some researchers protested at Schenley Plaza earlier this month. Others are organizing a rally that will be held there March 7 as part of a nationwide day of protest called “Stand Up For Science.” A few are speaking out to express disappointment in university officials.
+
+My students and mentees feel “a real sense of institutional betrayal,” said Nev Jones, an associate professor at Pitt’s School of Social Work. “Why are universities not publicly condemning this? Why aren’t senior figures in the field speaking out and condemning this?”
+
+Pitt spokesperson Jared Stonesifer pointed PublicSource to emails sent to students and faculty, the latest addressing the restraining order extension. The email said the decision gives the university more time to gather input and advocate in D.C. and Harrisburg.
+
+Stonesifer also told PublicSource that no hiring freezes are taking place at the university and declined to comment on the progress of a financial impact analysis if indirect costs are slashed.
+
+A CMU spokesperson declined to comment due to pending litigation. A researcher who declined to be interviewed said CMU advised faculty not to talk to reporters. Carnegie Mellon University’s campus in Oakland, on Feb. 26. (Photo by Stephanie Strasburg/PublicSource)
+
+PublicSource reached out to more than 30 federally funded researchers across both universities. Most didn’t respond. A few declined, saying it wasn’t in their best interests to speak out.
+
+Only five researchers, including Cooper and Jones, agreed to talk. They described grant-funded research that helps employ entire teams, including postdoctoral researchers, Ph.D. students and administrative research staff.
+
+Below, we detail their research — and what’s at stake for the projects and people they aim to serve if the courts uphold Trump’s policies.
+
+‘It is particularly senseless’
+
+Researcher: Nev Jones, associate professor in the School of Social Work, University of Pittsburgh
+
+Research interests: Early intervention for young people with psychosis; improving public community health services; the impact of race, class, income and other factors on the economic trajectories of those with a serious mental illness
+
+Total in active federal grants: Estimated $900,000
+
+Jones, who has schizophrenia, has dedicated her research career to helping people with serious mental illnesses.
+
+She and a colleague in California received a grant from the Social Security Administration [SSA] to study how people with disabilities navigate a catch-22: They’re hit with penalties if they try to work while claiming benefits. Advocates say the rules function as a trap, punishing people’s attempts to climb out of poverty.
+
+Nev Jones in her office in the Cathedral of Learning at the University of Pittsburgh on June 25. (Jess Daninhirsch/PublicSource)
+
+They were told last week the agency is terminating its agreements with a research consortium that funded Jones’ study and many others that would help inform disability policy. An SSA press release called the research “wasteful” and said the termination “aligns” with a Trump executive order that eliminates federal support for diversity, equity, inclusion and accessibility. A federal judge in Maryland blocked parts of the order Friday, so Jones’ project is in limbo until the court makes a ruling.
+
+“It is particularly senseless,” Jones said, because the project’s goal was to help people become more self-sufficient, which is what many Republicans say they want.
+
+The anti-DEIA order could also affect her project that’s part of a broader NIH-funded effort to help young people experiencing psychosis. Studying racial disparities is at the core of this work. And the teams include researchers with psychiatric disabilities and other types of lived experience.
+
+“What it will lead to is what we have already experienced in the past,” she said, “which is a research workforce dominated by people who are disconnected from the communities” they’re studying.
+
+‘Profoundly discouraging to the next generation of science’
+
+Researcher: Vaughn Cooper, professor in the Department of Microbiology and Molecular Genetics, University of Pittsburgh
+
+Research interests: Antimicrobial drug discovery and vaccine development; microbial genetics, evolution and drug resistance; host-pathogen interactions
+
+Total in active federal grants from NIH: $1.5 million
+
+Cooper’s lab studies the genetic makeup of microbes that evade antibiotics and immune defenses to cause disease. The research is largely funded by NIH grants, one of which supports a program for local K-12 students called EvolvingSTEM. Students conduct microbiology experiments in the classroom to observe how bacteria evolve to form biofilms — “slime on surfaces” — that contribute to drug resistance, said Cooper. One goal is to encourage them to pursue careers in science.
+
+A student performs a microbiology experiment as part of the EvolvingSTEM program at Pittsburgh Science and Technology Academy in Oakland. The program is funded by an NIH grant awarded to a research team at the University of Pittsburgh. (Photo courtesy of Abigail Matela)
+
+Cooper’s team has brought the program to more than 30 middle schools and high schools around the country, including about 20 in Pittsburgh. The goal is to encourage them to pursue careers in science.
+
+But the program’s funding announcement was scrubbed from the NIH website following Trump’s executive order banning federal support for DEIA, then restored and removed again. Cooper “has no evidence the program itself is being canceled,” but noted many programs focused on diversifying the STEM workforce have “slid in and out of existence” over the last few weeks.
+
+The uncertainty is “really profoundly discouraging to the next generation of science,” he said, adding that the program has existed since 1988 and is funded by the only NIH grant that supports K-12 students. “Like all NIH funding, it’s extremely important that this continues.”
+
+Cooper said the Trump administration forbade the NIH from giving public notice of grant review meetings, which effectively stops progress on his grant for research that could help treat urinary tract infections in long-term catheter users.
+
+“People have been employed knowing that this is a really strong project likely to eventually earn funding, and now that’s been kicked further down the road,” he said.
+
+Cooper emphasized that he spoke as a member of the community, not a representative of Pitt. The Oakland Innovation District with buildings from University of Pittsburgh’s campus and UPMC hospitals and research facilities, on Feb. 26. (Photo by Stephanie Strasburg/PublicSource)
+
+In direct conflict with the scientific method
+
+Researcher: Leah Jacobs, associate professor in the School of Social Work, University of Pittsburgh
+
+Research interests: Criminal legal systems, community mental health policy and interventions, alternatives to carceral interventions
+
+Total in active federal grants: $999,996
+
+Jacobs is testing a training program that teaches law enforcement about youth development and how to reduce the risk of harm or arrest in interactions with young people. The project spans 21 law enforcement agencies in California, and is funded by a grant from the National Institute of Justice [NIJ], the research arm of the U.S. Department of Justice.
+
+Under Trump, she said, the agency is interfering with research methodology in an “unprecedented” way.
+
+Jacobs received an email this month from her NIJ grant manager, which was reviewed by PublicSource. It instructed her to collect data in a way that complies with an executive order banning “gender ideology,” which opponents say aims to erase trans, nonbinary and intersex people from civic life.
+
+“If an award-funded project includes a survey, form, or data collection tool that asks about ‘gender’ or ‘gender identity,’ it must instead ask about ‘sex,’ with only two available responses: ‘male’ and ‘female,’” the grant manager wrote. “All questions about ‘gender identity’ must be removed.”
+
+Jacobs noted that law enforcement officers are “a fairly binary group of people.” But “if this were almost any other participant group, it would be leading to either the loss of information altogether, or the misrepresentation of people’s identities,” she said, noting the directive is in direct conflict with the scientific method.
+
+Gender could play a significant role in a project’s outcome, she added. The directive could “ruin that [research] design.” Forbes Avenue by the University of Pittsburgh’s Oakland campus on Feb. 5. (Photo by Stephanie Strasburg/PublicSource)
+
+Caught in a ‘holding pattern’
+
+Researcher: Colleen McClung, professor of psychiatry and clinical and translational science at the University of Pittsburgh Department of Psychiatry
+
+Research interests: Impact of sleep disruption on adolescent susceptibility to substance use through the university’s Center for Adolescent Reward, Rhythm and Sleep [CARRS]
+
+Total NIH funding received in 2024: $2,983,571
+
+Caught in a “holding pattern” caused by the proposed indirect cost caps, McClung said researchers at CARRS have wondered, “Is there anything we should be doing?”
+
+The center’s funding contains one of the largest indirect costs ($1,054,284 in 2024) for active grants in the city. McClung — who emphasized that she does not speak on behalf of Pitt — said researchers have been advised by the university to carry on as normal. But, without adequate funding, at risk is the chance to identify sound preventions for teenagers who may be vulnerable to substance abuse, which she said would be “huge for preventing this devastating disease of substance use disorder that plagues the world.”
+
+CARRS also involves much more than research, McClung said, by partnering with community organizations and educating children and others about the importance of sleep.
+
+The work produced by the center is meant to serve as a national resource for anyone looking to understand how sleep impacts adolescent brain development and function. If indirect costs are decreased, she said the losses across the university and city could be significant.
+
+Pitt’s Department of Microbiology and Molecular Genetics is in the Bridgeside Point II building in South Oakland, as photographed on Feb. 26. (Photo by Stephanie Strasburg/PublicSource)
+
+Finding ‘more stable places where research can happen’
+
+Researcher: Abby Carney, graduate student researcher at the University of Pittsburgh Department of Cell Biology and Molecular Physiology
+
+Research interests: Deafness genes and movement of proteins in the hair cells of the cochlea through the university’s otolaryngology department
+
+Total NIH funding for this research in 2024: $695,778
+
+As an early-career researcher, the current climate has caused Carney to begin re-evaluating her future. She has questioned whether she wants to stay in the U.S. after graduating or “find other, more stable places where research can happen.”
+
+Her Ph.D. could take another two years to finish, but she said she could speed the process to “be able to leave” with her degree sooner if needed.
+
+She applied for an NIH grant aimed at promoting diversity in health research, worth around $150,000.
+
+Her application was pulled from review earlier this month as were those of other scholars seeking diversity-related grants, then reinstated a few days later. As of Feb. 22, the grant was closed and archived, though Carney recently received a score on her application indicating that it was reviewed.
+
+She said her department has enough to cover her salary for the remainder of her studies.
+
+Her research around the cochlea — the organ that helps people hear — is important because not much is known about the structure, she said. And basic science studies like these are ultimately what lead to critical medical treatments and breakthroughs.
+
+“It’s kind of the first step in discovery.”
+
+From diabetes to organ transplants The following National Institutes of Health [NIH] grants are a sample of those awarded to University of Pittsburgh researchers since November. Descriptions of the projects are excerpted from the award data released by NIH, and may not reflect any changes in the projects that may have been made since the grant applications were submitted. Area of research: Menopause and brain health Specifics of project: Aims to determine how the brain changes with menopause and clarify how changes in hormones, cardiovascular health and menopausal symptoms influence these changes. Hopes to help optimize memory and brain health as people age so that they are more resilient to Alzheimer’s disease. Month of award notification: December 2024 Total amount of grant: $1,558,726 Area of research: Diabetes Specifics of project: Would continue ongoing research into diabetic foot ulcers, which develop in 15% of patients with diabetes and can lead to amputation, with the goal of improving care and minimizing amputations. Month of award notification: January 2025 Total amount of grant: $769,260 Area of research: Tuberculosis Specifics of project: Intends to test a novel strategy to enhance the effectiveness of current vaccines against tuberculosis, which is among the most common causes of death by infectious disease worldwide. Month of award notification: January 2025 Total amount of grant: $728,788 Area of research: Heart transplantation Specifics of project: Would explore innovative ways to achieve long-term survival and better quality of life after heart transplantation without immunosuppressive drugs. Month of award notification: January 2025 Total amount of grant: $717,706 Area of research: Organ transplantation Specifics of project: Aims to explore the mechanisms by which the immune system responds to the transplantation of an organ from a donor to develop novel therapies for longer-term patient survival. Month of award notification: January 2025 Total amount of grant: $698,177 —Assembled by Rich Lord
+
+Correction: A Feb. 14 protest at Schenley Plaza was not part of “Stand up for Science,” which is a nationwide day of protest scheduled for March 7.
+
+Venuri Siriwardane is PublicSource’s health and mental health reporter. She can be reached at venuri@publicsource.org or on Bluesky @venuri.bsky.social.
+
+Maddy Franklin reports on higher education for PublicSource, in partnership with Open Campus, and can be reached at madison@publicsource.org.
+
+This story was fact-checked by Rich Lord.
+
+The Jewish Healthcare Foundation has contributed funding to PublicSource’s health care reporting. Your gift will keep stories like this coming. Have you learned something new today? Consider supporting our work with a donation.
+
+
+
+We take pride in serving our community by delivering accurate, timely, and impactful journalism without paywalls, but with rising costs for the resources needed to produce our top-quality journalism, every reader contribution matters. It takes a lot of resources to produce this work, from compensating our staff, to the technology that brings it to you, to fact-checking every line, and much more.
+
+
+
+Your donation to our nonprofit newsroom helps ensure that everyone in Allegheny County can stay informed about the decisions and events that impact their lives. Thank you for your support! GIVE NOW MOST READ PUBLICSOURCE STORIES See what Allegheny County employees earned in 2024 — and how the county is hiding names of many top earners
+
+Trump talks up U.S. Steel deal in Mon Valley as Pittsburgh-area towns laud jobs, await details on upgrades
+
+Gainey has 7 months and 7 major development priorities. Here’s where they stand.
+
+Zombies to 'Cabaret': How Perry High’s arts scene is driving school spirit Republish This Story Republish our articles for free, online or in print, under a Creative Commons license.

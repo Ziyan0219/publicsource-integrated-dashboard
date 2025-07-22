@@ -1,0 +1,85 @@
+A January settlement between Pennsylvania Gov. Josh Shapiro and regional power grid operator PJM Interconnection forestalled what the governor called “potentially the largest unjust wealth transfer in the history of U.S. energy markets.”
+
+After wholesale electricity prices jumped 800% at PJM’s power auction over the summer, Shapiro sounded the alarm bells, warning in a January open letter that price escalation “threatens to undermine public confidence in PJM as an institution.” He suggested he could pull Pennsylvania — the largest exporter of electricity in the U.S. — out of PJM.
+
+Days later, PJM agreed to a settlement that will likely stabilize electricity prices over the next two years, but experts warn that structural problems at PJM persist, as thousands of renewable energy projects wait to be added to the grid.
+
+What is PJM?
+
+PJM interconnection is the nonprofit, non-governmental organization that oversees the largest power grid in the U.S. PJM serves 65 million Americans across 13 states, including Pennsylvania, New Jersey, Maryland, Delaware, Ohio, Tennessee, Virginia and West Virginia, along with portions of Illinois, Indiana, Kentucky, Michigan and North Carolina, plus Washington, D.C. PJM monitors the supply of energy and acts as a sort of air-traffic control mechanism for ensuring that supply meets demand. PJM is also responsible for adding new generation capacity to the grid.
+
+Each year, PJM holds a market auction at which utility companies, including Duquesne Light, bid for generation capacity from power plants. At the most recent auction in July, prices climbed 800% above the prior year. PJM cited concerns that the balance of supply and demand was tightening.
+
+Locally, Duquesne Light customers will be on the hook for $212 million as a result of the latest auction, according to David Fisfis, the firm’s general counsel.
+
+Pennsylvania is the largest exporter of electricity across the U.S. Natural gas generates 59% of Pennsylvania’s electricity, with 32% by nuclear, 5% coal and 4% by renewables.
+
+People gather along Barking Slopes to watch the implosion of the smokestacks at the former Cheswick Power Plant in New Kensington in 2023. As coal plants shutter, replacement energy sources are slow to come online. (Photo by Stephanie Strasburg/PublicSource)
+
+Pa. seeks lower prices
+
+The July price surge caught the attention of Shapiro, who in December filed a complaint with the Federal Energy Regulatory Commission [FERC], which oversees interstate energy transmission.
+
+“Pennsylvania ratepayers face potentially the largest unjust wealth transfer in the history of U.S. energy markets,” the governor’s complaint began, marking an escalation in Shapiro’s efforts to rein in PJM and prices for power since he entered office in 2023.
+
+In response, PJM wrote that it had long warned about potential supply shortfalls during periods of high demand, blaming “state and federal policy decisions that are pushing generators to retire prematurely” and “unprecedented and rapidly growing data center construction.”
+
+Shapiro followed up with his open letter, in which he threatened to pull Pennsylvania out of the network if the problems went unresolved. The governors of Delaware, Illinois, Maryland and New Jersey, along with a host of consumer and environmental advocates, backed Shapiro’s complaint.
+
+A few days later, PJM agreed to settle the lawsuit, committing to price caps that could stabilize prices through 2027.
+
+Why could energy bills rise?
+
+A convergence of factors have caused recent price hikes at the PJM auction.
+
+The demand for electricity is increasing. As more drivers adopt electric cars and more households turn toward electric heating, power demands grow. But the biggest drivers are the data centers powering big tech for AI.
+
+Demand for power is “increasing in ways we haven’t seen in the past decade,” said Stephen Bennett, a senior manager of regulatory and legislative affairs at PJM at a panel discussion in Pittsburgh in January.
+
+And at the same time, the supply of power to the grid is shrinking. Generators, mostly coal-fired power plants, are retiring — and replacements are slow to come online.
+
+PJM’s queue of new generation projects that have applied to join the grid is “utterly jammed,” according to Shapiro’s complaint, which points to the “3,300 projects awaiting interconnection.” Since 2020, projects totaling 157,765 megawatts have sought connection to PJM, but as of June 2024, only one megawatt has gone into service, according to the Natural Resources Defense Council. By NRDC’s tally, more than 90% of the projects in the queue are renewables and energy storage.
+
+Part of the reason PJM has struggled to add capacity is because the system was originally set up to approve a relatively small number of large, traditional power plants, according to Tom Rutigliano, a senior advocate for climate and energy at the NRDC. Now, he said, the queue has shifted to lots of small power plants, like wind, solar and energy storage facilities. “Their process was totally unprepared to handle it,” Rutigliano said, And now “it’s proceeding at a glacial pace.”
+
+In a response to Shapiro’s complaint, PJM wrote that the slow pace of interconnection was “due to factors outside of PJM’s control,” citing state permitting, project financing and global supply chain challenges.
+
+PJM indicated that some of the projects on its waiting list have not yet been completed and “are not moving ahead at the pace required to meet increasing electricity demand,” in an emailed response to questions posed by PublicSource. A PJM spokesperson also wrote that the grid operator is planning to study the waiting list while it works with policymakers to keep existing generation capacity intact and improve electricity transmission infrastructure.
+
+What is being done to solve PJM’s woes?
+
+In a settlement reached Jan. 28, PJM agreed to set a price cap for its next two capacity auctions.
+
+Shapiro said in a press release that the agreement avoids a “runaway auction price that would have unnecessarily increased energy bills,” and will save PJM consumers $21 billion over the next two years.
+
+Numerous state advocacy groups applauded the agreement, which still must be approved by FERC, while arguing that there is still much to do to fix PJM’s underlying issues. Consumer prices are still expected to rise in line with last year’s auction.
+
+Pennsylvania Gov. Josh Shapiro reached a settlement with PJM setting price caps he said would save consumers $21 billion over two years, but green energy projects still await entry to the grid. (Photo by Quinn Glabicki/PublicSource)
+
+Robert Routh, Pennsylvania policy director for climate and energy at the NRDC, said the agreement is “significant,” and buys time for PJM and its stakeholders to solve structural issues. He pointed to PJM’s lengthy queue of mostly solar and storage projects that have yet to be connected.
+
+It’s also an opportunity, he said, to winterize gas power plants to make them more reliable during cold snaps. According to NRDC analysis, if gas power plants could be winterized and achieve 90 percent reliability during cold weather, that could add the equivalent of a dozen new power plants in capacity to the grid, potentially alleviating some of the strain felt when temperatures drop.
+
+In Pennsylvania, investments into energy efficiency could help lower energy bills even if prices remain high, and programs like community solar could give people more control over their electric bills, said Rob Altenburg, a senior energy and climate director at PennFuture. He also pointed to programs that would encourage more renewable energy generation — like an update to the state’s renewable energy targets — and could reduce “overreliance” on gas power plants that dominate Pennsylvania’s energy generation.
+
+There is a misconception that a transition to renewable energy somehow played a role in PJM’s pricing problems, Rutigliano said.
+
+“That’s just simply false,” he said. “The renewable transition hasn’t happened to PJM.”
+
+Quinn Glabicki is the environment and climate reporter at PublicSource and a Report for America corps member. He can be reached at quinn@publicsource.org and on instagram @quinnglabicki.
+
+This story was fact-checked by Rich Lord. Your gift will keep stories like this coming. Have you learned something new today? Consider supporting our work with a donation.
+
+
+
+We take pride in serving our community by delivering accurate, timely, and impactful journalism without paywalls, but with rising costs for the resources needed to produce our top-quality journalism, every reader contribution matters. It takes a lot of resources to produce this work, from compensating our staff, to the technology that brings it to you, to fact-checking every line, and much more.
+
+
+
+Your donation to our nonprofit newsroom helps ensure that everyone in Allegheny County can stay informed about the decisions and events that impact their lives. Thank you for your support! GIVE NOW MOST READ PUBLICSOURCE STORIES See what Allegheny County employees earned in 2024 — and how the county is hiding names of many top earners
+
+Trump talks up U.S. Steel deal in Mon Valley as Pittsburgh-area towns laud jobs, await details on upgrades
+
+Gainey has 7 months and 7 major development priorities. Here’s where they stand.
+
+Zombies to 'Cabaret': How Perry High’s arts scene is driving school spirit Republish This Story Republish our articles for free, online or in print, under a Creative Commons license.
