@@ -28,8 +28,8 @@ def generate_improved_teaser(text: str) -> str:
     - Keep under 30 words
     """
     
-    # Extract first 1000 characters for context
-    excerpt = text[:1000]
+    # Extract first 4000 characters for context (approx. 800 words)
+    excerpt = text[:4000]
     
     # Enhanced prompt following the guidelines
     prompt = f"""You are a local news social media editor following strict voice guidelines. Create a compelling teaser (under 30 words) from this story excerpt.
