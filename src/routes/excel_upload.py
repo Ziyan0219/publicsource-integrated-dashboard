@@ -9,7 +9,7 @@ import shutil
 from pathlib import Path
 
 # Add the news-region-classification directory to Python path
-sys.path.append('/home/ubuntu/news-region-classification')
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'news-region-classification'))
 
 # Import the classification algorithm
 from archive_classifier_final import pipeline, read_stories, read_neighborhoods, read_municipalities
@@ -32,17 +32,11 @@ def get_file_hash(filepath):
 
 def load_existing_stories():
     """Load existing stories from the frontend data file"""
-    stories_path = '/home/ubuntu/open-news-classification-/src/data/stories.json'
-    try:
-        with open(stories_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data.get('stories', [])
-    except FileNotFoundError:
-        return []
+stories_path = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'src', 'data', 'stories.json')
 
 def save_stories(stories, filters):
     """Save updated stories and filters to the frontend data file"""
-    stories_path = '/home/ubuntu/open-news-classification-/src/data/stories.json'
+    stories_path = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'src', 'data', 'stories.json')
     data = {
         'stories': stories,
         'filters': filters
@@ -106,8 +100,8 @@ def upload_excel():
         # Process the file using the classification algorithm
         try:
             # Set up paths for the algorithm
-            neigh_path = Path('/home/ubuntu/news-region-classification/Pittsburgh neighborhoods.xlsx')
-            muni_path = Path('/home/ubuntu/news-region-classification/Allegheny County Municipalities.xlsx')
+            neigh_path = Path(os.path.join(os.path.dirname(__file__), '..', '..', 'Pittsburgh neighborhoods.xlsx'))
+            muni_path = Path(os.path.join(os.path.dirname(__file__), '..', '..', 'Allegheny County Municipalities.xlsx'))
             output_dir = Path('/tmp/classification_output')
             
             # Get OpenAI API key from environment
