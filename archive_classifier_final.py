@@ -142,21 +142,7 @@ def scan(text: str, alias_list: List[tuple[str,str]], muni_lc: Set[str]) -> tupl
 # -------------- LLM teaser --------------
 
 def generate_teaser(text: str) -> str:
-    """
-    Generate a social media teaser following Social Media Voice Guidelines:
-    - Maintain consistent active voice
-    - Promote facts first
-    - Do not editorialize
-    - Leverage quotes to help showcase personal perspectives
-    - Use calls-to-action (explore, examine, investigate...)
-    - Ask questions when facts/perspectives in the story can answer them
-    - Demonstrate story impacts to local communities/neighborhoods when included
-    - Follow Associated Press Style for copy
-    - Keep under 30 words
-    """
-    
-    excerpt = text[:1000]
-    
+    excerpt = text[:1300]
     prompt = f"""You are a local news social media editor following strict voice guidelines. Create a compelling teaser (under 30 words) from this story excerpt.
 
 VOICE GUIDELINES:
@@ -175,37 +161,13 @@ STORY EXCERPT:
 {excerpt}
 
 Create a factual, engaging teaser under 30 words that makes readers want to explore the full story:"""
-
-    try:
-        resp = openai.chat.completions.create(
-            model="gpt-4",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=80,
-            temperature=0.6,
-        )
-        
-        teaser = resp.choices[0].message.content.strip()
-        
-        # Clean up the teaser
-        import re
-        teaser = re.sub(r'^["\']*|["\']*$', '', teaser)  # Remove quotes at start/end
-        teaser = re.sub(r'\s+', ' ', teaser)  # Normalize whitespace
-        
-        # Ensure it's under 30 words
-        words = teaser.split()
-        if len(words) > 30:
-            teaser = ' '.join(words[:30])
-            if not teaser.endswith(('.', '!', '?')):
-                teaser += '...'
-        
-        return teaser
-        
-    except Exception as e:
-        print(f"[ERROR] Teaser generation failed: {e}")
-        # Fallback to simple summary
-        words = excerpt.split()[:25]
-        return ' '.join(words) + "..."
-
+    resp = openai.chat.completions.create(
+        model="gpt-4",
+        messages=[{"role":"user","content":prompt}],
+        max_tokens=80,
+        temperature=0.6,
+    )
+    return resp.choices[0].message.content.strip()
 # -------------- pipeline --------------
 
 def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
