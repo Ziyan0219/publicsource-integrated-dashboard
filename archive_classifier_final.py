@@ -35,8 +35,6 @@ import requests
 import openai
 from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
-# 新增导入 improved teaser 生成器
-from improved_teaser_generator import generate_improved_teaser
 
 # optional fuzzy
 try:
@@ -143,70 +141,33 @@ def scan(text: str, alias_list: List[tuple[str,str]], muni_lc: Set[str]) -> tupl
 
 # -------------- LLM teaser --------------
 
-# def generate_teaser(text: str) -> str:
-#     """
-#     Generate a social media teaser following Social Media Voice Guidelines:
-#     - Maintain consistent active voice
-#     - Promote facts first
-#     - Do not editorialize
-#     - Leverage quotes to help showcase personal perspectives
-#     - Use calls-to-action (explore, examine, investigate...)
-#     - Ask questions when facts/perspectives in the story can answer them
-#     - Demonstrate story impacts to local communities/neighborhoods when included
-#     - Follow Associated Press Style for copy
-#     - Keep under 30 words
-#     """
-    
-#     excerpt = text[:1000]
-    
-#     prompt = f"""You are a local news social media editor following strict voice guidelines. Create a compelling teaser (under 30 words) from this story excerpt.
+def generate_teaser(text: str) -> str:
+    excerpt = text[:1300]
+    prompt = f"""You are a local news social media editor following strict voice guidelines. Create a compelling teaser (under 30 words) from this story excerpt.
 
-# VOICE GUIDELINES:
-# - Use active voice consistently
-# - Lead with facts, not opinions
-# - Include quotes when available to show personal perspectives
-# - Use calls-to-action: explore, examine, investigate, discover
-# - Ask questions that the story can answer
-# - Show local community impact when relevant
-# - No clickbait or sensationalism
-# - Follow AP Style
-# - No oxford comma
-# - Be curious, tenacious, constructive, empathetic, clear, concise, certain, informative and friendly
+VOICE GUIDELINES:
+- Use active voice consistently
+- Lead with facts, not opinions
+- Include quotes when available to show personal perspectives
+- Use calls-to-action: explore, examine, investigate, discover
+- Ask questions that the story can answer
+- Show local community impact when relevant
+- No clickbait or sensationalism
+- Follow AP Style
+- No oxford comma
+- Be curious, tenacious, constructive, empathetic, clear, concise, certain, informative and friendly
 
-# STORY EXCERPT:
-# {excerpt}
+STORY EXCERPT:
+{excerpt}
 
-# Create a factual, engaging teaser under 30 words that makes readers want to explore the full story:"""
-
-#     try:
-#         resp = openai.chat.completions.create(
-#             model="gpt-4",
-#             messages=[{"role": "user", "content": prompt}],
-#             max_tokens=80,
-#             temperature=0.6,
-#         )
-        
-#         teaser = resp.choices[0].message.content.strip()
-        
-#         # Clean up the teaser
-#         import re
-#         teaser = re.sub(r'^["\']*|["\']*$', '', teaser)  # Remove quotes at start/end
-#         teaser = re.sub(r'\s+', ' ', teaser)  # Normalize whitespace
-        
-#         # Ensure it's under 30 words
-#         words = teaser.split()
-#         if len(words) > 30:
-#             teaser = ' '.join(words[:30])
-#             if not teaser.endswith(('.', '!', '?')):
-#                 teaser += '...'
-        
-#         return teaser
-        
-#     except Exception as e:
-#         print(f"[ERROR] Teaser generation failed: {e}")
-#         # Fallback to simple summary
-#         words = excerpt.split()[:25]
-#         return ' '.join(words) + "..."
+Create a factual, engaging teaser under 30 words that makes readers want to explore the full story:"""
+    resp = openai.chat.completions.create(
+        model="gpt-4",
+        messages=[{"role":"user","content":prompt}],
+        max_tokens=80,
+        temperature=0.6,
+    )
+    return resp.choices[0].message.content.strip()
 
 # -------------- pipeline --------------
 
@@ -225,6 +186,7 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
 
     texts=[]
     for idx,url in enumerate(df["Story"]):
+        print(f"operating on {idx+1} story: {url}")
         txt = fetch_text(url, cache)
         texts.append(txt)
         if txt: (dbg/f"{idx}.txt").write_text(txt[:1000],"utf-8")
@@ -241,6 +203,7 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
         regions=[neigh2reg[n] for n in neigh_l if n in neigh2reg]
         regions=list(dict.fromkeys(regions))
         if is_empty(row["GeographicArea"]) and regions:
+            print(f"generating teaser for {idx+1} story")
             df.at[idx,"GeographicArea"]=", ".join(regions)
         if is_empty(row["Umbrella"]):
             if any(r.lower().endswith("county") for r in regions):
@@ -250,7 +213,7 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
             else:
                 df.at[idx,"Umbrella"]="Pittsburgh, Allegheny County"
         if is_empty(row["SocialAbstract"]):
-            df.at[idx,"SocialAbstract"]=generate_improved_teaser(txt)
+            df.at[idx,"SocialAbstract"]=generate_teaser(txt)
 
     for col in ["Umbrella","GeographicArea","Neighborhoods"]:
         df[col]=df[col].apply(norm_text)
@@ -268,10 +231,13 @@ def main():
     p.add_argument("--stories", required=True, type=Path)
     p.add_argument("--neigh", required=True, type=Path)
     p.add_argument("--muni", required=True, type=Path)
-    p.add_argument("--openai_key", required=True)
+    p.add_argument("--openai_key", default=os.environ.get("OPENAI_API_KEY"))
     p.add_argument("--out_dir", required=True, type=Path)
     args=p.parse_args()
-    pipeline(args.stories,args.neigh,args.muni,args.out_dir,args.openai_key)
+    
 
+    if not args.openai_key:
+        raise ValueError("OpenAI API key not found. Please provide it via --openai_key argument or set the OPENAI_API_KEY environment variable.")
+    pipeline(args.stories,args.neigh,args.muni,args.out_dir,args.openai_key)
 if __name__=="__main__":
     main()
