@@ -54,7 +54,7 @@ const StoryCard = ({ story }) => {
 
       {/* Social Media Abstract */}
       <div className="mb-4 flex-1">
-        <p className="text-gray-700 text-sm leading-relaxed line-clamp-3">
+        <p className="text-gray-700 text-sm leading-relaxed">
           {story.social_abstract.replace(/^"|"$/g, '')}
         </p>
       </div>
