@@ -8,9 +8,9 @@ import UploadExcel from './UploadExcel';
 const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilters, setSelectedFilters] = useState({
-    umbrella: '',
-    geographic_area: '',
-    neighborhood: ''
+    umbrella: [],
+    geographic_area: [],
+    neighborhood: []
   });
   const [showFilters, setShowFilters] = useState(false);
 
@@ -29,17 +29,49 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
         story.social_abstract.toLowerCase().includes(searchTerm.toLowerCase()) ||
         story.url.toLowerCase().includes(searchTerm.toLowerCase());
 
-      // Umbrella filter
-      const matchesUmbrella = selectedFilters.umbrella === '' || 
-        story.umbrella === selectedFilters.umbrella;
+      // Umbrella filter - check if any selected umbrella matches any part of story umbrella
+      const matchesUmbrella = selectedFilters.umbrella.length === 0 || 
+        selectedFilters.umbrella.some(selectedUmbrella => {
+          if (!story.umbrella) return false;
+          // Split story umbrella by common separators and check for matches
+          const storyUmbrellas = story.umbrella.split(/[,;\/|]/).map(u => u.trim());
+          return storyUmbrellas.some(storyUmb => 
+            storyUmb === selectedUmbrella || storyUmb.includes(selectedUmbrella)
+          );
+        });
 
-      // Geographic Area filter
-      const matchesGeographic = selectedFilters.geographic_area === '' || 
-        story.geographic_area === selectedFilters.geographic_area;
+      // Geographic Area filter - check if any selected area matches any part of story geographic area
+      const matchesGeographic = selectedFilters.geographic_area.length === 0 || 
+        selectedFilters.geographic_area.some(selectedArea => {
+          if (!story.geographic_area) return false;
+          // Split story geographic area by common separators and check for matches
+          const storyAreas = story.geographic_area.split(/[,;\/|]/).map(a => a.trim());
+          return storyAreas.some(storyArea => 
+            storyArea === selectedArea || storyArea.includes(selectedArea)
+          );
+        });
 
-      // Neighborhood filter
-      const matchesNeighborhood = selectedFilters.neighborhood === '' || 
-        (story.neighborhoods && story.neighborhoods.includes(selectedFilters.neighborhood));
+      // Neighborhood filter - check if any selected neighborhood matches any part of story neighborhoods
+      const matchesNeighborhood = selectedFilters.neighborhood.length === 0 || 
+        selectedFilters.neighborhood.some(selectedNeigh => {
+          if (!story.neighborhoods) return false;
+          
+          let storyNeighborhoods = [];
+          
+          // Handle both string and array formats for neighborhoods
+          if (typeof story.neighborhoods === 'string') {
+            storyNeighborhoods = story.neighborhoods.split(/[,;\/|]/).map(n => n.trim());
+          } else if (Array.isArray(story.neighborhoods)) {
+            // Flatten array and split each item by separators
+            storyNeighborhoods = story.neighborhoods.flatMap(neigh => 
+              typeof neigh === 'string' ? neigh.split(/[,;\/|]/).map(n => n.trim()) : []
+            );
+          }
+          
+          return storyNeighborhoods.some(storyNeigh => 
+            storyNeigh === selectedNeigh || storyNeigh.includes(selectedNeigh)
+          );
+        });
 
       return matchesSearch && matchesUmbrella && matchesGeographic && matchesNeighborhood;
     });
@@ -54,14 +86,16 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
 
   const clearFilters = () => {
     setSelectedFilters({
-      umbrella: '',
-      geographic_area: '',
-      neighborhood: ''
+      umbrella: [],
+      geographic_area: [],
+      neighborhood: []
     });
     setSearchTerm('');
   };
 
-  const activeFiltersCount = Object.values(selectedFilters).filter(v => v !== '').length;
+  const activeFiltersCount = Object.values(selectedFilters).reduce((count, filterArray) => 
+    count + (Array.isArray(filterArray) ? filterArray.length : 0), 0
+  );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">

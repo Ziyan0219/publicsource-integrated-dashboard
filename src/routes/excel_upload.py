@@ -32,7 +32,18 @@ def get_file_hash(filepath):
 
 def load_existing_stories():
     """Load existing stories from the frontend data file"""
-stories_path = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'src', 'data', 'stories.json')
+    stories_path = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'src', 'data', 'stories.json')
+    
+    try:
+        if os.path.exists(stories_path):
+            with open(stories_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get('stories', [])
+        else:
+            return []
+    except Exception as e:
+        current_app.logger.error(f"Error loading existing stories: {str(e)}")
+        return []
 
 def save_stories(stories, filters):
     """Save updated stories and filters to the frontend data file"""
@@ -55,20 +66,73 @@ def update_filters(stories):
     neighborhoods = set()
     
     for story in stories:
-        if story.get('umbrella'):
-            umbrellas.add(story['umbrella'])
-        if story.get('geographic_area'):
-            geographic_areas.add(story['geographic_area'])
+        # Handle umbrella/category - split by comma and common separators
+        if story.get('umbrella') and story['umbrella'].strip():
+            umbrella_text = story['umbrella'].strip()
+            # Split by comma and other common separators
+            for separator in [',', ';', '/', '|']:
+                if separator in umbrella_text:
+                    for item in umbrella_text.split(separator):
+                        item = item.strip()
+                        if item and item != '':
+                            umbrellas.add(item)
+                    break
+            else:
+                # No separator found, add as single item
+                umbrellas.add(umbrella_text)
+        
+        # Handle geographic area - split by comma and common separators
+        if story.get('geographic_area') and story['geographic_area'].strip():
+            geo_text = story['geographic_area'].strip()
+            # Split by comma and other common separators
+            for separator in [',', ';', '/', '|']:
+                if separator in geo_text:
+                    for item in geo_text.split(separator):
+                        item = item.strip()
+                        if item and item != '':
+                            geographic_areas.add(item)
+                    break
+            else:
+                # No separator found, add as single item
+                geographic_areas.add(geo_text)
+        
+        # Handle neighborhoods - improved logic to handle various formats and split multi-value entries
         if story.get('neighborhoods'):
-            # Handle both string and list formats
-            if isinstance(story['neighborhoods'], str):
-                for neigh in story['neighborhoods'].split(', '):
-                    if neigh.strip():
-                        neighborhoods.add(neigh.strip())
-            elif isinstance(story['neighborhoods'], list):
-                for neigh in story['neighborhoods']:
-                    if neigh.strip():
-                        neighborhoods.add(neigh.strip())
+            neighborhoods_data = story['neighborhoods']
+            
+            # Handle string format (comma-separated)
+            if isinstance(neighborhoods_data, str):
+                neighborhoods_text = neighborhoods_data.strip()
+                # Split by comma and other common separators
+                for separator in [',', ';', '/', '|']:
+                    if separator in neighborhoods_text:
+                        for neigh in neighborhoods_text.split(separator):
+                            neigh = neigh.strip()
+                            if neigh and neigh != '':  # Skip empty strings
+                                neighborhoods.add(neigh)
+                        break
+                else:
+                    # No separator found, add as single item if not empty
+                    if neighborhoods_text and neighborhoods_text != '':
+                        neighborhoods.add(neighborhoods_text)
+            
+            # Handle list format
+            elif isinstance(neighborhoods_data, list):
+                for neigh_item in neighborhoods_data:
+                    if isinstance(neigh_item, str):
+                        neigh_text = neigh_item.strip()
+                        # Check if this list item contains multiple neighborhoods
+                        for separator in [',', ';', '/', '|']:
+                            if separator in neigh_text:
+                                for neigh in neigh_text.split(separator):
+                                    neigh = neigh.strip()
+                                    if neigh and neigh != '':
+                                        neighborhoods.add(neigh)
+                                break
+                        else:
+                            # No separator found, add as single item if not empty
+                            if neigh_text and neigh_text != '':
+                                neighborhoods.add(neigh_text)
     
     return {
         'umbrellas': sorted(list(umbrellas)),
