@@ -77,10 +77,10 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
     });
   }, [stories, searchTerm, selectedFilters]);
 
-  const handleFilterChange = (filterType, value) => {
+  const handleFilterChange = (filterType, newValues) => {
     setSelectedFilters(prev => ({
       ...prev,
-      [filterType]: value
+      [filterType]: newValues
     }));
   };
 
