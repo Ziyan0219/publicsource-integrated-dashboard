@@ -12,6 +12,39 @@ function App() {
   const [filters, setFilters] = useState({});
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  // Function to process filters from stories data (same logic as backend)
+  const processFilters = (stories) => {
+    const umbrellas = new Set();
+    const geographicAreas = new Set();
+    const neighborhoods = new Set();
+
+    stories.forEach(story => {
+      // Process umbrella/categories
+      if (story.umbrella) {
+        const umbrellaValues = story.umbrella.split(/[,;/|]/).map(v => v.trim()).filter(v => v);
+        umbrellaValues.forEach(value => umbrellas.add(value));
+      }
+
+      // Process geographic areas
+      if (story.geographic_area) {
+        const geoValues = story.geographic_area.split(/[,;/|]/).map(v => v.trim()).filter(v => v);
+        geoValues.forEach(value => geographicAreas.add(value));
+      }
+
+      // Process neighborhoods
+      if (story.neighborhoods) {
+        const neighborhoodValues = story.neighborhoods.split(/[,;/|]/).map(v => v.trim()).filter(v => v);
+        neighborhoodValues.forEach(value => neighborhoods.add(value));
+      }
+    });
+
+    return {
+      umbrellas: Array.from(umbrellas).sort(),
+      geographic_areas: Array.from(geographicAreas).sort(),
+      neighborhoods: Array.from(neighborhoods).sort()
+    };
+  };
+
   const loadData = async () => {
     try {
       // Try to fetch fresh data from backend
@@ -21,15 +54,17 @@ function App() {
         setStories(data.stories);
         setFilters(data.filters);
       } else {
-        // Fallback to local data
+        // Fallback to local data with client-side filter processing
         setStories(storiesData.stories);
-        setFilters(storiesData.filters);
+        const processedFilters = processFilters(storiesData.stories);
+        setFilters(processedFilters);
       }
     } catch (error) {
       // Fallback to local data if backend is not available
-      console.log('Backend not available, using local data');
+      console.log('Backend not available, using local data with client-side processing');
       setStories(storiesData.stories);
-      setFilters(storiesData.filters);
+      const processedFilters = processFilters(storiesData.stories);
+      setFilters(processedFilters);
     }
   };
 
