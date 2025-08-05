@@ -45,7 +45,7 @@ const StaticStoryCard = ({ story }) => {
   const hasMoreNeighborhoods = neighborhoods.length > 2;
 
   return (
-    <div className="bg-white rounded-xl border-2 border-gray-200 shadow-lg overflow-hidden">
+    <div className="bg-white rounded-xl border-2 border-gray-200 shadow-lg overflow-hidden hover-lift animate-fade-in group">
       {/* Header with gradient accent */}
       <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 h-2"></div>
       
@@ -53,15 +53,15 @@ const StaticStoryCard = ({ story }) => {
         {/* Article Title and Meta */}
         {story.title && (
           <div className="mb-4">
-            <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
+            <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-700 transition-colors duration-200">
               {story.title}
             </h3>
             
             {/* Author and Date */}
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
               {formatAuthor(story.author) && (
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                <div className="flex items-center gap-2 animate-slide-in-top">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-200">
                     <User className="h-4 w-4 text-blue-600" />
                   </div>
                   <span className="font-medium text-gray-700">
@@ -70,8 +70,8 @@ const StaticStoryCard = ({ story }) => {
                 </div>
               )}
               {formatDate(story.date) && (
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <div className="flex items-center gap-2 animate-slide-in-top" style={{ animationDelay: '100ms' }}>
+                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors duration-200">
                     <Calendar className="h-4 w-4 text-green-600" />
                   </div>
                   <span className="text-gray-600">
@@ -85,7 +85,7 @@ const StaticStoryCard = ({ story }) => {
 
         {/* Social Media Abstract */}
         <div className="mb-6">
-          <div className="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
+          <div className="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500 group-hover:bg-blue-50 group-hover:border-blue-600 transition-all duration-200">
             <p className="text-gray-700 text-base leading-relaxed font-medium">
               {story.social_abstract.replace(/^"|"$/g, '')}
             </p>
@@ -95,36 +95,36 @@ const StaticStoryCard = ({ story }) => {
         {/* Classification Grid */}
         <div className="grid grid-cols-1 gap-4 mb-6">
           {/* Category */}
-          <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+          <div className="bg-blue-50 rounded-lg p-4 border border-blue-200 group-hover:bg-blue-100 group-hover:border-blue-300 transition-all duration-200 animate-slide-in-bottom">
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center group-hover:bg-blue-700 transition-colors duration-200">
                 <Building className="h-4 w-4 text-white" />
               </div>
               <span className="text-blue-900 font-semibold">Category</span>
             </div>
-            <span className={`inline-block px-4 py-2 rounded-lg font-medium text-sm border-2 ${getCategoryColor(story.umbrella)}`}>
+            <span className={`inline-block px-4 py-2 rounded-lg font-medium text-sm border-2 transition-all duration-200 hover:scale-105 ${getCategoryColor(story.umbrella)}`}>
               {story.umbrella}
             </span>
           </div>
 
           {/* Geographic Area */}
-          <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+          <div className="bg-green-50 rounded-lg p-4 border border-green-200 group-hover:bg-green-100 group-hover:border-green-300 transition-all duration-200 animate-slide-in-bottom" style={{ animationDelay: '100ms' }}>
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center group-hover:bg-green-700 transition-colors duration-200">
                 <MapPin className="h-4 w-4 text-white" />
               </div>
               <span className="text-green-900 font-semibold">Geographic Area</span>
             </div>
-            <span className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-lg font-medium text-sm border-2 border-green-200">
+            <span className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-lg font-medium text-sm border-2 border-green-200 transition-all duration-200 hover:scale-105 hover:bg-green-200">
               {story.geographic_area}
             </span>
           </div>
 
           {/* Neighborhoods */}
           {neighborhoods.length > 0 && (
-            <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
+            <div className="bg-orange-50 rounded-lg p-4 border border-orange-200 group-hover:bg-orange-100 group-hover:border-orange-300 transition-all duration-200 animate-slide-in-bottom" style={{ animationDelay: '200ms' }}>
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center group-hover:bg-orange-700 transition-colors duration-200">
                   <Home className="h-4 w-4 text-white" />
                 </div>
                 <span className="text-orange-900 font-semibold">Neighborhoods</span>
@@ -133,7 +133,8 @@ const StaticStoryCard = ({ story }) => {
                 {visibleNeighborhoods.map((neighborhood, index) => (
                   <span
                     key={index}
-                    className="bg-orange-100 text-orange-800 px-3 py-2 rounded-lg font-medium text-sm border-2 border-orange-200"
+                    className="bg-orange-100 text-orange-800 px-3 py-2 rounded-lg font-medium text-sm border-2 border-orange-200 transition-all duration-200 hover:scale-105 hover:bg-orange-200"
+                    style={{ animationDelay: `${index * 50}ms` }}
                   >
                     {neighborhood}
                   </span>
@@ -141,7 +142,7 @@ const StaticStoryCard = ({ story }) => {
                 {hasMoreNeighborhoods && (
                   <button
                     onClick={() => setShowAllNeighborhoods(!showAllNeighborhoods)}
-                    className="flex items-center gap-1 text-orange-700 bg-orange-100 border-2 border-orange-300 px-3 py-2 rounded-lg text-sm font-medium"
+                    className="flex items-center gap-1 text-orange-700 bg-orange-100 border-2 border-orange-300 px-3 py-2 rounded-lg text-sm font-medium hover:bg-orange-200 hover:border-orange-400 transition-all duration-200 hover:scale-105"
                   >
                     {showAllNeighborhoods ? (
                       <>
@@ -167,10 +168,10 @@ const StaticStoryCard = ({ story }) => {
             href={story.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-base shadow-lg border-2 border-blue-700"
+            className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-base shadow-lg border-2 border-blue-700 hover:from-blue-700 hover:to-purple-700 hover:shadow-xl transition-all duration-200 transform hover:scale-105 group/button"
           >
             <span>Read Full Story</span>
-            <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+            <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center group-hover/button:bg-opacity-30 transition-all duration-200">
               <ExternalLink className="h-4 w-4" />
             </div>
           </a>
@@ -181,4 +182,3 @@ const StaticStoryCard = ({ story }) => {
 };
 
 export default StaticStoryCard;
-
