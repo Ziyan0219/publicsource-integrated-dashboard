@@ -33,7 +33,7 @@ const PittsburghMap = () => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+    <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 animate-fade-in">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-xl font-bold text-gray-900 flex items-center space-x-2">
           <MapPin className="h-6 w-6 text-blue-600" />
@@ -46,37 +46,41 @@ const PittsburghMap = () => {
 
       {/* Map Container */}
       <div className="relative bg-gradient-to-br from-green-100 to-blue-100 rounded-lg overflow-hidden" style={{ height: '400px' }}>
-        {/* Rivers - 使用内联样式修复 */}
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        {/* Rivers - 使用内联样式确保显示 */}
+        <svg className="absolute inset-0 w-full h-full z-0" viewBox="0 0 100 100" preserveAspectRatio="none">
           {rivers.map((river, index) => (
             <path
               key={index}
               d={river.path}
-              className="opacity-70"
               style={{
                 fill: 'transparent',
                 stroke: river.color,
-                strokeWidth: 4
+                strokeWidth: 20,
+                opacity: 0.7
               }}
             />
           ))}
         </svg>
 
-        {/* Geographic Areas */}
+        {/* Geographic Areas - 修复z-index和样式问题 */}
         {geographicAreas.map((area, index) => (
           <div
             key={index}
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer"
+            className="absolute z-10 group cursor-pointer animate-scale-in"
             style={{ 
               left: `${area.x}%`, 
-              top: `${area.y}%` 
+              top: `${area.y}%`,
+              transform: 'translate(-50%, -50%)',
+              animationDelay: `${index * 100}ms`
             }}
           >
-            <div className={`${area.color} rounded-full p-2.5 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110`}>
+            <div 
+              className={`${area.color} rounded-full p-2.5 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 hover-lift`}
+            >
               {getIcon(area.type)}
             </div>
             
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-20">
               <div className="bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                 {area.name}
               </div>
@@ -84,8 +88,8 @@ const PittsburghMap = () => {
           </div>
         ))}
 
-        {/* --- 这里是图例 (Key Areas / Legend) --- */}
-        <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 rounded-lg p-3 shadow-lg">
+        {/* 图例 (Key Areas / Legend) */}
+        <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 rounded-lg p-3 shadow-lg z-10 animate-slide-in-bottom">
           <h4 className="font-semibold text-gray-800 mb-2 text-sm">Key Areas</h4>
           <div className="space-y-1 text-xs">
             <div className="flex items-center space-x-2">
@@ -107,8 +111,8 @@ const PittsburghMap = () => {
           </div>
         </div>
 
-        {/* --- 这里是罗盘 (Compass) --- */}
-        <div className="absolute top-4 right-4 bg-white bg-opacity-90 rounded-full p-2 shadow-lg">
+        {/* 罗盘 (Compass) */}
+        <div className="absolute top-4 right-4 bg-white bg-opacity-90 rounded-full p-2 shadow-lg z-10 animate-slide-in-top">
           <div className="w-8 h-8 relative">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-6 h-6 border-2 border-gray-400 rounded-full relative">
@@ -122,19 +126,19 @@ const PittsburghMap = () => {
 
       {/* Map Statistics */}
       <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="text-center p-3 bg-gray-50 rounded-lg">
+        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
           <div className="text-lg font-bold text-gray-900">{geographicAreas.length}</div>
           <div className="text-xs text-gray-600">Geographic Areas</div>
         </div>
-        <div className="text-center p-3 bg-gray-50 rounded-lg">
+        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
           <div className="text-lg font-bold text-gray-900">3</div>
           <div className="text-xs text-gray-600">Rivers</div>
         </div>
-        <div className="text-center p-3 bg-gray-50 rounded-lg">
+        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
           <div className="text-lg font-bold text-gray-900">302k</div>
           <div className="text-xs text-gray-600">Population</div>
         </div>
-        <div className="text-center p-3 bg-gray-50 rounded-lg">
+        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
           <div className="text-lg font-bold text-gray-900">58.3</div>
           <div className="text-xs text-gray-600">sq mi</div>
         </div>
@@ -144,4 +148,3 @@ const PittsburghMap = () => {
 };
 
 export default PittsburghMap;
-
