@@ -3,6 +3,7 @@ import { ExternalLink, MapPin, Building, Home, ChevronDown, ChevronUp, Calendar,
 
 const StaticStoryCard = ({ story, onHover, onLeave }) => {
   const [showAllNeighborhoods, setShowAllNeighborhoods] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   
   // 解析geographic_area字符串，分割多个区域
   const parseGeographicAreas = (areaString) => {
@@ -11,6 +12,7 @@ const StaticStoryCard = ({ story, onHover, onLeave }) => {
   };
   
   const handleMouseEnter = () => {
+    setIsHovered(true);
     const areas = parseGeographicAreas(story.geographic_area);
     console.log('Story card hover - areas:', areas, 'from:', story.geographic_area);
     if (onHover && areas.length > 0) {
@@ -19,6 +21,7 @@ const StaticStoryCard = ({ story, onHover, onLeave }) => {
   };
   
   const handleMouseLeave = () => {
+    setIsHovered(false);
     console.log('Story card leave');
     if (onLeave) {
       onLeave();
@@ -67,37 +70,34 @@ const StaticStoryCard = ({ story, onHover, onLeave }) => {
 
   return (
     <div 
-      className="bg-white/70 backdrop-blur-xl rounded-2xl border border-gray-200/60 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 ease-out hover:scale-[1.02] group"
+      className={`group relative bg-white/70 backdrop-blur-xl rounded-2xl border border-gray-200/60 overflow-hidden transition-all duration-300 ease-out ${
+        isHovered ? 'shadow-lg scale-[1.02] border-gray-300/60' : 'shadow-sm hover:shadow-md'
+      }`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      
-      <div className="p-6">
-        {/* Article Title and Meta */}
+      <div className="p-5 h-full flex flex-col">
+        {/* Article Title */}
         {story.title && (
           <div className="mb-4">
-            <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-700 transition-colors duration-200">
+            <h3 className="text-lg font-semibold text-slate-900 mb-3 line-clamp-2 leading-tight group-hover:text-slate-700 transition-colors duration-200">
               {story.title}
             </h3>
             
             {/* Author and Date */}
-            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
+            <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
               {formatAuthor(story.author) && (
-                <div className="flex items-center gap-2 animate-slide-in-top">
-                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-200">
-                    <User className="h-4 w-4 text-blue-600" />
-                  </div>
-                  <span className="font-medium text-gray-700">
+                <div className="flex items-center gap-1">
+                  <User className="h-3 w-3 text-slate-400" />
+                  <span className="font-medium text-slate-600">
                     {formatAuthor(story.author)}
                   </span>
                 </div>
               )}
               {formatDate(story.date) && (
-                <div className="flex items-center gap-2 animate-slide-in-top" style={{ animationDelay: '100ms' }}>
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors duration-200">
-                    <Calendar className="h-4 w-4 text-green-600" />
-                  </div>
-                  <span className="text-gray-600">
+                <div className="flex items-center gap-1">
+                  <Calendar className="h-3 w-3 text-slate-400" />
+                  <span className="text-slate-500">
                     {formatDate(story.date)}
                   </span>
                 </div>
@@ -107,96 +107,87 @@ const StaticStoryCard = ({ story, onHover, onLeave }) => {
         )}
 
         {/* Social Media Abstract */}
-        <div className="mb-6">
-          <div className="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500 group-hover:bg-blue-50 group-hover:border-blue-600 transition-all duration-200">
-            <p className="text-gray-700 text-base leading-relaxed font-medium">
-              {story.social_abstract.replace(/^"|"$/g, '')}
-            </p>
-          </div>
+        <div className="mb-5 flex-1">
+          <p className="text-slate-600 text-sm leading-relaxed">
+            {story.social_abstract.replace(/^"|"$/g, '')}
+          </p>
         </div>
 
-        {/* Classification Grid */}
-        <div className="grid grid-cols-1 gap-4 mb-6">
+        {/* Classification Info */}
+        <div className="space-y-2.5 mb-5">
           {/* Category */}
-          <div className="bg-blue-50 rounded-lg p-4 border border-blue-200 group-hover:bg-blue-100 group-hover:border-blue-300 transition-all duration-200 animate-slide-in-bottom">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center group-hover:bg-blue-700 transition-colors duration-200">
-                <Building className="h-4 w-4 text-white" />
-              </div>
-              <span className="text-blue-900 font-semibold">Category</span>
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
+              <Building className="h-3 w-3 text-slate-400" />
+              <span className="text-slate-500 font-medium text-xs">Category</span>
             </div>
-            <span className={`inline-block px-4 py-2 rounded-lg font-medium text-sm border-2 transition-all duration-200 hover:scale-105 ${getCategoryColor(story.umbrella)}`}>
+            <span className={`px-2 py-1 rounded-lg font-medium text-xs border ${getCategoryColor(story.umbrella)}`}>
               {story.umbrella}
             </span>
           </div>
 
           {/* Geographic Area */}
-          <div className="bg-green-50 rounded-lg p-4 border border-green-200 group-hover:bg-green-100 group-hover:border-green-300 transition-all duration-200 animate-slide-in-bottom" style={{ animationDelay: '100ms' }}>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center group-hover:bg-green-700 transition-colors duration-200">
-                <MapPin className="h-4 w-4 text-white" />
-              </div>
-              <span className="text-green-900 font-semibold">Geographic Area</span>
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
+              <MapPin className="h-3 w-3 text-slate-400" />
+              <span className="text-slate-500 font-medium text-xs">Area</span>
             </div>
-            <span className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-lg font-medium text-sm border-2 border-green-200 transition-all duration-200 hover:scale-105 hover:bg-green-200">
+            <span className="bg-slate-100 text-slate-700 px-2 py-1 rounded-lg font-medium text-xs border border-slate-200">
               {story.geographic_area}
             </span>
           </div>
 
           {/* Neighborhoods */}
           {neighborhoods.length > 0 && (
-            <div className="bg-orange-50 rounded-lg p-4 border border-orange-200 group-hover:bg-orange-100 group-hover:border-orange-300 transition-all duration-200 animate-slide-in-bottom" style={{ animationDelay: '200ms' }}>
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center group-hover:bg-orange-700 transition-colors duration-200">
-                  <Home className="h-4 w-4 text-white" />
-                </div>
-                <span className="text-orange-900 font-semibold">Neighborhoods</span>
+            <div className="flex items-start gap-2">
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <Home className="h-3 w-3 text-slate-400" />
+                <span className="text-slate-500 font-medium text-xs">Areas</span>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {visibleNeighborhoods.map((neighborhood, index) => (
-                  <span
-                    key={index}
-                    className="bg-orange-100 text-orange-800 px-3 py-2 rounded-lg font-medium text-sm border-2 border-orange-200 transition-all duration-200 hover:scale-105 hover:bg-orange-200"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
-                    {neighborhood}
-                  </span>
-                ))}
-                {hasMoreNeighborhoods && (
-                  <button
-                    onClick={() => setShowAllNeighborhoods(!showAllNeighborhoods)}
-                    className="flex items-center gap-1 text-orange-700 bg-orange-100 border-2 border-orange-300 px-3 py-2 rounded-lg text-sm font-medium hover:bg-orange-200 hover:border-orange-400 transition-all duration-200 hover:scale-105"
-                  >
-                    {showAllNeighborhoods ? (
-                      <>
-                        <span>Show Less</span>
-                        <ChevronUp className="h-4 w-4" />
-                      </>
-                    ) : (
-                      <>
-                        <span>+{neighborhoods.length - 2} more</span>
-                        <ChevronDown className="h-4 w-4" />
-                      </>
-                    )}
-                  </button>
-                )}
+              <div className="flex-1">
+                <div className="flex flex-wrap gap-1.5 items-center">
+                  {visibleNeighborhoods.map((neighborhood, index) => (
+                    <span
+                      key={index}
+                      className="bg-slate-100 text-slate-600 px-2 py-1 rounded-lg font-medium text-xs border border-slate-200"
+                    >
+                      {neighborhood}
+                    </span>
+                  ))}
+                  {hasMoreNeighborhoods && (
+                    <button
+                      onClick={() => setShowAllNeighborhoods(!showAllNeighborhoods)}
+                      className="flex items-center gap-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 px-2 py-1 rounded-lg text-xs transition-all duration-200"
+                    >
+                      {showAllNeighborhoods ? (
+                        <>
+                          <span>Less</span>
+                          <ChevronUp className="h-3 w-3" />
+                        </>
+                      ) : (
+                        <>
+                          <span>+{neighborhoods.length - 2}</span>
+                          <ChevronDown className="h-3 w-3" />
+                        </>
+                      )}
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
           )}
         </div>
 
         {/* Read Full Story Button */}
-        <div className="pt-4 border-t-2 border-gray-100">
+        <div className="mt-auto">
           <a
             href={story.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-base shadow-lg border-2 border-blue-700 hover:from-blue-700 hover:to-purple-700 hover:shadow-xl transition-all duration-200 transform hover:scale-105 group/button"
+            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition-all duration-200 text-sm font-medium"
           >
-            <span>Read Full Story</span>
-            <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center group-hover/button:bg-opacity-30 transition-all duration-200">
-              <ExternalLink className="h-4 w-4" />
-            </div>
+            <span>Read Story</span>
+            <ExternalLink className="h-3 w-3" />
           </a>
         </div>
       </div>

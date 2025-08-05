@@ -71,8 +71,8 @@ const UploadButton = ({ onUploadSuccess }) => {
     if (isUploading) {
       return (
         <>
-          <Loader2 className="h-4 w-4 animate-spin" />
-          <span className="hidden sm:inline">Uploading...</span>
+          <Loader2 className="h-5 w-5 animate-spin" />
+          <span className="font-medium">Uploading...</span>
         </>
       );
     }
@@ -80,8 +80,8 @@ const UploadButton = ({ onUploadSuccess }) => {
     if (uploadStatus === 'success') {
       return (
         <>
-          <CheckCircle className="h-4 w-4 text-green-600" />
-          <span className="hidden sm:inline">Success</span>
+          <CheckCircle className="h-5 w-5 text-green-600" />
+          <span className="font-medium">Upload Successful</span>
         </>
       );
     }
@@ -89,36 +89,36 @@ const UploadButton = ({ onUploadSuccess }) => {
     if (uploadStatus === 'error') {
       return (
         <>
-          <XCircle className="h-4 w-4 text-red-600" />
-          <span className="hidden sm:inline">Error</span>
+          <XCircle className="h-5 w-5 text-red-600" />
+          <span className="font-medium">Upload Failed</span>
         </>
       );
     }
     
     return (
       <>
-        <Upload className="h-4 w-4" />
-        <span className="hidden sm:inline">Upload Excel</span>
+        <Upload className="h-5 w-5" />
+        <span className="font-medium">Upload Excel File</span>
       </>
     );
   };
 
   const getButtonClass = () => {
-    const baseClass = "flex items-center gap-2 px-4 py-2 rounded-xl font-medium text-sm transition-all duration-200";
+    const baseClass = "flex items-center gap-3 px-6 py-4 rounded-2xl font-medium text-sm transition-all duration-200 shadow-lg hover:shadow-xl";
     
     if (uploadStatus === 'success') {
-      return `${baseClass} bg-green-50 text-green-700 border border-green-200 hover:bg-green-100`;
+      return `${baseClass} bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100`;
     }
     
     if (uploadStatus === 'error') {
-      return `${baseClass} bg-red-50 text-red-700 border border-red-200 hover:bg-red-100`;
+      return `${baseClass} bg-red-50 text-red-700 border-2 border-red-200 hover:bg-red-100`;
     }
     
     if (isUploading) {
-      return `${baseClass} bg-blue-50 text-blue-700 border border-blue-200 cursor-not-allowed`;
+      return `${baseClass} bg-blue-50 text-blue-700 border-2 border-blue-200 cursor-not-allowed`;
     }
     
-    return `${baseClass} bg-white/60 text-slate-600 border border-gray-200/60 hover:bg-white/80 hover:text-slate-900 cursor-pointer backdrop-blur-sm shadow-sm hover:shadow-md`;
+    return `${baseClass} bg-white/80 text-slate-700 border-2 border-slate-200/60 hover:bg-white hover:text-slate-900 hover:border-slate-300 cursor-pointer backdrop-blur-sm`;
   };
 
   return (
@@ -141,8 +141,8 @@ const UploadButton = ({ onUploadSuccess }) => {
       
       {/* Status message tooltip - positioned relative to parent */}
       {uploadMessage && (
-        <div className="absolute top-full right-0 mt-2 z-50 bg-white/90 backdrop-blur-xl border border-gray-200/60 rounded-xl shadow-lg p-3 max-w-xs">
-          <p className={`text-xs ${
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 z-50 bg-white/95 backdrop-blur-xl border border-gray-200/60 rounded-xl shadow-lg p-4 max-w-sm">
+          <p className={`text-sm ${
             uploadStatus === 'success' ? 'text-green-700' : 
             uploadStatus === 'error' ? 'text-red-700' : 'text-slate-700'
           }`}>
