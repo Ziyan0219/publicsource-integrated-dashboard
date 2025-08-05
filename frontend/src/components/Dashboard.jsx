@@ -99,33 +99,33 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-zinc-50">
       {/* Header Navigation */}
-      <header className="bg-white shadow-xl border-b-4 border-gradient-to-r from-blue-500 to-purple-500 animate-slide-in-top">
+      <header className="bg-white/70 backdrop-blur-xl border-b border-gray-200/60 sticky top-0 z-50 animate-slide-in-top">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg hover-lift">
-                <FileText className="h-7 w-7 text-white" />
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-slate-800 to-slate-600 rounded-2xl flex items-center justify-center shadow-sm">
+                <FileText className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900 gradient-text">PublicSource Story Dashboard</h1>
-                <p className="text-sm text-gray-600">Pittsburgh News Classification System</p>
+                <h1 className="text-xl font-semibold text-slate-900">PublicSource</h1>
+                <p className="text-xs text-slate-500">Story Dashboard</p>
               </div>
             </div>
-            <nav className="flex items-center space-x-4">
+            <nav className="flex items-center space-x-3">
               <Link 
                 to="/keyword-search" 
-                className="flex items-center space-x-2 px-6 py-3 text-gray-700 bg-gray-100 rounded-xl border-2 border-gray-200 font-semibold hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition-all duration-200 hover-lift"
+                className="flex items-center space-x-2 px-4 py-2 text-slate-600 bg-white/60 backdrop-blur-sm rounded-xl border border-gray-200/60 font-medium hover:bg-white/80 hover:text-slate-900 transition-all duration-200 shadow-sm hover:shadow-md"
               >
-                <Search className="h-5 w-5" />
-                <span>Keyword Search</span>
+                <Search className="h-4 w-4" />
+                <span>Search</span>
               </Link>
               <button
                 onClick={onLogout}
-                className="flex items-center space-x-2 px-6 py-3 text-red-700 bg-red-50 rounded-xl border-2 border-red-200 font-semibold hover:bg-red-100 hover:border-red-300 transition-all duration-200 hover-lift"
+                className="flex items-center space-x-2 px-4 py-2 text-slate-500 hover:text-slate-700 hover:bg-white/60 rounded-xl transition-all duration-200"
               >
-                <LogOut className="h-5 w-5" />
+                <LogOut className="h-4 w-4" />
                 <span>Logout</span>
               </button>
             </nav>
@@ -133,33 +133,33 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
         </div>
       </header>
 
-      {/* Main Content Container - 使用flex布局确保不重叠 */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-        {/* Upload Button - Fixed position */}
+      {/* Main Content Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+        {/* Upload Button */}
         <div className="animate-fade-in">
           <UploadButton onUploadSuccess={handleUploadSuccess} />
         </div>
 
-        {/* Pittsburgh Map - 独立的容器 */}
+        {/* Pittsburgh Map */}
         <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
           <PittsburghMap />
         </div>
 
-        {/* Search and Filter Bar - 确保与地图有足够间距 */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200 animate-fade-in" style={{ animationDelay: '400ms' }}>
-          <div className="flex flex-col lg:flex-row gap-6">
+        {/* Search and Filter Bar */}
+        <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-sm border border-gray-200/60 p-6 animate-fade-in" style={{ animationDelay: '400ms' }}>
+          <div className="flex flex-col lg:flex-row gap-4">
             {/* Search Box */}
             <div className="flex-1">
               <div className="relative">
-                <div className="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Search className="h-4 w-4 text-blue-600" />
+                <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                  <Search className="h-4 w-4 text-slate-400" />
                 </div>
                 <input
                   type="text"
-                  placeholder="Search story content or links..."
+                  placeholder="Search stories..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-14 pr-4 py-4 text-lg border-2 border-gray-300 rounded-xl bg-gray-50 font-medium focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200"
+                  className="w-full pl-10 pr-4 py-3 text-sm border border-gray-200/60 rounded-xl bg-white/60 backdrop-blur-sm placeholder-slate-400 focus:bg-white focus:border-slate-300 focus:ring-2 focus:ring-slate-200/50 transition-all duration-200"
                 />
               </div>
             </div>
@@ -167,22 +167,16 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
             {/* Filter Button */}
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className={`flex items-center justify-center space-x-3 px-8 py-4 rounded-xl border-2 font-bold min-w-[160px] shadow-lg transition-all duration-200 hover-lift ${
+              className={`flex items-center justify-center space-x-2 px-6 py-3 rounded-xl border font-medium min-w-[120px] transition-all duration-200 ${
                 showFilters || activeFiltersCount > 0
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white border-blue-600'
-                  : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
+                  ? 'bg-slate-900 text-white border-slate-900 shadow-md'
+                  : 'bg-white/60 text-slate-600 border-gray-200/60 hover:bg-white/80'
               }`}
             >
-              <div className={`w-6 h-6 rounded-full flex items-center justify-center ${
-                showFilters || activeFiltersCount > 0 ? 'bg-white bg-opacity-20' : 'bg-gray-100'
-              }`}>
-                <Filter className={`h-4 w-4 ${
-                  showFilters || activeFiltersCount > 0 ? 'text-white' : 'text-gray-600'
-                }`} />
-              </div>
+              <Filter className="h-4 w-4" />
               <span>Filters</span>
               {activeFiltersCount > 0 && (
-                <span className="bg-white text-blue-600 rounded-full px-3 py-1 text-sm font-bold min-w-[24px] text-center border-2 border-blue-200">
+                <span className="bg-white text-slate-900 rounded-full px-2 py-0.5 text-xs font-semibold min-w-[20px] text-center">
                   {activeFiltersCount}
                 </span>
               )}
@@ -203,59 +197,59 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
         </div>
 
         {/* Statistics */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in" style={{ animationDelay: '600ms' }}>
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 shadow-xl border-2 border-blue-700 text-white hover-lift">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in" style={{ animationDelay: '600ms' }}>
+          <div className="bg-white/60 backdrop-blur-xl rounded-xl p-4 border border-gray-200/60 shadow-sm hover:shadow-md transition-all duration-200">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-blue-100 font-semibold mb-2">Total Stories</p>
-                <p className="text-4xl font-bold">{stories.length}</p>
+                <p className="text-slate-500 font-medium mb-1 text-sm">Stories</p>
+                <p className="text-2xl font-bold text-slate-900">{stories.length}</p>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4">
-                <FileText className="h-8 w-8" />
+              <div className="bg-slate-100 rounded-lg p-2">
+                <FileText className="h-5 w-5 text-slate-600" />
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 shadow-xl border-2 border-green-700 text-white hover-lift">
+          <div className="bg-white/60 backdrop-blur-xl rounded-xl p-4 border border-gray-200/60 shadow-sm hover:shadow-md transition-all duration-200">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-green-100 font-semibold mb-2">Categories</p>
-                <p className="text-4xl font-bold">{filters.umbrellas?.length || 0}</p>
+                <p className="text-slate-500 font-medium mb-1 text-sm">Categories</p>
+                <p className="text-2xl font-bold text-slate-900">{filters.umbrellas?.length || 0}</p>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4">
-                <Building className="h-8 w-8" />
+              <div className="bg-slate-100 rounded-lg p-2">
+                <Building className="h-5 w-5 text-slate-600" />
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-6 shadow-xl border-2 border-orange-700 text-white hover-lift">
+          <div className="bg-white/60 backdrop-blur-xl rounded-xl p-4 border border-gray-200/60 shadow-sm hover:shadow-md transition-all duration-200">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-orange-100 font-semibold mb-2">Geographic Areas</p>
-                <p className="text-4xl font-bold">{filters.geographic_areas?.length || 0}</p>
+                <p className="text-slate-500 font-medium mb-1 text-sm">Areas</p>
+                <p className="text-2xl font-bold text-slate-900">{filters.geographic_areas?.length || 0}</p>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4">
-                <MapPin className="h-8 w-8" />
+              <div className="bg-slate-100 rounded-lg p-2">
+                <MapPin className="h-5 w-5 text-slate-600" />
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-6 shadow-xl border-2 border-purple-700 text-white hover-lift">
+          <div className="bg-white/60 backdrop-blur-xl rounded-xl p-4 border border-gray-200/60 shadow-sm hover:shadow-md transition-all duration-200">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-purple-100 font-semibold mb-2">Neighborhoods</p>
-                <p className="text-4xl font-bold">{filters.neighborhoods?.length || 0}</p>
+                <p className="text-slate-500 font-medium mb-1 text-sm">Neighborhoods</p>
+                <p className="text-2xl font-bold text-slate-900">{filters.neighborhoods?.length || 0}</p>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4">
-                <Home className="h-8 w-8" />
+              <div className="bg-slate-100 rounded-lg p-2">
+                <Home className="h-5 w-5 text-slate-600" />
               </div>
             </div>
           </div>
         </div>
 
         {/* Results Count */}
-        <div className="bg-white rounded-xl p-4 shadow-lg border-2 border-gray-200 animate-fade-in" style={{ animationDelay: '800ms' }}>
-          <p className="text-gray-700 font-semibold text-lg">
-            Showing <span className="font-bold text-blue-600 text-xl">{filteredStories.length}</span> stories
+        <div className="bg-white/60 backdrop-blur-xl rounded-xl p-4 border border-gray-200/60 shadow-sm animate-fade-in" style={{ animationDelay: '800ms' }}>
+          <p className="text-slate-600 font-medium text-sm">
+            Showing <span className="font-semibold text-slate-900">{filteredStories.length}</span> stories
             {filteredStories.length !== stories.length && (
-              <span className="text-gray-500"> of {stories.length} total</span>
+              <span className="text-slate-400"> of {stories.length} total</span>
             )}
           </p>
         </div>
@@ -274,17 +268,17 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
         </div>
 
         {filteredStories.length === 0 && (
-          <div className="text-center py-16 bg-white rounded-2xl shadow-xl border-2 border-gray-200 animate-fade-in">
-            <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FileText className="h-12 w-12 text-gray-400" />
+          <div className="text-center py-16 bg-white/60 backdrop-blur-xl rounded-2xl border border-gray-200/60 shadow-sm animate-fade-in">
+            <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <FileText className="h-8 w-8 text-slate-400" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">No matching stories found</h3>
-            <p className="text-gray-600 mb-6 text-lg">Try adjusting your search terms or filters</p>
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">No stories found</h3>
+            <p className="text-slate-500 mb-6">Try adjusting your search terms or filters</p>
             <button
               onClick={clearFilters}
-              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-lg shadow-lg border-2 border-blue-700 hover:from-blue-700 hover:to-purple-700 transition-all duration-200 hover-lift"
+              className="px-6 py-3 bg-slate-900 text-white rounded-xl font-medium shadow-sm hover:bg-slate-800 transition-all duration-200"
             >
-              Clear all filters
+              Clear filters
             </button>
           </div>
         )}

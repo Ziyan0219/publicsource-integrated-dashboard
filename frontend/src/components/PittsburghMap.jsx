@@ -1,35 +1,93 @@
-import React from 'react';
-import { MapPin, Building, Home, TreePine, Waves, Mountain, Users } from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPin, Building, Home, GraduationCap, Palette, Users, Briefcase } from 'lucide-react';
 
 const PittsburghMap = () => {
-  // 更新为7个地理区域
+  const [hoveredArea, setHoveredArea] = useState(null);
+
+  // 精确对应Pittsburgh实际地理位置的区域
   const geographicAreas = [
-    { name: "Central Pittsburgh", x: 48, y: 58, type: "business", color: "bg-blue-600" },
-    { name: "North Side", x: 45, y: 45, type: "sports", color: "bg-yellow-500" },
-    { name: "South Pittsburgh", x: 50, y: 75, type: "entertainment", color: "bg-red-500" },
-    { name: "Hill District", x: 60, y: 58, type: "residential", color: "bg-purple-500" },
-    { name: "Lower East End", x: 65, y: 42, type: "arts", color: "bg-orange-500" },
-    { name: "Upper East End", x: 78, y: 50, type: "education", color: "bg-green-500" },
-    { name: "West End", x: 30, y: 65, type: "residential", color: "bg-purple-500" },
+    { name: "Downtown", x: 47, y: 50, type: "business", color: "amber", description: "Golden Triangle - Business District" },
+    { name: "North Side", x: 40, y: 25, type: "sports", color: "blue", description: "Heinz Field & PNC Park" },
+    { name: "South Side", x: 48, y: 78, type: "entertainment", color: "purple", description: "Carson Street Nightlife" },
+    { name: "Oakland", x: 68, y: 68, type: "education", color: "green", description: "Pitt & CMU Campus" },
+    { name: "Lawrenceville", x: 65, y: 35, type: "arts", color: "orange", description: "Trendy Arts District" },
+    { name: "Shadyside", x: 75, y: 55, type: "residential", color: "pink", description: "Upscale Shopping" },
+    { name: "West End", x: 25, y: 65, type: "residential", color: "indigo", description: "Historic Neighborhoods" },
   ];
 
-  // 在河流数据中直接使用颜色值
+  // Pittsburgh三河汇合的真实地形
   const rivers = [
-    { path: "M20,45 Q35,40 50,45 Q65,50 85,35", color: "#60a5fa" }, // Allegheny
-    { path: "M20,70 Q35,65 50,70 Q65,75 85,65", color: "#60a5fa" }, // Monongahela
-    { path: "M15,55 Q25,50 35,55 Q45,60 50,55", color: "#3b82f6" }, // Ohio
+    { 
+      name: "Allegheny River",
+      path: "M10,15 Q20,20 30,25 Q40,30 45,35 Q48,40 50,45", 
+      color: "#3b82f6",
+      width: "3"
+    },
+    { 
+      name: "Monongahela River",
+      path: "M15,85 Q25,80 35,75 Q42,70 48,65 Q49,55 50,45", 
+      color: "#1d4ed8",
+      width: "3"
+    },
+    { 
+      name: "Ohio River",
+      path: "M50,45 Q60,48 70,50 Q80,52 90,55", 
+      color: "#1e40af",
+      width: "4"
+    },
+  ];
+
+  // Pittsburgh各区域的实际轮廓
+  const neighborhoods = [
+    {
+      name: "Golden Triangle",
+      path: "M50,45 L45,35 Q42,40 40,50 Q42,60 48,65 Z",
+      color: "rgba(251, 191, 36, 0.2)",
+      stroke: "#f59e0b"
+    },
+    {
+      name: "North Side",
+      path: "M30,15 L50,15 L50,35 Q40,30 30,25 Z",
+      color: "rgba(59, 130, 246, 0.15)",
+      stroke: "#3b82f6"
+    },
+    {
+      name: "South Side",
+      path: "M35,65 L50,75 L60,85 L40,90 L25,85 Q30,75 35,65 Z",
+      color: "rgba(147, 51, 234, 0.15)",
+      stroke: "#9333ea"
+    },
+    {
+      name: "Oakland",
+      path: "M55,55 L70,50 L80,65 L70,80 L55,75 Q50,65 55,55 Z",
+      color: "rgba(16, 185, 129, 0.15)",
+      stroke: "#10b981"
+    },
   ];
 
   const getIcon = (type) => {
     switch (type) {
-      case 'business': return <Building className="h-4 w-4 text-white" />;
-      case 'education': return <Home className="h-4 w-4 text-white" />;
-      case 'residential': return <Users className="h-4 w-4 text-white" />;
-      case 'arts': return <TreePine className="h-4 w-4 text-white" />;
-      case 'entertainment': return <Waves className="h-4 w-4 text-white" />;
-      case 'sports': return <Mountain className="h-4 w-4 text-white" />;
-      default: return <MapPin className="h-4 w-4 text-white" />;
+      case 'business': return <Briefcase className="h-3 w-3 text-white" />;
+      case 'education': return <GraduationCap className="h-3 w-3 text-white" />;
+      case 'residential': return <Home className="h-3 w-3 text-white" />;
+      case 'arts': return <Palette className="h-3 w-3 text-white" />;
+      case 'entertainment': return <Users className="h-3 w-3 text-white" />;
+      case 'sports': return <Building className="h-3 w-3 text-white" />;
+      default: return <MapPin className="h-3 w-3 text-white" />;
     }
+  };
+
+  const getColorClasses = (color, isHovered = false) => {
+    const colors = {
+      amber: isHovered ? 'bg-amber-600 border-amber-400' : 'bg-amber-500 border-amber-300',
+      blue: isHovered ? 'bg-blue-600 border-blue-400' : 'bg-blue-500 border-blue-300',
+      purple: isHovered ? 'bg-purple-600 border-purple-400' : 'bg-purple-500 border-purple-300',
+      green: isHovered ? 'bg-emerald-600 border-emerald-400' : 'bg-emerald-500 border-emerald-300',
+      orange: isHovered ? 'bg-orange-600 border-orange-400' : 'bg-orange-500 border-orange-300',
+      pink: isHovered ? 'bg-pink-600 border-pink-400' : 'bg-pink-500 border-pink-300',
+      indigo: isHovered ? 'bg-indigo-600 border-indigo-400' : 'bg-indigo-500 border-indigo-300',
+    };
+    return colors[color] || colors.slate;
   };
 
   return (
@@ -46,78 +104,138 @@ const PittsburghMap = () => {
 
       {/* Map Container */}
       <div className="relative bg-gradient-to-br from-green-100 to-blue-100 rounded-lg overflow-hidden" style={{ height: '400px' }}>
-        {/* Rivers - 使用内联样式确保显示 */}
-        <svg className="absolute inset-0 w-full h-full z-0" viewBox="0 0 100 100" preserveAspectRatio="none">
-          {rivers.map((river, index) => (
+        {/* Pittsburgh Real Geography */}
+        <svg className="absolute inset-0 w-full h-full z-0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+          {/* Neighborhood Areas */}
+          {neighborhoods.map((area, index) => (
             <path
-              key={index}
-              d={river.path}
-              style={{
-                fill: 'transparent',
-                stroke: river.color,
-                strokeWidth: 20,
-                opacity: 0.7
-              }}
+              key={`area-${index}`}
+              d={area.path}
+              fill={area.color}
+              stroke={area.stroke}
+              strokeWidth="0.5"
+              opacity="0.7"
+              className="transition-opacity duration-300 hover:opacity-90"
             />
           ))}
+          
+          {/* Rivers - Pittsburgh's defining feature */}
+          {rivers.map((river, index) => (
+            <g key={`river-${index}`}>
+              {/* River shadow */}
+              <path
+                d={river.path}
+                fill="none"
+                stroke="rgba(0, 0, 0, 0.1)"
+                strokeWidth={`${parseFloat(river.width) + 1}`}
+                strokeLinecap="round"
+                transform="translate(0.5, 0.5)"
+              />
+              {/* Main river */}
+              <path
+                d={river.path}
+                fill="none"
+                stroke={river.color}
+                strokeWidth={river.width}
+                strokeLinecap="round"
+                opacity="0.9"
+                className="drop-shadow-sm"
+              />
+              {/* River highlight */}
+              <path
+                d={river.path}
+                fill="none"
+                stroke="rgba(255, 255, 255, 0.4)"
+                strokeWidth="1"
+                strokeLinecap="round"
+                opacity="0.8"
+              />
+            </g>
+          ))}
+          
+          {/* Point of Rivers Convergence */}
+          <circle
+            cx="50"
+            cy="45"
+            r="1.5"
+            fill="#1e40af"
+            opacity="0.8"
+            className="animate-pulse"
+          />
+          <circle
+            cx="50"
+            cy="45"
+            r="0.8"
+            fill="white"
+            opacity="0.9"
+          />
         </svg>
 
-        {/* Geographic Areas - 修复z-index和样式问题 */}
+        {/* Geographic Areas */}
         {geographicAreas.map((area, index) => (
           <div
             key={index}
-            className="absolute z-10 group cursor-pointer animate-scale-in"
+            className="absolute z-20 cursor-pointer animate-scale-in"
             style={{ 
               left: `${area.x}%`, 
               top: `${area.y}%`,
               transform: 'translate(-50%, -50%)',
-              animationDelay: `${index * 100}ms`
+              animationDelay: `${index * 80}ms`
             }}
+            onMouseEnter={() => setHoveredArea(area)}
+            onMouseLeave={() => setHoveredArea(null)}
           >
             <div 
-              className={`${area.color} rounded-full p-2.5 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 hover-lift`}
+              className={`${
+                getColorClasses(area.color, hoveredArea?.name === area.name)
+              } rounded-xl p-2 border-2 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-110`}
             >
               {getIcon(area.type)}
             </div>
             
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-20">
-              <div className="bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap">
-                {area.name}
+            {/* Tooltip */}
+            {hoveredArea?.name === area.name && (
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-30 animate-in fade-in slide-in-from-top-2 duration-200">
+                <div className="bg-slate-900 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap shadow-lg">
+                  <div className="font-semibold">{area.name}</div>
+                  <div className="text-slate-300 text-xs">{area.description}</div>
+                  <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-slate-900 rotate-45"></div>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         ))}
 
-        {/* 图例 (Key Areas / Legend) */}
-        <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 rounded-lg p-3 shadow-lg z-10 animate-slide-in-bottom">
-          <h4 className="font-semibold text-gray-800 mb-2 text-sm">Key Areas</h4>
-          <div className="space-y-1 text-xs">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
-              <span>Business</span>
+        {/* Legend */}
+        <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-sm border border-gray-200/60 z-15 animate-slide-in-bottom">
+          <h4 className="font-medium text-slate-700 mb-2 text-xs">Districts</h4>
+          <div className="grid grid-cols-2 gap-2 text-xs">
+            <div className="flex items-center space-x-1.5">
+              <div className="w-2 h-2 bg-amber-500 rounded-sm"></div>
+              <span className="text-slate-600">Downtown</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-              <span>Education</span>
+            <div className="flex items-center space-x-1.5">
+              <div className="w-2 h-2 bg-emerald-500 rounded-sm"></div>
+              <span className="text-slate-600">Education</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-              <span>Residential</span>
+            <div className="flex items-center space-x-1.5">
+              <div className="w-2 h-2 bg-orange-500 rounded-sm"></div>
+              <span className="text-slate-600">Arts</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span>Arts & Culture</span>
+            <div className="flex items-center space-x-1.5">
+              <div className="w-2 h-2 bg-purple-500 rounded-sm"></div>
+              <span className="text-slate-600">Entertainment</span>
             </div>
           </div>
         </div>
 
-        {/* 罗盘 (Compass) */}
-        <div className="absolute top-4 right-4 bg-white bg-opacity-90 rounded-full p-2 shadow-lg z-10 animate-slide-in-top">
-          <div className="w-8 h-8 relative">
+        {/* Compass */}
+        <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-xl p-2 shadow-sm border border-gray-200/60 z-15 animate-slide-in-top">
+          <div className="w-6 h-6 relative">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-6 h-6 border-2 border-gray-400 rounded-full relative">
-                <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-2 border-r-2 border-b-3 border-transparent border-b-red-500"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs font-bold text-gray-600">N</div>
+              <div className="w-5 h-5 border border-slate-300 rounded-full relative bg-white">
+                <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l border-r border-b-2 border-transparent border-b-red-500"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs font-bold text-slate-600">N</div>
               </div>
             </div>
           </div>
@@ -125,22 +243,22 @@ const PittsburghMap = () => {
       </div>
 
       {/* Map Statistics */}
-      <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
-          <div className="text-lg font-bold text-gray-900">{geographicAreas.length}</div>
-          <div className="text-xs text-gray-600">Geographic Areas</div>
+      <div className="mt-4 grid grid-cols-4 gap-3">
+        <div className="text-center p-3 bg-slate-50/60 rounded-xl border border-gray-200/40 hover:bg-slate-50 transition-colors duration-200">
+          <div className="text-base font-semibold text-slate-900">{geographicAreas.length}</div>
+          <div className="text-xs text-slate-500">Districts</div>
         </div>
-        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
-          <div className="text-lg font-bold text-gray-900">3</div>
-          <div className="text-xs text-gray-600">Rivers</div>
+        <div className="text-center p-3 bg-slate-50/60 rounded-xl border border-gray-200/40 hover:bg-slate-50 transition-colors duration-200">
+          <div className="text-base font-semibold text-slate-900">3</div>
+          <div className="text-xs text-slate-500">Rivers</div>
         </div>
-        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
-          <div className="text-lg font-bold text-gray-900">302k</div>
-          <div className="text-xs text-gray-600">Population</div>
+        <div className="text-center p-3 bg-slate-50/60 rounded-xl border border-gray-200/40 hover:bg-slate-50 transition-colors duration-200">
+          <div className="text-base font-semibold text-slate-900">302k</div>
+          <div className="text-xs text-slate-500">Population</div>
         </div>
-        <div className="text-center p-3 bg-gray-50 rounded-lg hover-lift">
-          <div className="text-lg font-bold text-gray-900">58.3</div>
-          <div className="text-xs text-gray-600">sq mi</div>
+        <div className="text-center p-3 bg-slate-50/60 rounded-xl border border-gray-200/40 hover:bg-slate-50 transition-colors duration-200">
+          <div className="text-base font-semibold text-slate-900">58.3</div>
+          <div className="text-xs text-slate-500">sq mi</div>
         </div>
       </div>
     </div>
