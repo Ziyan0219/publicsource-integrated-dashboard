@@ -30,52 +30,52 @@ const FilterPanel = ({ filters, selectedFilters, onFilterChange, onClearFilters 
     onFilterChange(filterType, newValues);
   };
 
-  const renderFilterSection = (title, icon, filterType, options, color) => {
+  const renderFilterSection = (title, icon, filterType, options, colorScheme) => {
     const selectedValues = selectedFilters[filterType] || [];
     const isExpanded = expandedSections[filterType];
     
     return (
-      <div className="border border-gray-200 rounded-lg">
+      <div className="border-2 border-gray-100 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-200">
         <button
           onClick={() => toggleSection(filterType)}
-          className={`w-full flex items-center justify-between p-3 text-left hover:bg-gray-50 rounded-t-lg ${
-            isExpanded ? 'border-b border-gray-200' : ''
+          className={`w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors duration-200 ${
+            isExpanded ? 'bg-gray-50 border-b-2 border-gray-100' : ''
           }`}
         >
-          <div className="flex items-center gap-2">
-            {icon}
-            <span className="font-medium text-gray-700">{title}</span>
+          <div className="flex items-center gap-3">
+            <div className={`p-2 rounded-lg ${colorScheme.iconBg}`}>
+              {React.cloneElement(icon, { className: `h-5 w-5 ${colorScheme.iconColor}` })}
+            </div>
+            <span className="font-semibold text-gray-800 text-lg">{title}</span>
             {selectedValues.length > 0 && (
-              <span className={`px-2 py-1 text-xs rounded-full bg-${color}-100 text-${color}-800`}>
+              <span className={`px-3 py-1 text-sm rounded-full font-bold ${colorScheme.badgeBg} ${colorScheme.badgeText}`}>
                 {selectedValues.length}
               </span>
             )}
           </div>
-          {isExpanded ? (
-            <ChevronUp className="h-4 w-4 text-gray-500" />
-          ) : (
-            <ChevronDown className="h-4 w-4 text-gray-500" />
-          )}
+          <div className={`transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}>
+            <ChevronDown className="h-5 w-5 text-gray-500" />
+          </div>
         </button>
         
         {isExpanded && (
-          <div className="p-3 max-h-48 overflow-y-auto">
+          <div className="p-4 max-h-64 overflow-y-auto bg-gray-50">
             {options && options.length > 0 ? (
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {options.map(option => (
-                  <label key={option} className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 p-1 rounded">
+                  <label key={option} className="flex items-center space-x-3 cursor-pointer hover:bg-white p-3 rounded-lg transition-colors duration-200 group">
                     <input
                       type="checkbox"
                       checked={selectedValues.includes(option)}
                       onChange={() => handleCheckboxChange(filterType, option)}
-                      className={`rounded border-gray-300 text-${color}-600 focus:ring-${color}-500`}
+                      className={`rounded-md border-2 border-gray-300 ${colorScheme.checkboxColor} focus:ring-2 focus:ring-offset-2 ${colorScheme.checkboxFocus} w-5 h-5`}
                     />
-                    <span className="text-sm text-gray-700">{option}</span>
+                    <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors duration-200">{option}</span>
                   </label>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-gray-500 italic">No options available</p>
+              <p className="text-gray-500 italic text-center py-4">No options available</p>
             )}
           </div>
         )}
@@ -83,89 +83,128 @@ const FilterPanel = ({ filters, selectedFilters, onFilterChange, onClearFilters 
     );
   };
 
+  const colorSchemes = {
+    umbrella: {
+      iconBg: 'bg-blue-100',
+      iconColor: 'text-blue-600',
+      badgeBg: 'bg-blue-100',
+      badgeText: 'text-blue-800',
+      checkboxColor: 'text-blue-600',
+      checkboxFocus: 'focus:ring-blue-500'
+    },
+    geographic_area: {
+      iconBg: 'bg-green-100',
+      iconColor: 'text-green-600',
+      badgeBg: 'bg-green-100',
+      badgeText: 'text-green-800',
+      checkboxColor: 'text-green-600',
+      checkboxFocus: 'focus:ring-green-500'
+    },
+    neighborhood: {
+      iconBg: 'bg-orange-100',
+      iconColor: 'text-orange-600',
+      badgeBg: 'bg-orange-100',
+      badgeText: 'text-orange-800',
+      checkboxColor: 'text-orange-600',
+      checkboxFocus: 'focus:ring-orange-500'
+    }
+  };
+
   return (
-    <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-gray-900">Filter Options</h3>
+    <div className="p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border-2 border-gray-200">
+      <div className="flex items-center justify-between mb-6">
+        <h3 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+          <div className="p-2 bg-blue-100 rounded-lg">
+            <Building className="h-6 w-6 text-blue-600" />
+          </div>
+          Filter Options
+        </h3>
         <button
           onClick={onClearFilters}
-          className="flex items-center gap-2 px-3 py-1 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-200 rounded-md transition-colors duration-200"
+          className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 font-medium border-2 border-transparent hover:border-red-200"
         >
           <X className="h-4 w-4" />
           Clear All
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Category Filter */}
         {renderFilterSection(
           'Category',
-          <Building className="h-4 w-4 text-blue-600" />,
+          <Building />,
           'umbrella',
           filters.umbrellas,
-          'blue'
+          colorSchemes.umbrella
         )}
 
         {/* Geographic Area Filter */}
         {renderFilterSection(
           'Geographic Area',
-          <MapPin className="h-4 w-4 text-green-600" />,
+          <MapPin />,
           'geographic_area',
           filters.geographic_areas,
-          'green'
+          colorSchemes.geographic_area
         )}
 
         {/* Neighborhood Filter */}
         {renderFilterSection(
           'Neighborhood',
-          <Home className="h-4 w-4 text-orange-600" />,
+          <Home />,
           'neighborhood',
           filters.neighborhoods,
-          'orange'
+          colorSchemes.neighborhood
         )}
       </div>
 
       {/* Current Filter Status */}
-      <div className="mt-4 flex flex-wrap gap-2">
-        {(selectedFilters.umbrella || []).map(value => (
-          <span key={`umbrella-${value}`} className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-            <Building className="h-3 w-3" />
-            {value}
-            <button
-              onClick={() => handleCheckboxChange('umbrella', value)}
-              className="ml-1 hover:bg-blue-200 rounded-full p-0.5"
-            >
-              <X className="h-3 w-3" />
-            </button>
-          </span>
-        ))}
-        
-        {(selectedFilters.geographic_area || []).map(value => (
-          <span key={`geo-${value}`} className="inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
-            <MapPin className="h-3 w-3" />
-            {value}
-            <button
-              onClick={() => handleCheckboxChange('geographic_area', value)}
-              className="ml-1 hover:bg-green-200 rounded-full p-0.5"
-            >
-              <X className="h-3 w-3" />
-            </button>
-          </span>
-        ))}
-        
-        {(selectedFilters.neighborhood || []).map(value => (
-          <span key={`neigh-${value}`} className="inline-flex items-center gap-1 px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">
-            <Home className="h-3 w-3" />
-            {value}
-            <button
-              onClick={() => handleCheckboxChange('neighborhood', value)}
-              className="ml-1 hover:bg-orange-200 rounded-full p-0.5"
-            >
-              <X className="h-3 w-3" />
-            </button>
-          </span>
-        ))}
-      </div>
+      {((selectedFilters.umbrella || []).length > 0 || 
+        (selectedFilters.geographic_area || []).length > 0 || 
+        (selectedFilters.neighborhood || []).length > 0) && (
+        <div className="mt-6 p-4 bg-white rounded-xl border-2 border-gray-200">
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">Active Filters</h4>
+          <div className="flex flex-wrap gap-3">
+            {(selectedFilters.umbrella || []).map(value => (
+              <span key={`umbrella-${value}`} className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200">
+                <Building className="h-4 w-4" />
+                {value}
+                <button
+                  onClick={() => handleCheckboxChange('umbrella', value)}
+                  className="ml-1 hover:bg-blue-200 rounded-full p-1 transition-colors duration-200"
+                >
+                  <X className="h-3 w-3" />
+                </button>
+              </span>
+            ))}
+            
+            {(selectedFilters.geographic_area || []).map(value => (
+              <span key={`geo-${value}`} className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium border border-green-200">
+                <MapPin className="h-4 w-4" />
+                {value}
+                <button
+                  onClick={() => handleCheckboxChange('geographic_area', value)}
+                  className="ml-1 hover:bg-green-200 rounded-full p-1 transition-colors duration-200"
+                >
+                  <X className="h-3 w-3" />
+                </button>
+              </span>
+            ))}
+            
+            {(selectedFilters.neighborhood || []).map(value => (
+              <span key={`neigh-${value}`} className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium border border-orange-200">
+                <Home className="h-4 w-4" />
+                {value}
+                <button
+                  onClick={() => handleCheckboxChange('neighborhood', value)}
+                  className="ml-1 hover:bg-orange-200 rounded-full p-1 transition-colors duration-200"
+                >
+                  <X className="h-3 w-3" />
+                </button>
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
