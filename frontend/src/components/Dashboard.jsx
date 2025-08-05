@@ -14,6 +14,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
     neighborhood: []
   });
   const [showFilters, setShowFilters] = useState(false);
+  const [hoveredStoryAreas, setHoveredStoryAreas] = useState([]);
 
   const handleUploadSuccess = (result) => {
     // Notify App component to refresh data
@@ -142,7 +143,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
 
         {/* Pittsburgh Map */}
         <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
-          <PittsburghMap />
+          <PittsburghMap highlightedAreas={hoveredStoryAreas} />
         </div>
 
         {/* Search and Filter Bar */}
@@ -255,14 +256,18 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
         </div>
 
         {/* Story Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
           {filteredStories.map((story, index) => (
             <div 
               key={story.id} 
               className="animate-fade-in"
               style={{ animationDelay: `${1000 + (index * 100)}ms` }}
             >
-              <StaticStoryCard story={story} />
+              <StaticStoryCard 
+                story={story} 
+                onHover={(areas) => setHoveredStoryAreas(areas)}
+                onLeave={() => setHoveredStoryAreas([])}
+              />
             </div>
           ))}
         </div>

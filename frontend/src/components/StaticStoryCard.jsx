@@ -1,8 +1,27 @@
 import React, { useState } from 'react';
 import { ExternalLink, MapPin, Building, Home, ChevronDown, ChevronUp, Calendar, User } from 'lucide-react';
 
-const StaticStoryCard = ({ story }) => {
+const StaticStoryCard = ({ story, onHover, onLeave }) => {
   const [showAllNeighborhoods, setShowAllNeighborhoods] = useState(false);
+  
+  // 解析geographic_area字符串，分割多个区域
+  const parseGeographicAreas = (areaString) => {
+    if (!areaString) return [];
+    return areaString.split(/[,;/|]/).map(area => area.trim()).filter(area => area);
+  };
+  
+  const handleMouseEnter = () => {
+    const areas = parseGeographicAreas(story.geographic_area);
+    if (onHover && areas.length > 0) {
+      onHover(areas);
+    }
+  };
+  
+  const handleMouseLeave = () => {
+    if (onLeave) {
+      onLeave();
+    }
+  };
 
   const formatDate = (dateString) => {
     if (!dateString) return null;
@@ -24,18 +43,18 @@ const StaticStoryCard = ({ story }) => {
   };
 
   const getCategoryColor = (category) => {
-    if (!category) return 'bg-gray-100 text-gray-800 border-gray-200';
+    if (!category) return 'bg-slate-100 text-slate-600 border-slate-200';
     const hash = category.split('').reduce((a, b) => {
       a = ((a << 5) - a) + b.charCodeAt(0);
       return a & a;
     }, 0);
     const colors = [
-      'bg-blue-100 text-blue-800 border-blue-200',
-      'bg-purple-100 text-purple-800 border-purple-200',
-      'bg-green-100 text-green-800 border-green-200',
-      'bg-orange-100 text-orange-800 border-orange-200',
-      'bg-pink-100 text-pink-800 border-pink-200',
-      'bg-indigo-100 text-indigo-800 border-indigo-200'
+      'bg-blue-50 text-blue-700 border-blue-200',
+      'bg-purple-50 text-purple-700 border-purple-200',
+      'bg-emerald-50 text-emerald-700 border-emerald-200',
+      'bg-orange-50 text-orange-700 border-orange-200',
+      'bg-pink-50 text-pink-700 border-pink-200',
+      'bg-indigo-50 text-indigo-700 border-indigo-200'
     ];
     return colors[Math.abs(hash) % colors.length];
   };
@@ -45,9 +64,11 @@ const StaticStoryCard = ({ story }) => {
   const hasMoreNeighborhoods = neighborhoods.length > 2;
 
   return (
-    <div className="bg-white rounded-xl border-2 border-gray-200 shadow-lg overflow-hidden hover-lift animate-fade-in group">
-      {/* Header with gradient accent */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 h-2"></div>
+    <div 
+      className="bg-white/70 backdrop-blur-xl rounded-2xl border border-gray-200/60 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 ease-out hover:scale-[1.02] group"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       
       <div className="p-6">
         {/* Article Title and Meta */}

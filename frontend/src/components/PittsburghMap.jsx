@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { MapPin, Building, Home, GraduationCap, Palette, Users, Briefcase } from 'lucide-react';
 
-const PittsburghMap = () => {
+const PittsburghMap = ({ highlightedAreas = [] }) => {
   const [hoveredArea, setHoveredArea] = useState(null);
+  
+  // 检查区域是否应该被高亮
+  const isAreaHighlighted = (areaName) => {
+    return highlightedAreas.some(highlighted => 
+      highlighted.toLowerCase().includes(areaName.toLowerCase()) ||
+      areaName.toLowerCase().includes(highlighted.toLowerCase())
+    );
+  };
 
   // 精确对应Pittsburgh实际地理位置的区域
   const geographicAreas = [
@@ -107,17 +115,22 @@ const PittsburghMap = () => {
         {/* Pittsburgh Real Geography */}
         <svg className="absolute inset-0 w-full h-full z-0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
           {/* Neighborhood Areas */}
-          {neighborhoods.map((area, index) => (
-            <path
-              key={`area-${index}`}
-              d={area.path}
-              fill={area.color}
-              stroke={area.stroke}
-              strokeWidth="0.5"
-              opacity="0.7"
-              className="transition-opacity duration-300 hover:opacity-90"
-            />
-          ))}
+          {neighborhoods.map((area, index) => {
+            const isHighlighted = isAreaHighlighted(area.name);
+            return (
+              <path
+                key={`area-${index}`}
+                d={area.path}
+                fill={isHighlighted ? area.color.replace('0.15', '0.4').replace('0.2', '0.5') : area.color}
+                stroke={area.stroke}
+                strokeWidth={isHighlighted ? "1.5" : "0.5"}
+                opacity={isHighlighted ? "1" : "0.7"}
+                className={`transition-all duration-300 hover:opacity-90 ${
+                  isHighlighted ? 'animate-pulse' : ''
+                }`}
+              />
+            );
+          })}
           
           {/* Rivers - Pittsburgh's defining feature */}
           {rivers.map((river, index) => (
@@ -187,8 +200,10 @@ const PittsburghMap = () => {
           >
             <div 
               className={`${
-                getColorClasses(area.color, hoveredArea?.name === area.name)
-              } rounded-xl p-2 border-2 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-110`}
+                getColorClasses(area.color, hoveredArea?.name === area.name || isAreaHighlighted(area.name))
+              } rounded-xl p-2 border-2 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-110 ${
+                isAreaHighlighted(area.name) ? 'ring-2 ring-offset-1 ring-slate-400 animate-pulse' : ''
+              }`}
             >
               {getIcon(area.type)}
             </div>
@@ -246,7 +261,7 @@ const PittsburghMap = () => {
       <div className="mt-4 grid grid-cols-4 gap-3">
         <div className="text-center p-3 bg-slate-50/60 rounded-xl border border-gray-200/40 hover:bg-slate-50 transition-colors duration-200">
           <div className="text-base font-semibold text-slate-900">{geographicAreas.length}</div>
-          <div className="text-xs text-slate-500">Districts</div>
+          <div className="text-xs text-slate-500">Areas</div>
         </div>
         <div className="text-center p-3 bg-slate-50/60 rounded-xl border border-gray-200/40 hover:bg-slate-50 transition-colors duration-200">
           <div className="text-base font-semibold text-slate-900">3</div>
