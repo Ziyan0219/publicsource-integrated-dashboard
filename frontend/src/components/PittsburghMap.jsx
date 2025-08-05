@@ -58,7 +58,8 @@ const PittsburghMap = () => {
             <path
               key={index}
               d={river.path}
-              className={`${river.color} fill-transparent stroke-4 opacity-70`}
+              className={`${river.color} stroke-4 opacity-70`}
+              style={{ fill: 'transparent' }} 
             />
           ))}
         </svg>
