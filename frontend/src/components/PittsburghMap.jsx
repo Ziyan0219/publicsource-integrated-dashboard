@@ -134,7 +134,7 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 animate-fade-in">
+    <div className="bg-white/70 backdrop-blur-xl rounded-2xl shadow-sm border border-gray-200/60 p-6 animate-fade-in">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-xl font-bold text-gray-900 flex items-center space-x-2">
           <MapPin className="h-6 w-6 text-blue-600" />
@@ -146,7 +146,7 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
       </div>
 
       {/* Map Container */}
-      <div className="relative bg-gradient-to-br from-green-100 to-blue-100 rounded-lg overflow-hidden" style={{ height: '400px' }}>
+      <div className="relative bg-gradient-to-br from-green-100 to-blue-100 rounded-lg overflow-hidden" style={{ height: '500px', minHeight: '450px' }}>
         {/* Pittsburgh Real Geography */}
         <svg className="absolute inset-0 w-full h-full z-0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
           {/* Neighborhood Areas */}

@@ -16,7 +16,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
   const [showFilters, setShowFilters] = useState(false);
   const [hoveredStoryAreas, setHoveredStoryAreas] = useState([]);
 
-  const handleUploadSuccess = (result) => {
+  const handleUploadSuccess = () => {
     // Notify App component to refresh data
     if (onDataUpdate) {
       onDataUpdate();
@@ -36,7 +36,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
         selectedFilters.umbrella.some(selectedUmbrella => {
           if (!story.umbrella) return false;
           // Split story umbrella by common separators and check for matches
-          const storyUmbrellas = story.umbrella.split(/[,;\/|]/).map(u => u.trim());
+          const storyUmbrellas = story.umbrella.split(/[,;/|]/).map(u => u.trim());
           return storyUmbrellas.some(storyUmb => 
             storyUmb === selectedUmbrella || storyUmb.includes(selectedUmbrella)
           );
@@ -47,7 +47,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
         selectedFilters.geographic_area.some(selectedArea => {
           if (!story.geographic_area) return false;
           // Split story geographic area by common separators and check for matches
-          const storyAreas = story.geographic_area.split(/[,;\/|]/).map(a => a.trim());
+          const storyAreas = story.geographic_area.split(/[,;/|]/).map(a => a.trim());
           return storyAreas.some(storyArea => 
             storyArea === selectedArea || storyArea.includes(selectedArea)
           );
@@ -62,11 +62,11 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
           
           // Handle both string and array formats for neighborhoods
           if (typeof story.neighborhoods === 'string') {
-            storyNeighborhoods = story.neighborhoods.split(/[,;\/|]/).map(n => n.trim());
+            storyNeighborhoods = story.neighborhoods.split(/[,;/|]/).map(n => n.trim());
           } else if (Array.isArray(story.neighborhoods)) {
             // Flatten array and split each item by separators
             storyNeighborhoods = story.neighborhoods.flatMap(neigh => 
-              typeof neigh === 'string' ? neigh.split(/[,;\/|]/).map(n => n.trim()) : []
+              typeof neigh === 'string' ? neigh.split(/[,;/|]/).map(n => n.trim()) : []
             );
           }
           
@@ -103,7 +103,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
     <div className="h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-zinc-50 flex flex-col">
       {/* Header Navigation */}
       <header className="bg-white/70 backdrop-blur-xl border-b border-gray-200/60 sticky top-0 z-50 animate-slide-in-top flex-shrink-0">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-2 sm:px-4 lg:px-6">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-slate-800 to-slate-600 rounded-2xl flex items-center justify-center shadow-sm">
@@ -136,7 +136,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
 
       {/* Main Content Container - Now takes full remaining height */}
       <div className="flex-1 overflow-auto">
-        <div className="w-full px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+        <div className="w-full px-2 sm:px-4 lg:px-6 py-4 space-y-4">
           {/* Upload Button - Moved to top of dashboard content */}
           <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
             <div className="flex justify-center">
@@ -259,7 +259,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
           </div>
 
           {/* Story Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
             {filteredStories.map((story, index) => (
               <div 
                 key={story.id} 

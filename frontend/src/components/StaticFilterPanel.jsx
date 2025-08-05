@@ -28,7 +28,7 @@ const StaticFilterPanel = ({ filters, selectedFilters, onFilterChange, onClearFi
     onFilterChange(filterType, newValues);
   };
 
-  const renderFilterSection = (title, icon, filterType, options, colorScheme) => {
+  const renderFilterSection = (title, icon, filterType, options) => {
     const selectedValues = selectedFilters[filterType] || [];
     const isExpanded = expandedSections[filterType];
     
