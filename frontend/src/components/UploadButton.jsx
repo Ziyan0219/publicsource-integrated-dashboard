@@ -104,25 +104,25 @@ const UploadButton = ({ onUploadSuccess }) => {
   };
 
   const getButtonClass = () => {
-    const baseClass = "fixed top-4 right-4 z-50 flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm shadow-lg transition-all duration-200 hover:shadow-xl";
+    const baseClass = "flex items-center gap-2 px-4 py-2 rounded-xl font-medium text-sm transition-all duration-200";
     
     if (uploadStatus === 'success') {
-      return `${baseClass} bg-green-100 text-green-800 border border-green-300`;
+      return `${baseClass} bg-green-50 text-green-700 border border-green-200 hover:bg-green-100`;
     }
     
     if (uploadStatus === 'error') {
-      return `${baseClass} bg-red-100 text-red-800 border border-red-300`;
+      return `${baseClass} bg-red-50 text-red-700 border border-red-200 hover:bg-red-100`;
     }
     
     if (isUploading) {
-      return `${baseClass} bg-blue-100 text-blue-800 border border-blue-300 cursor-not-allowed`;
+      return `${baseClass} bg-blue-50 text-blue-700 border border-blue-200 cursor-not-allowed`;
     }
     
-    return `${baseClass} bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 cursor-pointer`;
+    return `${baseClass} bg-white/60 text-slate-600 border border-gray-200/60 hover:bg-white/80 hover:text-slate-900 cursor-pointer backdrop-blur-sm shadow-sm hover:shadow-md`;
   };
 
   return (
-    <>
+    <div className="relative">
       <input
         type="file"
         accept=".xlsx,.xls,.csv"
@@ -139,18 +139,18 @@ const UploadButton = ({ onUploadSuccess }) => {
         {getButtonContent()}
       </label>
       
-      {/* Status message tooltip */}
+      {/* Status message tooltip - positioned relative to parent */}
       {uploadMessage && (
-        <div className="fixed top-16 right-4 z-50 bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-xs">
-          <p className={`text-sm ${
+        <div className="absolute top-full right-0 mt-2 z-50 bg-white/90 backdrop-blur-xl border border-gray-200/60 rounded-xl shadow-lg p-3 max-w-xs">
+          <p className={`text-xs ${
             uploadStatus === 'success' ? 'text-green-700' : 
-            uploadStatus === 'error' ? 'text-red-700' : 'text-gray-700'
+            uploadStatus === 'error' ? 'text-red-700' : 'text-slate-700'
           }`}>
             {uploadMessage}
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

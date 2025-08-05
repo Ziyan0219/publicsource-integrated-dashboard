@@ -12,12 +12,14 @@ const StaticStoryCard = ({ story, onHover, onLeave }) => {
   
   const handleMouseEnter = () => {
     const areas = parseGeographicAreas(story.geographic_area);
+    console.log('Story card hover - areas:', areas, 'from:', story.geographic_area);
     if (onHover && areas.length > 0) {
       onHover(areas);
     }
   };
   
   const handleMouseLeave = () => {
+    console.log('Story card leave');
     if (onLeave) {
       onLeave();
     }

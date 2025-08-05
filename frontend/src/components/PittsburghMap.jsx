@@ -4,23 +4,40 @@ import { MapPin, Building, Home, GraduationCap, Palette, Users, Briefcase } from
 const PittsburghMap = ({ highlightedAreas = [] }) => {
   const [hoveredArea, setHoveredArea] = useState(null);
   
-  // 检查区域是否应该被高亮
+  // 检查区域是否应该被高亮 - 增强匹配逻辑
   const isAreaHighlighted = (areaName) => {
-    return highlightedAreas.some(highlighted => 
-      highlighted.toLowerCase().includes(areaName.toLowerCase()) ||
-      areaName.toLowerCase().includes(highlighted.toLowerCase())
-    );
+    if (!highlightedAreas || highlightedAreas.length === 0) return false;
+    
+    console.log('Checking highlight for:', areaName, 'against:', highlightedAreas);
+    
+    return highlightedAreas.some(highlighted => {
+      const highlightedLower = highlighted.toLowerCase().trim();
+      const areaNameLower = areaName.toLowerCase().trim();
+      
+      // 精确匹配
+      if (highlightedLower === areaNameLower) return true;
+      
+      // 部分匹配
+      if (highlightedLower.includes(areaNameLower) || areaNameLower.includes(highlightedLower)) return true;
+      
+      // 特殊匹配规则
+      if (highlighted === 'Central Pittsburgh' && areaName === 'Downtown') return true;
+      if (highlighted === 'Upper East End' && areaName === 'Oakland') return true;
+      if (highlighted === 'South Pittsburgh' && areaName === 'South Side') return true;
+      
+      return false;
+    });
   };
 
-  // 精确对应Pittsburgh实际地理位置的区域
+  // 精确对应数据中geographic_area字段的区域
   const geographicAreas = [
-    { name: "Downtown", x: 47, y: 50, type: "business", color: "amber", description: "Golden Triangle - Business District" },
+    { name: "Central Pittsburgh", x: 47, y: 50, type: "business", color: "amber", description: "Downtown - Business District" },
     { name: "North Side", x: 40, y: 25, type: "sports", color: "blue", description: "Heinz Field & PNC Park" },
-    { name: "South Side", x: 48, y: 78, type: "entertainment", color: "purple", description: "Carson Street Nightlife" },
-    { name: "Oakland", x: 68, y: 68, type: "education", color: "green", description: "Pitt & CMU Campus" },
-    { name: "Lawrenceville", x: 65, y: 35, type: "arts", color: "orange", description: "Trendy Arts District" },
-    { name: "Shadyside", x: 75, y: 55, type: "residential", color: "pink", description: "Upscale Shopping" },
-    { name: "West End", x: 25, y: 65, type: "residential", color: "indigo", description: "Historic Neighborhoods" },
+    { name: "South Pittsburgh", x: 48, y: 78, type: "entertainment", color: "purple", description: "South Side & Carson Street" },
+    { name: "Upper East End", x: 68, y: 68, type: "education", color: "green", description: "Oakland - Pitt & CMU" },
+    { name: "Lower East End", x: 65, y: 35, type: "arts", color: "pink", description: "Lawrenceville & Strip District" },
+    { name: "Hill District", x: 58, y: 55, type: "residential", color: "violet", description: "Historic Hill District" },
+    { name: "West End", x: 25, y: 65, type: "residential", color: "indigo", description: "West End Neighborhoods" },
   ];
 
   // Pittsburgh三河汇合的真实地形
@@ -45,10 +62,10 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
     },
   ];
 
-  // Pittsburgh各区域的实际轮廓
+  // Pittsburgh各区域的实际轮廓 - 与数据字段名称匹配
   const neighborhoods = [
     {
-      name: "Golden Triangle",
+      name: "Central Pittsburgh",
       path: "M50,45 L45,35 Q42,40 40,50 Q42,60 48,65 Z",
       color: "rgba(251, 191, 36, 0.2)",
       stroke: "#f59e0b"
@@ -60,16 +77,34 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
       stroke: "#3b82f6"
     },
     {
-      name: "South Side",
+      name: "South Pittsburgh",
       path: "M35,65 L50,75 L60,85 L40,90 L25,85 Q30,75 35,65 Z",
       color: "rgba(147, 51, 234, 0.15)",
       stroke: "#9333ea"
     },
     {
-      name: "Oakland",
+      name: "Upper East End",
       path: "M55,55 L70,50 L80,65 L70,80 L55,75 Q50,65 55,55 Z",
       color: "rgba(16, 185, 129, 0.15)",
       stroke: "#10b981"
+    },
+    {
+      name: "Lower East End",
+      path: "M55,35 L70,30 L80,45 L70,50 L55,45 Q50,40 55,35 Z",
+      color: "rgba(236, 72, 153, 0.15)",
+      stroke: "#ec4899"
+    },
+    {
+      name: "Hill District",
+      path: "M52,48 L62,45 L65,55 L60,65 L52,62 Q48,55 52,48 Z",
+      color: "rgba(168, 85, 247, 0.15)",
+      stroke: "#a855f7"
+    },
+    {
+      name: "West End",
+      path: "M15,50 L35,45 L40,60 L30,75 L15,70 Q10,60 15,50 Z",
+      color: "rgba(99, 102, 241, 0.15)",
+      stroke: "#6366f1"
     },
   ];
 
@@ -91,9 +126,9 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
       blue: isHovered ? 'bg-blue-600 border-blue-400' : 'bg-blue-500 border-blue-300',
       purple: isHovered ? 'bg-purple-600 border-purple-400' : 'bg-purple-500 border-purple-300',
       green: isHovered ? 'bg-emerald-600 border-emerald-400' : 'bg-emerald-500 border-emerald-300',
-      orange: isHovered ? 'bg-orange-600 border-orange-400' : 'bg-orange-500 border-orange-300',
       pink: isHovered ? 'bg-pink-600 border-pink-400' : 'bg-pink-500 border-pink-300',
       indigo: isHovered ? 'bg-indigo-600 border-indigo-400' : 'bg-indigo-500 border-indigo-300',
+      violet: isHovered ? 'bg-violet-600 border-violet-400' : 'bg-violet-500 border-violet-300',
     };
     return colors[color] || colors.slate;
   };

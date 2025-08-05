@@ -103,7 +103,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-zinc-50">
       {/* Header Navigation */}
       <header className="bg-white/70 backdrop-blur-xl border-b border-gray-200/60 sticky top-0 z-50 animate-slide-in-top">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-slate-800 to-slate-600 rounded-2xl flex items-center justify-center shadow-sm">
@@ -115,6 +115,9 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
               </div>
             </div>
             <nav className="flex items-center space-x-3">
+              <div className="animate-fade-in">
+                <UploadButton onUploadSuccess={handleUploadSuccess} />
+              </div>
               <Link 
                 to="/keyword-search" 
                 className="flex items-center space-x-2 px-4 py-2 text-slate-600 bg-white/60 backdrop-blur-sm rounded-xl border border-gray-200/60 font-medium hover:bg-white/80 hover:text-slate-900 transition-all duration-200 shadow-sm hover:shadow-md"
@@ -135,12 +138,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
       </header>
 
       {/* Main Content Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
-        {/* Upload Button */}
-        <div className="animate-fade-in">
-          <UploadButton onUploadSuccess={handleUploadSuccess} />
-        </div>
-
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-6 space-y-6">
         {/* Pittsburgh Map */}
         <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
           <PittsburghMap highlightedAreas={hoveredStoryAreas} />
