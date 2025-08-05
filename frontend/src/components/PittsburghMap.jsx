@@ -29,15 +29,15 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
     });
   };
 
-  // 精确对应数据中geographic_area字段的区域 - 重新调整位置到各区域中心
+  // 精确计算SVG路径的几何中心点
   const geographicAreas = [
-    { name: "Central Pittsburgh", x: 46, y: 50, type: "business", color: "amber", description: "Downtown - Business District" },
+    { name: "Central Pittsburgh", x: 44, y: 50, type: "business", color: "amber", description: "Downtown - Business District" },
     { name: "North Side", x: 40, y: 25, type: "sports", color: "blue", description: "Heinz Field & PNC Park" },
-    { name: "South Pittsburgh", x: 47, y: 77, type: "entertainment", color: "purple", description: "South Side & Carson Street" },
-    { name: "Upper East End", x: 67, y: 67, type: "education", color: "green", description: "Oakland - Pitt & CMU" },
-    { name: "Lower East End", x: 67, y: 37, type: "arts", color: "pink", description: "Lawrenceville & Strip District" },
-    { name: "Hill District", x: 58, y: 55, type: "residential", color: "violet", description: "Historic Hill District" },
-    { name: "West End", x: 25, y: 62, type: "residential", color: "indigo", description: "West End Neighborhoods" },
+    { name: "South Pittsburgh", x: 42, y: 79, type: "entertainment", color: "purple", description: "South Side & Carson Street" },
+    { name: "Upper East End", x: 66, y: 67, type: "education", color: "green", description: "Oakland - Pitt & CMU" },
+    { name: "Lower East End", x: 67.5, y: 36, type: "arts", color: "pink", description: "Lawrenceville & Strip District" },
+    { name: "Hill District", x: 58, y: 56.5, type: "residential", color: "violet", description: "Historic Hill District" },
+    { name: "West End", x: 23, y: 63, type: "residential", color: "indigo", description: "West End Neighborhoods" },
   ];
 
   // Pittsburgh三河汇合的真实地形
