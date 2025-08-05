@@ -29,15 +29,15 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
     });
   };
 
-  // 精确对应数据中geographic_area字段的区域
+  // 精确对应数据中geographic_area字段的区域 - 重新调整位置到各区域中心
   const geographicAreas = [
-    { name: "Central Pittsburgh", x: 47, y: 50, type: "business", color: "amber", description: "Downtown - Business District" },
+    { name: "Central Pittsburgh", x: 46, y: 50, type: "business", color: "amber", description: "Downtown - Business District" },
     { name: "North Side", x: 40, y: 25, type: "sports", color: "blue", description: "Heinz Field & PNC Park" },
-    { name: "South Pittsburgh", x: 48, y: 78, type: "entertainment", color: "purple", description: "South Side & Carson Street" },
-    { name: "Upper East End", x: 68, y: 68, type: "education", color: "green", description: "Oakland - Pitt & CMU" },
-    { name: "Lower East End", x: 65, y: 35, type: "arts", color: "pink", description: "Lawrenceville & Strip District" },
+    { name: "South Pittsburgh", x: 47, y: 77, type: "entertainment", color: "purple", description: "South Side & Carson Street" },
+    { name: "Upper East End", x: 67, y: 67, type: "education", color: "green", description: "Oakland - Pitt & CMU" },
+    { name: "Lower East End", x: 67, y: 37, type: "arts", color: "pink", description: "Lawrenceville & Strip District" },
     { name: "Hill District", x: 58, y: 55, type: "residential", color: "violet", description: "Historic Hill District" },
-    { name: "West End", x: 25, y: 65, type: "residential", color: "indigo", description: "West End Neighborhoods" },
+    { name: "West End", x: 25, y: 62, type: "residential", color: "indigo", description: "West End Neighborhoods" },
   ];
 
   // Pittsburgh三河汇合的真实地形
@@ -62,47 +62,47 @@ const PittsburghMap = ({ highlightedAreas = [] }) => {
     },
   ];
 
-  // Pittsburgh各区域的实际轮廓 - 与数据字段名称匹配
+  // Pittsburgh各区域的实际轮廓 - 重新调整形状更匹配图标位置
   const neighborhoods = [
     {
       name: "Central Pittsburgh",
-      path: "M50,45 L45,35 Q42,40 40,50 Q42,60 48,65 Z",
+      path: "M50,45 L42,38 Q40,42 38,50 Q40,58 46,62 L50,55 Z",
       color: "rgba(251, 191, 36, 0.2)",
       stroke: "#f59e0b"
     },
     {
       name: "North Side",
-      path: "M30,15 L50,15 L50,35 Q40,30 30,25 Z",
+      path: "M28,15 L52,15 L52,35 Q40,30 28,25 Z",
       color: "rgba(59, 130, 246, 0.15)",
       stroke: "#3b82f6"
     },
     {
       name: "South Pittsburgh",
-      path: "M35,65 L50,75 L60,85 L40,90 L25,85 Q30,75 35,65 Z",
+      path: "M32,68 L52,68 L62,85 L42,90 L22,85 Q27,76 32,68 Z",
       color: "rgba(147, 51, 234, 0.15)",
       stroke: "#9333ea"
     },
     {
       name: "Upper East End",
-      path: "M55,55 L70,50 L80,65 L70,80 L55,75 Q50,65 55,55 Z",
+      path: "M55,55 L72,52 L82,68 L72,82 L55,79 Q50,67 55,55 Z",
       color: "rgba(16, 185, 129, 0.15)",
       stroke: "#10b981"
     },
     {
       name: "Lower East End",
-      path: "M55,35 L70,30 L80,45 L70,50 L55,45 Q50,40 55,35 Z",
+      path: "M55,25 L75,25 L85,42 L75,47 L55,44 Q50,35 55,25 Z",
       color: "rgba(236, 72, 153, 0.15)",
       stroke: "#ec4899"
     },
     {
       name: "Hill District",
-      path: "M52,48 L62,45 L65,55 L60,65 L52,62 Q48,55 52,48 Z",
+      path: "M52,48 L68,45 L68,62 L58,68 L52,62 Q48,55 52,48 Z",
       color: "rgba(168, 85, 247, 0.15)",
       stroke: "#a855f7"
     },
     {
       name: "West End",
-      path: "M15,50 L35,45 L40,60 L30,75 L15,70 Q10,60 15,50 Z",
+      path: "M12,52 L32,48 L38,65 L28,78 L12,75 Q8,63 12,52 Z",
       color: "rgba(99, 102, 241, 0.15)",
       stroke: "#6366f1"
     },
