@@ -5,7 +5,18 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(npm run lint)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(find:*)",
+      "Bash(sed:*)",
+      "Bash(grep:*)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(pip install:*)",
+      "Bash(timeout:*)",
+      "Bash(npm run lint:*)"
     ],
     "deny": []
   }

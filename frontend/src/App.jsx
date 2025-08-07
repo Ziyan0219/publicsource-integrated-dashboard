@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'next-themes';
 import Dashboard from './components/Dashboard';
@@ -45,7 +45,7 @@ function App() {
     };
   };
 
-  const loadData = async () => {
+  const loadData = useCallback(async () => {
     try {
       // Try to fetch fresh data from backend
       const response = await fetch('/api/refresh-data');
@@ -59,14 +59,14 @@ function App() {
         const processedFilters = processFilters(storiesData.stories);
         setFilters(processedFilters);
       }
-    } catch (error) {
+    } catch {
       // Fallback to local data if backend is not available
       console.log('Backend not available, using local data with client-side processing');
       setStories(storiesData.stories);
       const processedFilters = processFilters(storiesData.stories);
       setFilters(processedFilters);
     }
-  };
+  }, []);
 
   useEffect(() => {
     loadData();
@@ -76,7 +76,7 @@ function App() {
     if (authStatus === 'true') {
       setIsAuthenticated(true);
     }
-  }, []);
+  }, [loadData]);
 
   const handleLogin = () => {
     setIsAuthenticated(true);

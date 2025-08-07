@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Search, FileText, AlertCircle, LogOut } from 'lucide-react';
-import StaticStoryCard from './StaticStoryCard';
+import ModernStoryCard from './ModernStoryCard';
 
 const KeywordSearch = ({ stories, onLogout }) => {
   const [keyword, setKeyword] = useState('');
@@ -123,7 +123,7 @@ const KeywordSearch = ({ stories, onLogout }) => {
             {searchResults.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {searchResults.map(story => (
-                  <StaticStoryCard key={story.id} story={story} />
+                  <ModernStoryCard key={story.id} story={story} />
                 ))}
               </div>
             ) : (
