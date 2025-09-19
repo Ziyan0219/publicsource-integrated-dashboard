@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'next-themes';
 import Dashboard from './components/Dashboard';
 import KeywordSearch from './components/KeywordSearch';
+import AnalyticsDashboard from './components/AnalyticsDashboard';
+import UploadPage from './components/UploadPage';
+import TestPage from './components/TestPage';
 import Login from './components/Login';
 import storiesData from './data/stories.json';
 import './App.css';
@@ -59,9 +62,9 @@ function App() {
         const processedFilters = processFilters(storiesData.stories);
         setFilters(processedFilters);
       }
-    } catch (error) {
+    } catch (err) {
       // Fallback to local data if backend is not available
-      console.log('Backend not available, using local data with client-side processing');
+      console.log('Backend not available, using local data with client-side processing', err);
       setStories(storiesData.stories);
       const processedFilters = processFilters(storiesData.stories);
       setFilters(processedFilters);
@@ -69,7 +72,10 @@ function App() {
   };
 
   useEffect(() => {
-    loadData();
+    const initializeData = async () => {
+      await loadData();
+    };
+    initializeData();
     
     // Check if user is already authenticated (stored in sessionStorage)
     const authStatus = sessionStorage.getItem('publicsource-auth');
@@ -118,6 +124,18 @@ function App() {
             <Route 
               path="/keyword-search" 
               element={<KeywordSearch stories={stories} onLogout={handleLogout} />} 
+            />
+            <Route 
+              path="/upload" 
+              element={<UploadPage onLogout={handleLogout} onUploadSuccess={handleDataUpdate} />} 
+            />
+            <Route
+              path="/stats"
+              element={<AnalyticsDashboard stories={stories} filters={filters} onLogout={handleLogout} onDataRefresh={loadData} />}
+            />
+            <Route 
+              path="/test" 
+              element={<TestPage onLogout={handleLogout} />} 
             />
           </Routes>
         </div>

@@ -121,6 +121,228 @@ def fetch_text(url: str, cache_dir: Path) -> Optional[str]:
         print(f"[WARN] fetch {url}: {e}")
         return None
 
+def extract_article_metadata(url: str, cache_dir: Path) -> tuple[Optional[str], Optional[str], Optional[str]]:
+    """Extract article title, author, and publication date from webpage"""
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    key = hashlib.md5(url.encode()).hexdigest()
+    metadata_fp = cache_dir / f"{key}_metadata.txt"
+    
+    # Check cache first
+    if metadata_fp.exists():
+        try:
+            lines = metadata_fp.read_text("utf-8", "ignore").strip().split('\n')
+            if len(lines) >= 3:
+                return lines[0] or None, lines[1] or None, lines[2] or None
+        except:
+            pass
+    
+    title, author, date = None, None, None
+    
+    try:
+        r = requests.get(url, timeout=30)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        
+        # Extract title with comprehensive selector strategy
+        title_selectors = [
+            # PublicSource and news site specific selectors
+            'h1.entry-title', 'h1.post-title', 'h1.article-title', 'h1.story-title',
+            '.entry-header h1', '.article-header h1', '.post-header h1', '.story-header h1',
+            '.post-content h1', '.article-content h1', '.story-content h1',
+            
+            # WordPress and CMS patterns
+            'h1[class*="title"]', 'h1[id*="title"]', 'h1[class*="headline"]',
+            '.wp-block-post-title', '.entry-title', '.post-title', '.page-title',
+            '.article-title', '.story-title', '.news-title', '.headline',
+            '.post-headline', '.article-headline', '.story-headline',
+            
+            # News site specific patterns
+            '.headline h1', '.title h1', '.article-head h1', '.story-head h1',
+            '[class*="headline"] h1', '[class*="heading"] h1',
+            '.news-article h1', '.article-wrapper h1', '.content-wrapper h1',
+            '.single-post h1', '.single-article h1',
+            
+            # Generic semantic and accessibility selectors
+            'article h1', 'main h1', '[role="main"] h1', '[role="article"] h1',
+            'header h1', '.content h1', '.main-content h1', '.primary-content h1',
+            '.site-content h1', '.page-content h1',
+            
+            # Schema.org and structured data
+            '[itemprop="headline"]', '[itemprop="name"]', '[property="headline"]',
+            
+            # Meta tag fallbacks with priority order
+            'meta[property="og:title"]', 'meta[name="twitter:title"]',
+            'meta[property="article:title"]', 'meta[name="title"]',
+            'meta[property="DC.title"]', 'meta[name="DC.Title"]',
+            
+            # Last resort - any h1 or title tag
+            'h1', 'title'
+        ]
+        
+        for selector in title_selectors:
+            try:
+                if selector.startswith('meta'):
+                    # Handle meta tags
+                    title_elem = soup.select_one(selector)
+                    if title_elem:
+                        title = title_elem.get('content', '').strip()
+                        if _is_valid_title(title):
+                            break
+                else:
+                    # Handle regular elements
+                    title_elem = soup.select_one(selector)
+                    if title_elem:
+                        title = title_elem.get_text(strip=True)
+                        # Clean up common title prefixes/suffixes
+                        title = _clean_title(title)
+                        if _is_valid_title(title):
+                            break
+            except Exception as e:
+                continue
+        
+        # Extract author with comprehensive strategy
+        author_selectors = [
+            # Semantic and structured data
+            '[rel="author"]', '[property="author"]', '[itemprop="author"]',
+            'meta[name="author"]', 'meta[property="article:author"]',
+            
+            # Common class patterns
+            '.author', '.byline', '.by-author', '.post-author', 
+            '.entry-author', '.article-author', '.writer', '.journalist',
+            '[class*="author"]', '[class*="byline"]', '[class*="writer"]',
+            
+            # PublicSource and news site specific
+            '.entry-meta .author', '.post-meta .author', '.article-meta .author',
+            '.author-name', '.author-link', '.by-line',
+            
+            # Generic patterns
+            '.meta .author', '.info .author', '.details .author'
+        ]
+        
+        for selector in author_selectors:
+            try:
+                if selector.startswith('meta'):
+                    author_elem = soup.select_one(selector)
+                    if author_elem:
+                        author = author_elem.get('content', '').strip()
+                        if author and len(author) > 2 and len(author) < 100:
+                            # Clean up common prefixes
+                            author = re.sub(r'^(by\s*|author:\s*)', '', author, flags=re.IGNORECASE).strip()
+                            if author:
+                                break
+                else:
+                    author_elem = soup.select_one(selector)
+                    if author_elem:
+                        author = author_elem.get_text(strip=True)
+                        if author and len(author) > 2 and len(author) < 100:
+                            # Clean up common prefixes and validate
+                            author = re.sub(r'^(by\s*|author:\s*)', '', author, flags=re.IGNORECASE).strip()
+                            if author and not author.lower() in ['admin', 'administrator', 'staff', 'editor']:
+                                break
+            except Exception as e:
+                continue
+        
+        # Extract publication date with comprehensive strategy
+        date_selectors = [
+            # Semantic HTML5 and structured data
+            'time[datetime]', 'time[pubdate]', '[datetime]',
+            'meta[property="article:published_time"]', 'meta[property="article:modified_time"]',
+            'meta[name="publication_date"]', 'meta[name="DC.date"]',
+            '[itemprop="datePublished"]', '[itemprop="dateCreated"]',
+            
+            # Common class patterns
+            '.date', '.published', '.publish-date', '.post-date', '.entry-date', 
+            '.publication-date', '.article-date', '.story-date', '.news-date',
+            '[class*="date"]', '[class*="publish"]', '[class*="time"]',
+            
+            # PublicSource and WordPress specific  
+            '.entry-meta .date', '.post-meta .date', '.article-meta .date',
+            '.wp-block-post-date', '.entry-date', '.post-published',
+            
+            # Generic patterns
+            '.meta .date', '.info .date', '.details .date', '.timestamp'
+        ]
+        
+        for selector in date_selectors:
+            try:
+                date_elem = soup.select_one(selector)
+                if date_elem:
+                    # Try multiple attributes and text content
+                    date = (date_elem.get('datetime') or 
+                           date_elem.get('content') or 
+                           date_elem.get('title') or 
+                           date_elem.get_text(strip=True))
+                    
+                    if date and len(date) > 4 and len(date) < 50:  # Reasonable date string
+                        # Basic date format validation
+                        import re
+                        if re.search(r'\d{4}|\d{1,2}[\/\-]\d{1,2}|\w{3,9}\s+\d{1,2}', date):
+                            break
+            except Exception as e:
+                continue
+        
+        # Cache the results
+        cache_content = f"{title or ''}\n{author or ''}\n{date or ''}"
+        metadata_fp.write_text(cache_content, "utf-8")
+        
+        return title, author, date
+        
+    except Exception as e:
+        print(f"[WARN] extract metadata {url}: {e}")
+        # Cache empty results to avoid repeated failures
+        metadata_fp.write_text("\n\n", "utf-8")
+        return None, None, None
+
+# -------------- title extraction helpers --------------
+
+def _clean_title(title: str) -> str:
+    """Clean up common title prefixes and suffixes"""
+    if not title:
+        return title
+        
+    # Remove common prefixes
+    title = re.sub(r'^(Breaking:\s*|BREAKING:\s*|News:\s*|Update:\s*)', '', title, flags=re.IGNORECASE).strip()
+    
+    # Remove common suffixes (site names, separators)
+    title = re.sub(r'\s*[-|–]\s*.+$', '', title).strip()
+    title = re.sub(r'\s*\|\s*.+$', '', title).strip()
+    
+    # Remove extra whitespace
+    title = re.sub(r'\s+', ' ', title).strip()
+    
+    return title
+
+def _is_valid_title(title: str) -> bool:
+    """Validate if extracted text is a reasonable article title"""
+    if not title or not isinstance(title, str):
+        return False
+        
+    # Length checks
+    if len(title) < 10 or len(title) > 300:
+        return False
+    
+    # Generic/invalid terms
+    invalid_titles = {
+        'home', 'news', 'article', 'post', 'page', 'blog', 'index',
+        'loading', 'error', '404', 'not found', 'untitled', 'default',
+        'welcome', 'main', 'content', 'title', 'headline', 'story'
+    }
+    
+    if title.lower().strip() in invalid_titles:
+        return False
+    
+    # Should contain some actual words (not just punctuation/numbers)
+    word_count = len(re.findall(r'[A-Za-z]{3,}', title))
+    if word_count < 2:
+        return False
+    
+    # Avoid titles that are mostly non-alphabetic
+    alpha_ratio = len(re.findall(r'[A-Za-z]', title)) / len(title)
+    if alpha_ratio < 0.3:
+        return False
+    
+    return True
+
 # -------------- matching --------------
 
 def build_alias(alias2off: Dict[str,str]) -> List[tuple[str,str]]:
@@ -185,25 +407,45 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
     muni_lc = {m.lower() for m in muni_set}
 
     texts=[]
+    titles=[]
+    authors=[]
+    dates=[]
+    
     for idx,url in enumerate(df["Story"]):
         print(f"operating on {idx+1} story: {url}")
         txt = fetch_text(url, cache)
+        title, author, date = extract_article_metadata(url, cache)
+        
         texts.append(txt)
+        titles.append(title)
+        authors.append(author)
+        dates.append(date)
+        
         if txt: (dbg/f"{idx}.txt").write_text(txt[:1000],"utf-8")
+    
     df["_txt"] = texts
+    df["Title"] = titles
+    df["Author"] = authors
+    df["Date"] = dates
 
     for idx,row in df.iterrows():
         txt=row["_txt"]
-        if not txt: continue
+        if not txt: 
+            # Teaser generation disabled per user request
+            print(f"Skipping teaser generation for story {idx+1} (no content)")
+            continue
+            
         neigh_l, muni_l = scan(txt, alias_list, muni_lc)
         if not neigh_l and not muni_l and all(not is_empty(row[c]) for c in ["Neighborhoods","GeographicArea","Umbrella"]):
+            # Teaser generation disabled per user request
+            print(f"Skipping teaser generation for classified story {idx+1}")
             continue
+            
         if is_empty(row["Neighborhoods"]) and neigh_l:
             df.at[idx,"Neighborhoods"]=", ".join(neigh_l)
         regions=[neigh2reg[n] for n in neigh_l if n in neigh2reg]
         regions=list(dict.fromkeys(regions))
         if is_empty(row["GeographicArea"]) and regions:
-            print(f"generating teaser for {idx+1} story")
             df.at[idx,"GeographicArea"]=", ".join(regions)
         if is_empty(row["Umbrella"]):
             if any(r.lower().endswith("county") for r in regions):
@@ -212,8 +454,9 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
                 df.at[idx,"Umbrella"]=muni_l[0]
             else:
                 df.at[idx,"Umbrella"]="Pittsburgh, Allegheny County"
-        if is_empty(row["SocialAbstract"]):
-            df.at[idx,"SocialAbstract"]=generate_teaser(txt)
+        
+        # Teaser generation disabled per user request
+        print(f"Skipping teaser generation for story {idx+1}")
 
     for col in ["Umbrella","GeographicArea","Neighborhoods"]:
         df[col]=df[col].apply(norm_text)

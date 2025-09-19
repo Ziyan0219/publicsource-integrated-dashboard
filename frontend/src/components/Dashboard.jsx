@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
-import { Search, Filter, ExternalLink, FileText, MapPin, Building, Home, LogOut } from 'lucide-react';
+import { Search, Filter, FileText, MapPin, Building, Home } from 'lucide-react';
 import StaticStoryCard from './StaticStoryCard';
 import StaticFilterPanel from './StaticFilterPanel';
 import UploadButton from './UploadButton';
 import PittsburghMap from './PittsburghMap';
+import NavigationHeader from './NavigationHeader';
 
 const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -100,43 +100,12 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
   );
 
   return (
-    <div className="h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-zinc-50 flex flex-col">
-      {/* Header Navigation */}
-      <header className="bg-white/70 backdrop-blur-xl border-b border-gray-200/60 sticky top-0 z-50 animate-slide-in-top flex-shrink-0">
-        <div className="w-full px-2 sm:px-4 lg:px-6">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-slate-800 to-slate-600 rounded-2xl flex items-center justify-center shadow-sm">
-                <FileText className="h-5 w-5 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-semibold text-slate-900">PublicSource</h1>
-                <p className="text-xs text-slate-500">Story Dashboard</p>
-              </div>
-            </div>
-            <nav className="flex items-center space-x-3">
-              <Link 
-                to="/keyword-search" 
-                className="flex items-center space-x-2 px-4 py-2 text-slate-600 bg-white/60 backdrop-blur-sm rounded-xl border border-gray-200/60 font-medium hover:bg-white/80 hover:text-slate-900 transition-all duration-200 shadow-sm hover:shadow-md"
-              >
-                <Search className="h-4 w-4" />
-                <span>Search</span>
-              </Link>
-              <button
-                onClick={onLogout}
-                className="flex items-center space-x-2 px-4 py-2 text-slate-500 hover:text-slate-700 hover:bg-white/60 rounded-xl transition-all duration-200"
-              >
-                <LogOut className="h-4 w-4" />
-                <span>Logout</span>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-zinc-50 flex flex-col">
+      <NavigationHeader onLogout={onLogout} />
 
       {/* Main Content Container - Now takes full remaining height */}
       <div className="flex-1 overflow-auto">
-        <div className="w-full px-2 sm:px-4 lg:px-6 py-4 space-y-4">
+        <div className="max-w-full px-4 sm:px-6 lg:px-8 xl:max-w-7xl 2xl:max-w-full mx-auto py-4 space-y-4">
           {/* Upload Button - Moved to top of dashboard content */}
           <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
             <div className="flex justify-center">
@@ -146,7 +115,7 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
 
           {/* Pittsburgh Map */}
           <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <PittsburghMap highlightedAreas={hoveredStoryAreas} />
+            <PittsburghMap highlightedAreas={hoveredStoryAreas} stories={stories} />
           </div>
 
           {/* Search and Filter Bar */}

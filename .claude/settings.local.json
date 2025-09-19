@@ -5,7 +5,19 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(npm run lint)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(dir \"C:\\Users\\32044\\Desktop\\agents\\publicsource-integrated-dashboard\\frontend\\public\")",
+      "Bash(dir)",
+      "Bash(del \"C:\\Users\\32044\\Desktop\\agents\\publicsource-integrated-dashboard\\frontend\\public\\pittsburgh-neighborhoods-detailed.png\")",
+      "Read(c:\\Users\\32044\\Desktop/**)",
+      "Bash(dir:*)",
+      "Bash(powershell:*)",
+      "Bash(python:*)",
+      "Bash(node:*)",
+      "Bash(git checkout:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(findstr:*)",
+      "WebFetch(domain:localhost)"
     ],
     "deny": []
   }

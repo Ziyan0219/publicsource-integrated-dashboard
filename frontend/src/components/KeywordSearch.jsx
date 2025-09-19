@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, Search, FileText, AlertCircle, LogOut } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search, FileText, AlertCircle } from 'lucide-react';
 import StaticStoryCard from './StaticStoryCard';
+import NavigationHeader from './NavigationHeader';
 
 const KeywordSearch = ({ stories, onLogout }) => {
   const [keyword, setKeyword] = useState('');
@@ -31,35 +31,9 @@ const KeywordSearch = ({ stories, onLogout }) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header Navigation */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <Link 
-                to="/" 
-                className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 mr-6"
-              >
-                <ArrowLeft className="h-5 w-5" />
-                <span>Back to Dashboard</span>
-              </Link>
-              <div className="flex items-center space-x-3">
-                <Search className="h-8 w-8 text-blue-600" />
-                <h1 className="text-2xl font-bold text-gray-900">Keyword Search</h1>
-              </div>
-            </div>
-            <button
-              onClick={onLogout}
-              className="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md transition-colors duration-200"
-            >
-              <LogOut className="h-4 w-4" />
-              <span>Logout</span>
-            </button>
-          </div>
-        </div>
-      </header>
+      <NavigationHeader onLogout={onLogout} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Search Area */}
         <div className="mb-8 bg-white rounded-lg shadow-sm p-8">
           <div className="text-center mb-6">

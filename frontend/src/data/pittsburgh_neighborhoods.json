@@ -1,0 +1,474 @@
+{
+  "neighborhoods": {
+    "Allegheny Center": {
+      "region": "North Side",
+      "official_name": "Allegheny Center"
+    },
+    "Allegheny West": {
+      "region": "North Side",
+      "official_name": "Allegheny West"
+    },
+    "Allentown": {
+      "region": "South Pittsburgh",
+      "official_name": "Allentown"
+    },
+    "Arlington": {
+      "region": "South Pittsburgh",
+      "official_name": "Arlington"
+    },
+    "Arlington Heights": {
+      "region": "South Pittsburgh",
+      "official_name": "Arlington Heights"
+    },
+    "Banksville": {
+      "region": "South Pittsburgh",
+      "official_name": "Banksville"
+    },
+    "Bedford Dwellings": {
+      "region": "Hill District",
+      "official_name": "Bedford Dwellings"
+    },
+    "Beechview": {
+      "region": "South Pittsburgh",
+      "official_name": "Beechview"
+    },
+    "Beltzhoover": {
+      "region": "South Pittsburgh",
+      "official_name": "Beltzhoover"
+    },
+    "Bloomfield": {
+      "region": "Upper East End",
+      "official_name": "Bloomfield"
+    },
+    "Bluff": {
+      "region": "Hill District",
+      "official_name": "Bluff"
+    },
+    "Bon Air": {
+      "region": "South Pittsburgh",
+      "official_name": "Bon Air"
+    },
+    "Brighton Heights": {
+      "region": "North Side",
+      "official_name": "Brighton Heights"
+    },
+    "Brookline": {
+      "region": "South Pittsburgh",
+      "official_name": "Brookline"
+    },
+    "California-Kirkbride": {
+      "region": "North Side",
+      "official_name": "California-Kirkbride"
+    },
+    "Carrick": {
+      "region": "South Pittsburgh",
+      "official_name": "Carrick"
+    },
+    "Central Business District": {
+      "region": "Central Pittsburgh",
+      "official_name": "Golden Triangle"
+    },
+    "Central Lawrenceville": {
+      "region": "Central Pittsburgh",
+      "official_name": "Central Lawrenceville"
+    },
+    "Central Northside": {
+      "region": "North Side",
+      "official_name": "Central Northside"
+    },
+    "Central Oakland": {
+      "region": "Lower East End",
+      "official_name": "Central Oakland"
+    },
+    "Chartiers City": {
+      "region": "West End",
+      "official_name": "Chartiers City"
+    },
+    "Chateau": {
+      "region": "North Side",
+      "official_name": "Chateau"
+    },
+    "Crafton Heights": {
+      "region": "West End",
+      "official_name": "Crafton Heights"
+    },
+    "Crawford-Roberts": {
+      "region": "Hill District",
+      "official_name": "Crawford-Roberts"
+    },
+    "Duquesne Heights": {
+      "region": "South Pittsburgh",
+      "official_name": "Duquesne Heights"
+    },
+    "East Allegheny": {
+      "region": "North Side",
+      "official_name": "East Allegheny"
+    },
+    "East Carnegie": {
+      "region": "West End",
+      "official_name": "East Carnegie"
+    },
+    "East Hills": {
+      "region": "Upper East End",
+      "official_name": "East Hills"
+    },
+    "East Liberty": {
+      "region": "Upper East End",
+      "official_name": "East Liberty"
+    },
+    "Elliott": {
+      "region": "West End",
+      "official_name": "Elliott"
+    },
+    "Esplen": {
+      "region": "West End",
+      "official_name": "Esplen"
+    },
+    "Fairywood": {
+      "region": "West End",
+      "official_name": "Fairywood"
+    },
+    "Fineview": {
+      "region": "North Side",
+      "official_name": "Fineview"
+    },
+    "Friendship": {
+      "region": "Upper East End",
+      "official_name": "Friendship"
+    },
+    "Garfield": {
+      "region": "Upper East End",
+      "official_name": "Garfield"
+    },
+    "Glen Hazel": {
+      "region": "Lower East End",
+      "official_name": "Glen Hazel"
+    },
+    "Greenfield": {
+      "region": "Lower East End",
+      "official_name": "Greenfield"
+    },
+    "Hays": {
+      "region": "Southeast Pittsburgh ",
+      "official_name": "Hays"
+    },
+    "Hazelwood": {
+      "region": "Lower East End",
+      "official_name": "Hazelwood"
+    },
+    "Highland Park": {
+      "region": "Upper East End",
+      "official_name": "Highland Park"
+    },
+    "Homewood North": {
+      "region": "Upper East End",
+      "official_name": "Homewood North"
+    },
+    "Homewood South": {
+      "region": "Upper East End",
+      "official_name": "Homewood South"
+    },
+    "Homewood West": {
+      "region": "Upper East End",
+      "official_name": "Homewood West"
+    },
+    "Knoxville": {
+      "region": "South Pittsburgh",
+      "official_name": "Knoxville"
+    },
+    "Larimer": {
+      "region": "Upper East End",
+      "official_name": "Larimer"
+    },
+    "Lincoln Place": {
+      "region": "Southeast Pittsburgh ",
+      "official_name": "Lincoln Place"
+    },
+    "Lincoln-Lemington-Belmar": {
+      "region": "Upper East End",
+      "official_name": "Lincoln-Lemington-Belmar"
+    },
+    "Lower Lawrenceville": {
+      "region": "Central Pittsburgh",
+      "official_name": "Lower Lawrenceville"
+    },
+    "Manchester": {
+      "region": "North Side",
+      "official_name": "Manchester"
+    },
+    "Marshall-Shadeland": {
+      "region": "North Side",
+      "official_name": "Marshall-Shadeland"
+    },
+    "Middle Hill": {
+      "region": "Hill District",
+      "official_name": "Middle Hill"
+    },
+    "Morningside": {
+      "region": "Upper East End",
+      "official_name": "Morningside"
+    },
+    "Mount Washington": {
+      "region": "South Pittsburgh",
+      "official_name": "Mount Washington"
+    },
+    "Mt. Oliver": {
+      "region": "South Pittsburgh",
+      "official_name": "Mount Oliver"
+    },
+    "New Homestead": {
+      "region": "Southeast Pittsburgh ",
+      "official_name": "New Homestead"
+    },
+    "North Oakland": {
+      "region": "Lower East End",
+      "official_name": "North Oakland"
+    },
+    "North Shore": {
+      "region": "North Side",
+      "official_name": "North Shore"
+    },
+    "Northview Heights": {
+      "region": "North Side",
+      "official_name": "Northview Heights"
+    },
+    "Oakwood": {
+      "region": "West End",
+      "official_name": "Oakwood"
+    },
+    "Overbrook": {
+      "region": "South Pittsburgh",
+      "official_name": "Overbrook"
+    },
+    "Perry North": {
+      "region": "North Side",
+      "official_name": "Perry North"
+    },
+    "Perry South": {
+      "region": "North Side",
+      "official_name": "Perry South"
+    },
+    "Point Breeze": {
+      "region": "Lower East End",
+      "official_name": "Point Breeze"
+    },
+    "Point Breeze North": {
+      "region": "Lower East End",
+      "official_name": "Point Breeze North"
+    },
+    "Polish Hill": {
+      "region": "Central Pittsburgh",
+      "official_name": "Polish Hill"
+    },
+    "Regent Square": {
+      "region": "Lower East End",
+      "official_name": "Regent Square"
+    },
+    "Ridgemont": {
+      "region": "West End",
+      "official_name": "Ridgemont"
+    },
+    "Shadyside": {
+      "region": "Lower East End",
+      "official_name": "Shadyside"
+    },
+    "Sheraden": {
+      "region": "West End",
+      "official_name": "Sheraden"
+    },
+    "South Oakland": {
+      "region": "Lower East End",
+      "official_name": "South Oakland"
+    },
+    "South Shore": {
+      "region": "South Pittsburgh",
+      "official_name": "South Shore"
+    },
+    "South Side Flats": {
+      "region": "South Pittsburgh",
+      "official_name": "South Side Flats"
+    },
+    "South Side Slopes": {
+      "region": "South Pittsburgh",
+      "official_name": "South Side Slopes"
+    },
+    "Spring Garden": {
+      "region": "North Side",
+      "official_name": "Spring Garden"
+    },
+    "Spring Hill-City View": {
+      "region": "North Side",
+      "official_name": "Spring Hill-City View"
+    },
+    "Squirrel Hill North": {
+      "region": "Lower East End",
+      "official_name": "Squirrel Hill North"
+    },
+    "Squirrel Hill South": {
+      "region": "Lower East End",
+      "official_name": "Squirrel Hill South"
+    },
+    "St. Clair": {
+      "region": "South Pittsburgh",
+      "official_name": "Saint Clair"
+    },
+    "Stanton Heights": {
+      "region": "Upper East End",
+      "official_name": "Stanton Heights"
+    },
+    "Strip District": {
+      "region": "Central Pittsburgh",
+      "official_name": "Strip District"
+    },
+    "Summer Hill": {
+      "region": "North Side",
+      "official_name": "Summer Hill"
+    },
+    "Swisshelm Park": {
+      "region": "Lower East End",
+      "official_name": "Swisshelm Park"
+    },
+    "Terrace Village": {
+      "region": "Hill District",
+      "official_name": "Terrace Village"
+    },
+    "Troy Hill": {
+      "region": "North Side",
+      "official_name": "Troy Hill"
+    },
+    "Upper Hill": {
+      "region": "Hill District",
+      "official_name": "Upper Hill"
+    },
+    "Upper Lawrenceville": {
+      "region": "Central Pittsburgh",
+      "official_name": "Upper Lawrenceville"
+    },
+    "West End": {
+      "region": "West End",
+      "official_name": "West End"
+    },
+    "West Oakland": {
+      "region": "Lower East End",
+      "official_name": "West Oakland"
+    },
+    "Westwood": {
+      "region": "West End",
+      "official_name": "Westwood"
+    },
+    "Windgap": {
+      "region": "West End",
+      "official_name": "Windgap"
+    }
+  },
+  "regions": {
+    "North Side": [
+      "Allegheny Center",
+      "Allegheny West",
+      "Brighton Heights",
+      "California-Kirkbride",
+      "Central Northside",
+      "Chateau",
+      "East Allegheny",
+      "Fineview",
+      "Manchester",
+      "Marshall-Shadeland",
+      "North Shore",
+      "Northview Heights",
+      "Perry North",
+      "Perry South",
+      "Spring Garden",
+      "Spring Hill-City View",
+      "Summer Hill",
+      "Troy Hill"
+    ],
+    "South Pittsburgh": [
+      "Allentown",
+      "Arlington",
+      "Arlington Heights",
+      "Banksville",
+      "Beechview",
+      "Beltzhoover",
+      "Bon Air",
+      "Brookline",
+      "Carrick",
+      "Duquesne Heights",
+      "Knoxville",
+      "Mount Washington",
+      "Mt. Oliver",
+      "Overbrook",
+      "South Shore",
+      "South Side Flats",
+      "South Side Slopes",
+      "St. Clair"
+    ],
+    "Hill District": [
+      "Bedford Dwellings",
+      "Bluff",
+      "Crawford-Roberts",
+      "Middle Hill",
+      "Terrace Village",
+      "Upper Hill"
+    ],
+    "Upper East End": [
+      "Bloomfield",
+      "East Hills",
+      "East Liberty",
+      "Friendship",
+      "Garfield",
+      "Highland Park",
+      "Homewood North",
+      "Homewood South",
+      "Homewood West",
+      "Larimer",
+      "Lincoln-Lemington-Belmar",
+      "Morningside",
+      "Stanton Heights"
+    ],
+    "Central Pittsburgh": [
+      "Central Business District",
+      "Central Lawrenceville",
+      "Lower Lawrenceville",
+      "Polish Hill",
+      "Strip District",
+      "Upper Lawrenceville"
+    ],
+    "Lower East End": [
+      "Central Oakland",
+      "Glen Hazel",
+      "Greenfield",
+      "Hazelwood",
+      "North Oakland",
+      "Point Breeze",
+      "Point Breeze North",
+      "Regent Square",
+      "Shadyside",
+      "South Oakland",
+      "Squirrel Hill North",
+      "Squirrel Hill South",
+      "Swisshelm Park",
+      "West Oakland"
+    ],
+    "West End": [
+      "Chartiers City",
+      "Crafton Heights",
+      "East Carnegie",
+      "Elliott",
+      "Esplen",
+      "Fairywood",
+      "Oakwood",
+      "Ridgemont",
+      "Sheraden",
+      "West End",
+      "Westwood",
+      "Windgap"
+    ],
+    "Southeast Pittsburgh ": [
+      "Hays",
+      "Lincoln Place",
+      "New Homestead"
+    ]
+  },
+  "total_neighborhoods": 90,
+  "total_regions": 8
+}
