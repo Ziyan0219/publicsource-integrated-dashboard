@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import Dashboard from './components/Dashboard';
 import KeywordSearch from './components/KeywordSearch';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
+import AIStrategicDashboard from './components/AIStrategicDashboard';
 import UploadPage from './components/UploadPage';
 import TestPage from './components/TestPage';
 import Login from './components/Login';
@@ -36,7 +37,19 @@ function App() {
 
       // Process neighborhoods
       if (story.neighborhoods) {
-        const neighborhoodValues = story.neighborhoods.split(/[,;/|]/).map(v => v.trim()).filter(v => v);
+        let neighborhoodValues = [];
+
+        // Handle array format
+        if (Array.isArray(story.neighborhoods)) {
+          neighborhoodValues = story.neighborhoods.flatMap(n =>
+            typeof n === 'string' ? n.split(/[,;/|]/).map(v => v.trim()).filter(v => v) : []
+          );
+        }
+        // Handle string format
+        else if (typeof story.neighborhoods === 'string') {
+          neighborhoodValues = story.neighborhoods.split(/[,;/|]/).map(v => v.trim()).filter(v => v);
+        }
+
         neighborhoodValues.forEach(value => neighborhoods.add(value));
       }
     });
@@ -133,9 +146,13 @@ function App() {
               path="/stats"
               element={<AnalyticsDashboard stories={stories} filters={filters} onLogout={handleLogout} onDataRefresh={loadData} />}
             />
-            <Route 
-              path="/test" 
-              element={<TestPage onLogout={handleLogout} />} 
+            <Route
+              path="/ai-analytics"
+              element={<AIStrategicDashboard onLogout={handleLogout} />}
+            />
+            <Route
+              path="/test"
+              element={<TestPage onLogout={handleLogout} />}
             />
           </Routes>
         </div>

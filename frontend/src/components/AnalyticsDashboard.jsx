@@ -19,6 +19,14 @@ import NavigationHeader from './NavigationHeader';
 import PittsburghMap from './PittsburghMap';
 import { TimeSeriesChart, BarChart, PieChart } from './ChartWidgets';
 import pittsburghNeighborhoods from '../data/pittsburgh_neighborhoods.json';
+
+// Enhanced geographic data loading
+let enhancedGeographicData = null;
+try {
+  enhancedGeographicData = require('../../../enhanced_geographic_data.json');
+} catch (error) {
+  console.log('Enhanced geographic data not found, using Pittsburgh neighborhoods only');
+}
 import { BarChart as RechartsBarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, LineChart, Line } from 'recharts';
 
 const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefresh }) => {
@@ -129,7 +137,16 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
 
         // Check if story neighborhoods match the selected region
         if (story.neighborhoods) {
-          const storyNeighborhoods = story.neighborhoods.split(',').map(n => n.trim());
+          // Handle both string and array formats
+          let storyNeighborhoods = [];
+          if (Array.isArray(story.neighborhoods)) {
+            storyNeighborhoods = story.neighborhoods.flatMap(n =>
+              typeof n === 'string' ? n.split(/[,;/|]/).map(v => v.trim()).filter(v => v) : []
+            );
+          } else if (typeof story.neighborhoods === 'string') {
+            storyNeighborhoods = story.neighborhoods.split(/[,;/|]/).map(n => n.trim());
+          }
+
           return storyNeighborhoods.some(neighborhood => {
             const officialNeighborhood = Object.keys(pittsburghNeighborhoods.neighborhoods)
               .find(official => official.toLowerCase() === neighborhood.toLowerCase());
@@ -206,7 +223,16 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
 
     filteredStories.forEach(story => {
       if (story.neighborhoods) {
-        const storyNeighborhoods = story.neighborhoods.split(',').map(n => n.trim());
+        // Handle both string and array formats
+        let storyNeighborhoods = [];
+        if (Array.isArray(story.neighborhoods)) {
+          storyNeighborhoods = story.neighborhoods.flatMap(n =>
+            typeof n === 'string' ? n.split(/[,;/|]/).map(v => v.trim()).filter(v => v) : []
+          );
+        } else if (typeof story.neighborhoods === 'string') {
+          storyNeighborhoods = story.neighborhoods.split(/[,;/|]/).map(n => n.trim());
+        }
+
         const processedStoryRegions = new Set(); // Avoid double counting for stories spanning multiple neighborhoods in same region
 
         storyNeighborhoods.forEach(neighborhood => {
@@ -241,7 +267,16 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
     // Count stories for each neighborhood
     filteredStories.forEach(story => {
       if (story.neighborhoods) {
-        const neighborhoods = story.neighborhoods.split(',').map(n => n.trim());
+        // Handle both string and array formats
+        let neighborhoods = [];
+        if (Array.isArray(story.neighborhoods)) {
+          neighborhoods = story.neighborhoods.flatMap(n =>
+            typeof n === 'string' ? n.split(/[,;/|]/).map(v => v.trim()).filter(v => v) : []
+          );
+        } else if (typeof story.neighborhoods === 'string') {
+          neighborhoods = story.neighborhoods.split(/[,;/|]/).map(n => n.trim());
+        }
+
         neighborhoods.forEach(neighborhood => {
           // Only count if it's in our official neighborhood list
           if (counts.hasOwnProperty(neighborhood)) {
@@ -289,17 +324,31 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
 
   // Summary statistics
   const summaryStats = useMemo(() => {
-    console.log('UPDATED ANALYTICS - Total official neighborhoods:', Object.keys(pittsburghNeighborhoods.neighborhoods).length);
-    console.log('UPDATED ANALYTICS - Total official regions:', Object.keys(pittsburghNeighborhoods.regions).length);
-    console.log('UPDATED ANALYTICS - Neighborhoods with stories:', neighborhoodData.filter(n => n.value > 0).length);
-    console.log('UPDATED ANALYTICS - Geographic data for charts:', geographicData);
-    console.log('UPDATED ANALYTICS - Geographic data values:', geographicData.map(d => `${d.name}: ${d.value}`));
-    console.log('UPDATED ANALYTICS - Sum of all region values:', geographicData.reduce((sum, d) => sum + d.value, 0));
+    // Calculate comprehensive geographic coverage
+    let totalOfficialNeighborhoods = Object.keys(pittsburghNeighborhoods.neighborhoods).length;
+    let totalOfficialRegions = Object.keys(pittsburghNeighborhoods.regions).length;
+    let totalMunicipalities = 0;
+
+    // Include enhanced geographic data if available
+    if (enhancedGeographicData) {
+      totalMunicipalities = Object.keys(enhancedGeographicData.allegheny_county_municipalities || {}).length;
+      console.log('ENHANCED ANALYTICS - Total municipalities:', totalMunicipalities);
+    }
+
+    console.log('ENHANCED ANALYTICS - Total Pittsburgh neighborhoods:', totalOfficialNeighborhoods);
+    console.log('ENHANCED ANALYTICS - Total Pittsburgh regions:', totalOfficialRegions);
+    console.log('ENHANCED ANALYTICS - Neighborhoods with stories:', neighborhoodData.filter(n => n.value > 0).length);
+    console.log('ENHANCED ANALYTICS - Geographic coverage:', {
+      neighborhoods: totalOfficialNeighborhoods,
+      municipalities: totalMunicipalities,
+      total_places: totalOfficialNeighborhoods + totalMunicipalities
+    });
 
     const totalStories = filteredStories.length;
     const totalCategories = categoryData.length;
     const totalAreas = geographicData.length;
-    const totalNeighborhoods = neighborhoodData.length;
+    // Show combined coverage: Pittsburgh neighborhoods + Allegheny County municipalities
+    const totalNeighborhoods = totalOfficialNeighborhoods + totalMunicipalities;
 
     // Calculate average stories per day
     const dateRange = timeSeriesData.length > 0 ?
@@ -451,7 +500,7 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
           </div>
 
           {/* Summary Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
             <Card>
               <CardContent className="p-4">
                 <div className="flex items-center gap-3">
@@ -481,7 +530,7 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
                 <div className="flex items-center gap-3">
                   <MapPin className="h-8 w-8 text-orange-500" />
                   <div>
-                    <p className="text-sm text-muted-foreground">Areas</p>
+                    <p className="text-sm text-muted-foreground">Regions</p>
                     <p className="text-xl font-bold">{summaryStats.totalAreas}</p>
                   </div>
                 </div>
@@ -493,8 +542,9 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
                 <div className="flex items-center gap-3">
                   <MapPin className="h-8 w-8 text-purple-500" />
                   <div>
-                    <p className="text-sm text-muted-foreground">Neighborhoods</p>
+                    <p className="text-sm text-muted-foreground">Places</p>
                     <p className="text-xl font-bold">{summaryStats.totalNeighborhoods}</p>
+                    <p className="text-xs text-gray-400">Neighborhoods + Municipalities</p>
                   </div>
                 </div>
               </CardContent>
@@ -511,6 +561,21 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
                 </div>
               </CardContent>
             </Card>
+
+            {enhancedGeographicData && (
+              <Card>
+                <CardContent className="p-4">
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-8 w-8 text-indigo-500" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Coverage</p>
+                      <p className="text-xl font-bold">Enhanced</p>
+                      <p className="text-xs text-gray-400">Pittsburgh + County</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
 

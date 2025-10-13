@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-archive_classifier_final.py – No-override classification + LLM teaser generation
+archive_classifier_final.py – Enhanced geographic classification with context validation
 ===============================================================================
 • Accepts CSV or Excel (`.csv`, `.xls`, `.xlsx`) for `--stories` (Story URLs).
 • Crawls and caches article text; saves 1KB previews for debugging.
-• Classifies stories into Neighborhoods, GeographicArea, and Umbrella via dictionary + fuzzy matching.
-• Generates a 25-word social-media teaser (`SocialAbstract`) using OpenAI LLM.
-• Does NOT merge manual labels—pure algorithmic predictions.
+• Enhanced geographic classification with Allegheny County coverage and context validation.
+• PRESERVES existing social media teasers - NO new OpenAI generation.
+• Improved accuracy with confidence scoring and ambiguous place disambiguation.
 • Outputs `stories_classified_filled.csv` and prints missing-value summary.
 
 Dependencies:
@@ -27,12 +27,12 @@ import argparse
 import hashlib
 import os
 import re
+import json
 from pathlib import Path
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional, Set, Tuple
 
 import pandas as pd
 import requests
-import openai
 from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 
@@ -60,6 +60,98 @@ def norm_text(v: Optional[str]) -> Optional[str]:
 
 def norm_header(c: str) -> str:
     return re.sub(r"[\s_]+", "", c.strip()).title()
+
+# -------------- Enhanced Geographic Database --------------
+
+class EnhancedGeographicDatabase:
+    def __init__(self, data_file: str = "enhanced_geographic_data.json"):
+        try:
+            with open(data_file, 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
+        except FileNotFoundError:
+            print(f"Warning: {data_file} not found, falling back to basic neighborhood data")
+            self.data = {'pittsburgh_neighborhoods': {}, 'allegheny_county_municipalities': {}, 'context_validation': {'positive_keywords': [], 'negative_keywords': [], 'ambiguous_places': {}}}
+
+        self.pittsburgh_neighborhoods = self.data.get('pittsburgh_neighborhoods', {})
+        self.allegheny_municipalities = self.data.get('allegheny_county_municipalities', {})
+        self.context_validation = self.data.get('context_validation', {'positive_keywords': [], 'negative_keywords': [], 'ambiguous_places': {}})
+
+        # Build unified alias mapping
+        self.alias_to_official = {}
+        self.official_to_region = {}
+
+        # Add Pittsburgh neighborhoods
+        for neighborhood, info in self.pittsburgh_neighborhoods.items():
+            official = info['official_name']
+            region = info['region']
+
+            # Add multiple alias variations
+            self.alias_to_official[neighborhood.lower()] = official
+            self.alias_to_official[official.lower()] = official
+
+            # Add common variations
+            if ' ' in official:
+                # Handle multi-word names
+                parts = official.split()
+                for part in parts:
+                    if len(part) > 3:  # Avoid short words like "the", "of"
+                        self.alias_to_official[part.lower()] = official
+
+            self.official_to_region[official] = region
+
+        # Add Allegheny County municipalities
+        for municipality, info in self.allegheny_municipalities.items():
+            official = info['official_name']
+            sub_region = info['sub_region']
+            for alias in info.get('aliases', [municipality]):
+                self.alias_to_official[alias.lower()] = official
+            self.official_to_region[official] = sub_region
+
+        # Build sorted alias list for scanning
+        self.alias_list = sorted(((a, o) for a, o in self.alias_to_official.items()),
+                                key=lambda x: -len(x[0]))
+
+    def validate_geographic_context(self, text: str, found_places: List[str]) -> Dict[str, float]:
+        """Validate geographic context and return confidence scores"""
+        text_lower = text.lower()
+        scores = {}
+
+        for place in found_places:
+            score = 0.6  # Start with moderate confidence
+
+            # Check for positive geographic context
+            positive_keywords = ['pennsylvania', 'pa', 'pittsburgh', 'allegheny county',
+                               'near pittsburgh', 'pittsburgh area', 'western pennsylvania',
+                               'southwestern pa', 'greater pittsburgh', 'neighborhood',
+                               'community', 'local', 'area residents']
+
+            positive_found = any(keyword in text_lower for keyword in positive_keywords)
+
+            # Check for negative geographic context
+            negative_keywords = ['tennessee', 'tn', 'university of tennessee', 'knoxville tn',
+                               'texas', 'tx', 'california', 'ca', 'new york', 'ny',
+                               'florida', 'fl', 'ohio', 'oh', 'university of']
+
+            negative_found = any(keyword in text_lower for keyword in negative_keywords)
+
+            # Handle ambiguous places (like Knoxville)
+            if place.lower() == 'knoxville':
+                if 'tennessee' in text_lower or 'tn' in text_lower or 'university of' in text_lower:
+                    score = 0.0  # Definitely not Pennsylvania location
+                elif positive_found or 'pittsburgh' in text_lower:
+                    score = 0.9  # Definitely Pennsylvania location
+                else:
+                    score = 0.5  # Moderate confidence for Pittsburgh Knoxville
+            else:
+                # Adjust score based on context
+                if positive_found:
+                    score = min(1.0, score + 0.3)
+                if negative_found:
+                    score = max(0.0, score - 0.7)
+
+            scores[place] = score
+
+        return scores
 
 # -------------- readers --------------
 
@@ -343,68 +435,60 @@ def _is_valid_title(title: str) -> bool:
     
     return True
 
-# -------------- matching --------------
+# -------------- Enhanced Matching Algorithm --------------
 
-def build_alias(alias2off: Dict[str,str]) -> List[tuple[str,str]]:
-    return sorted(((a.lower(),o) for a,o in alias2off.items()), key=lambda x:-len(x[0]))
+def enhanced_geographic_scan(text: str, geo_db: EnhancedGeographicDatabase) -> Tuple[List[str], Dict[str, float]]:
+    """Enhanced geographic scanning with advanced NLP analysis"""
+    # Import and use the advanced classifier
+    try:
+        from advanced_geographic_classifier import AdvancedGeographicClassifier
+        classifier = AdvancedGeographicClassifier()
+        return classifier.classify_text(text, min_confidence=0.4)
+    except ImportError:
+        # Fallback to the old method if advanced classifier not available
+        text_lower = text.lower()
+        found_places = set()
 
+        # First pass: exact matches
+        for alias, official in geo_db.alias_list:
+            if alias in text_lower:
+                found_places.add(official)
 
-def scan(text: str, alias_list: List[tuple[str,str]], muni_lc: Set[str]) -> tuple[List[str],List[str]]:
-    txt = text.lower(); neigh=set(); muni=set()
-    for a,off in alias_list:
-        if a in txt: neigh.add(off)
-    for m in muni_lc:
-        if m in txt: muni.add(m)
-    if not neigh:
-        words = set(re.findall(r"[a-z']{4,}", txt))
-        for a,off in alias_list:
-            if any(fuzz_ratio(w,a)>=90 for w in words): neigh.add(off); break
-    return list(neigh), list(muni)
+        # Second pass: fuzzy matching for missed places
+        if not found_places:
+            words = set(re.findall(r"[a-z']{4,}", text_lower))
+            for alias, official in geo_db.alias_list:
+                if any(fuzz_ratio(word, alias) >= 90 for word in words):
+                    found_places.add(official)
+                    break  # Only take the first high-confidence fuzzy match
 
-# -------------- LLM teaser --------------
+        found_places_list = list(found_places)
 
-def generate_teaser(text: str) -> str:
-    excerpt = text[:1300]
-    prompt = f"""You are a local news social media editor following strict voice guidelines. Create a compelling teaser (under 30 words) from this story excerpt.
+        # Validate geographic context
+        context_scores = geo_db.validate_geographic_context(text, found_places_list)
 
-VOICE GUIDELINES:
-- Use active voice consistently
-- Lead with facts, not opinions
-- Include quotes when available to show personal perspectives
-- Use calls-to-action: explore, examine, investigate, discover
-- Ask questions that the story can answer
-- Show local community impact when relevant
-- No clickbait or sensationalism
-- Follow AP Style
-- No oxford comma
-- Be curious, tenacious, constructive, empathetic, clear, concise, certain, informative and friendly
+        # Filter by minimum confidence threshold
+        MIN_CONFIDENCE = 0.4
+        high_confidence_places = [place for place, score in context_scores.items()
+                                 if score >= MIN_CONFIDENCE]
 
-STORY EXCERPT:
-{excerpt}
+        return high_confidence_places, context_scores
 
-Create a factual, engaging teaser under 30 words that makes readers want to explore the full story:"""
-    resp = openai.chat.completions.create(
-        model="gpt-4",
-        messages=[{"role":"user","content":prompt}],
-        max_tokens=80,
-        temperature=0.6,
-    )
-    return resp.choices[0].message.content.strip()
+# -------------- Teaser Generation (DISABLED) --------------
+# Teaser generation disabled per user request to preserve existing data and save API usage
 
 # -------------- pipeline --------------
 
-def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
-    openai.api_key = api_key
+def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str=None):
+    # OpenAI API key no longer required since teaser generation is disabled
     out.mkdir(parents=True, exist_ok=True)
     cache=out/"articles_cache"; dbg=out/"debug_texts"; dbg.mkdir(exist_ok=True)
 
     df = read_stories(stories)
     df.drop_duplicates("Story", inplace=True, ignore_index=True)
 
-    alias2off, neigh2reg = read_neighborhoods(neigh)
-    alias_list = build_alias(alias2off)
-    muni_set = read_municipalities(muni)
-    muni_lc = {m.lower() for m in muni_set}
+    # Use enhanced geographic database
+    geo_db = EnhancedGeographicDatabase()
 
     texts=[]
     titles=[]
@@ -428,35 +512,48 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
     df["Author"] = authors
     df["Date"] = dates
 
+    confidence_scores = []
+
     for idx,row in df.iterrows():
         txt=row["_txt"]
-        if not txt: 
-            # Teaser generation disabled per user request
-            print(f"Skipping teaser generation for story {idx+1} (no content)")
+        if not txt:
+            print(f"Skipping story {idx+1} (no content)")
+            confidence_scores.append({})
             continue
-            
-        neigh_l, muni_l = scan(txt, alias_list, muni_lc)
-        if not neigh_l and not muni_l and all(not is_empty(row[c]) for c in ["Neighborhoods","GeographicArea","Umbrella"]):
-            # Teaser generation disabled per user request
-            print(f"Skipping teaser generation for classified story {idx+1}")
-            continue
-            
-        if is_empty(row["Neighborhoods"]) and neigh_l:
-            df.at[idx,"Neighborhoods"]=", ".join(neigh_l)
-        regions=[neigh2reg[n] for n in neigh_l if n in neigh2reg]
-        regions=list(dict.fromkeys(regions))
-        if is_empty(row["GeographicArea"]) and regions:
-            df.at[idx,"GeographicArea"]=", ".join(regions)
-        if is_empty(row["Umbrella"]):
-            if any(r.lower().endswith("county") for r in regions):
-                df.at[idx,"Umbrella"]=next(r for r in regions if r.lower().endswith("county"))
-            elif muni_l:
-                df.at[idx,"Umbrella"]=muni_l[0]
-            else:
-                df.at[idx,"Umbrella"]="Pittsburgh, Allegheny County"
-        
-        # Teaser generation disabled per user request
-        print(f"Skipping teaser generation for story {idx+1}")
+
+        # Use enhanced geographic scanning
+        found_places, place_confidence = enhanced_geographic_scan(txt, geo_db)
+        confidence_scores.append(place_confidence)
+
+        # Update geographic classifications only if empty or low confidence existing data
+        if is_empty(row["Neighborhoods"]) and found_places:
+            # Filter neighborhoods vs municipalities
+            neighborhoods = [p for p in found_places if p in geo_db.pittsburgh_neighborhoods]
+            municipalities = [p for p in found_places if p in geo_db.allegheny_municipalities]
+
+            if neighborhoods:
+                df.at[idx, "Neighborhoods"] = ", ".join(neighborhoods)
+
+            # Set geographic areas based on found places
+            regions = []
+            for place in found_places:
+                if place in geo_db.official_to_region:
+                    regions.append(geo_db.official_to_region[place])
+
+            if regions and is_empty(row["GeographicArea"]):
+                df.at[idx, "GeographicArea"] = ", ".join(list(dict.fromkeys(regions)))
+
+            # Set umbrella region
+            if is_empty(row["Umbrella"]):
+                if municipalities:
+                    df.at[idx, "Umbrella"] = municipalities[0]
+                elif any("county" in r.lower() for r in regions):
+                    df.at[idx, "Umbrella"] = next(r for r in regions if "county" in r.lower())
+                else:
+                    df.at[idx, "Umbrella"] = "Pittsburgh, Allegheny County"
+
+        # PRESERVE existing teaser data - NO new generation
+        print(f"Preserving existing teaser for story {idx+1}")
 
     for col in ["Umbrella","GeographicArea","Neighborhoods"]:
         df[col]=df[col].apply(norm_text)
@@ -464,8 +561,23 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str):
 
     out_csv=out/"stories_classified_filled.csv"
     df.to_csv(out_csv,index=False)
-    print("Missing counts →", df[["Umbrella","GeographicArea","Neighborhoods","SocialAbstract"]].isna().sum().to_dict())
-    print(f"✅ Saved to {out_csv}")
+
+    # Save confidence analysis
+    confidence_analysis = out / "confidence_analysis.json"
+    with open(confidence_analysis, 'w', encoding='utf-8') as f:
+        json.dump({
+            'story_confidence_scores': confidence_scores,
+            'summary': {
+                'total_stories': len(df),
+                'stories_with_places': len([s for s in confidence_scores if s]),
+                'avg_confidence': sum(sum(scores.values()) for scores in confidence_scores) /
+                                max(1, sum(len(scores) for scores in confidence_scores))
+            }
+        }, f, indent=2)
+
+    print("Missing counts:", df[["Umbrella","GeographicArea","Neighborhoods","SocialAbstract"]].isna().sum().to_dict())
+    print(f"Saved to {out_csv}")
+    print(f"Confidence analysis saved to {confidence_analysis}")
 
 # -------------- CLI --------------
 
@@ -474,13 +586,11 @@ def main():
     p.add_argument("--stories", required=True, type=Path)
     p.add_argument("--neigh", required=True, type=Path)
     p.add_argument("--muni", required=True, type=Path)
-    p.add_argument("--openai_key", default=os.environ.get("OPENAI_API_KEY"))
+    p.add_argument("--openai_key", default=os.environ.get("OPENAI_API_KEY"), help="OpenAI API key (not required, teaser generation disabled)")
     p.add_argument("--out_dir", required=True, type=Path)
     args=p.parse_args()
-    
 
-    if not args.openai_key:
-        raise ValueError("OpenAI API key not found. Please provide it via --openai_key argument or set the OPENAI_API_KEY environment variable.")
+    # OpenAI API key no longer required since teaser generation is disabled
     pipeline(args.stories,args.neigh,args.muni,args.out_dir,args.openai_key)
 if __name__=="__main__":
     main()

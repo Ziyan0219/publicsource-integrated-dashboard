@@ -168,12 +168,10 @@ def upload_excel():
             muni_path = Path(os.path.join(os.path.dirname(__file__), '..', '..', 'Allegheny County Municipalities.xlsx'))
             output_dir = Path('/tmp/classification_output')
             
-            # Get OpenAI API key from environment
+            # Get OpenAI API key from environment (optional now, teaser generation disabled)
             api_key = os.environ.get('OPENAI_API_KEY')
-            if not api_key:
-                return jsonify({'error': 'OpenAI API key not configured'}), 500
-            
-            # Run the classification pipeline
+
+            # Run the enhanced classification pipeline
             pipeline(Path(filepath), neigh_path, muni_path, output_dir, api_key)
             
             # Read the processed results
@@ -251,7 +249,7 @@ def refresh_data():
     try:
         stories = load_existing_stories()
         filters = update_filters(stories)
-        
+
         return jsonify({
             'stories': stories,
             'filters': filters
@@ -259,4 +257,196 @@ def refresh_data():
     except Exception as e:
         current_app.logger.error(f"Refresh data error: {str(e)}")
         return jsonify({'error': f'Failed to get data: {str(e)}'}), 500
+
+@excel_bp.route('/import-sitemap', methods=['POST'])
+def import_sitemap():
+    """Import articles from PublicSource sitemaps"""
+    try:
+        import subprocess
+        import threading
+
+        # Get parameters from request
+        data = request.get_json() or {}
+        test_mode = data.get('test_mode', False)
+        batch_size = data.get('batch_size', 50)
+        max_articles = data.get('max_articles', None)
+
+        # Build command
+        cmd = ['python', 'sitemap_importer.py', '--batch_size', str(batch_size)]
+
+        if test_mode:
+            cmd.append('--test_mode')
+
+        if max_articles:
+            cmd.extend(['--max_articles', str(max_articles)])
+
+        # Run in background thread
+        def run_import():
+            try:
+                result = subprocess.run(
+                    cmd,
+                    cwd=os.path.join(os.path.dirname(__file__), '..', '..'),
+                    capture_output=True,
+                    text=True,
+                    timeout=3600  # 1 hour timeout
+                )
+                current_app.logger.info(f"Sitemap import output: {result.stdout}")
+                if result.stderr:
+                    current_app.logger.error(f"Sitemap import errors: {result.stderr}")
+            except Exception as e:
+                current_app.logger.error(f"Sitemap import error: {str(e)}")
+
+        # Start background thread
+        thread = threading.Thread(target=run_import)
+        thread.daemon = True
+        thread.start()
+
+        return jsonify({
+            'success': True,
+            'message': 'Sitemap import started in background',
+            'test_mode': test_mode,
+            'batch_size': batch_size
+        })
+
+    except Exception as e:
+        current_app.logger.error(f"Sitemap import error: {str(e)}")
+        return jsonify({'error': f'Failed to start sitemap import: {str(e)}'}), 500
+
+@excel_bp.route('/import-sitemap-sync', methods=['POST'])
+def import_sitemap_sync():
+    """Import articles from PublicSource sitemaps (synchronous version)"""
+    try:
+        import requests
+        import xml.etree.ElementTree as ET
+
+        # Get parameters
+        data = request.get_json() or {}
+        test_mode = data.get('test_mode', False)
+        max_articles = data.get('max_articles', 10 if test_mode else None)
+
+        # Sitemap URLs
+        sitemap_urls = [
+            "https://www.publicsource.org/sitemap-1.xml",
+            "https://www.publicsource.org/sitemap-2.xml",
+            "https://www.publicsource.org/sitemap-3.xml",
+            "https://www.publicsource.org/sitemap-4.xml",
+            "https://www.publicsource.org/sitemap-5.xml",
+        ]
+
+        # Fetch URLs from sitemaps
+        all_urls = []
+        for sitemap_url in sitemap_urls:
+            try:
+                response = requests.get(sitemap_url, timeout=30)
+                response.raise_for_status()
+
+                root = ET.fromstring(response.content)
+                namespace = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+
+                for url_elem in root.findall('.//ns:url', namespace):
+                    loc_elem = url_elem.find('ns:loc', namespace)
+                    if loc_elem is not None and loc_elem.text:
+                        all_urls.append(loc_elem.text)
+
+            except Exception as e:
+                current_app.logger.error(f"Error fetching sitemap {sitemap_url}: {str(e)}")
+
+        # Remove duplicates
+        all_urls = list(dict.fromkeys(all_urls))
+
+        # Load existing stories
+        existing_stories = load_existing_stories()
+        existing_urls = {story.get('url', '') for story in existing_stories}
+
+        # Filter new URLs
+        new_urls = [url for url in all_urls if url not in existing_urls]
+
+        # Limit if requested
+        if max_articles:
+            new_urls = new_urls[:max_articles]
+
+        if not new_urls:
+            return jsonify({
+                'success': True,
+                'message': 'No new articles to import',
+                'total_urls': len(all_urls),
+                'existing_urls': len(existing_urls),
+                'new_urls': 0
+            })
+
+        # Create temporary CSV
+        temp_dir = Path('/tmp/sitemap_import')
+        temp_dir.mkdir(parents=True, exist_ok=True)
+
+        temp_csv = temp_dir / 'urls.csv'
+        df = pd.DataFrame({
+            'Story': new_urls,
+            'Umbrella': '',
+            'GeographicArea': '',
+            'Neighborhoods': '',
+            'SocialAbstract': ''
+        })
+        df.to_csv(temp_csv, index=False)
+
+        # Process through pipeline
+        neigh_path = Path(os.path.join(os.path.dirname(__file__), '..', '..', 'Pittsburgh neighborhoods.xlsx'))
+        muni_path = Path(os.path.join(os.path.dirname(__file__), '..', '..', 'Allegheny County Municipalities.xlsx'))
+        output_dir = temp_dir / 'output'
+        api_key = os.environ.get('OPENAI_API_KEY')
+
+        pipeline(temp_csv, neigh_path, muni_path, output_dir, api_key)
+
+        # Read results
+        result_file = output_dir / 'stories_classified_filled.csv'
+        if not result_file.exists():
+            return jsonify({'error': 'Processing failed, no result file generated'}), 500
+
+        df_results = pd.read_csv(result_file)
+
+        # Convert to frontend format and merge
+        new_stories = []
+        for _, row in df_results.iterrows():
+            # Helper function to clean nan values
+            def clean_value(val):
+                if pd.isna(val) or str(val).lower() == 'nan':
+                    return ''
+                return str(val)
+
+            # Get neighborhoods and clean
+            neighborhoods_str = clean_value(row.get('Neighborhoods', ''))
+            neighborhoods = [n.strip() for n in neighborhoods_str.split(', ') if n.strip() and n.strip().lower() != 'nan'] if neighborhoods_str else []
+
+            story = {
+                'id': len(existing_stories) + len(new_stories) + 1,
+                'url': clean_value(row.get('Story', '')),
+                'social_abstract': clean_value(row.get('SocialAbstract', '')),
+                'umbrella': clean_value(row.get('Umbrella', '')),
+                'geographic_area': clean_value(row.get('GeographicArea', '')),
+                'neighborhoods': neighborhoods,
+                'title': clean_value(row.get('Title', '')),
+                'author': clean_value(row.get('Author', '')),
+                'date': clean_value(row.get('Date', ''))
+            }
+            new_stories.append(story)
+
+        # Save
+        all_stories = existing_stories + new_stories
+        filters = update_filters(all_stories)
+        save_stories(all_stories, filters)
+
+        # Cleanup
+        shutil.rmtree(temp_dir, ignore_errors=True)
+
+        return jsonify({
+            'success': True,
+            'total_urls': len(all_urls),
+            'existing_urls': len(existing_urls),
+            'new_urls': len(new_urls),
+            'processed': len(new_stories),
+            'total_stories': len(all_stories)
+        })
+
+    except Exception as e:
+        current_app.logger.error(f"Sitemap import sync error: {str(e)}")
+        return jsonify({'error': f'Import failed: {str(e)}'}), 500
 

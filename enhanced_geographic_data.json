@@ -1,0 +1,4016 @@
+{
+  "pittsburgh_neighborhoods": {
+    "Allegheny Center": {
+      "region": "North Side",
+      "official_name": "Allegheny Center"
+    },
+    "Allegheny West": {
+      "region": "North Side",
+      "official_name": "Allegheny West"
+    },
+    "Allentown": {
+      "region": "South Pittsburgh",
+      "official_name": "Allentown"
+    },
+    "Arlington": {
+      "region": "South Pittsburgh",
+      "official_name": "Arlington"
+    },
+    "Arlington Heights": {
+      "region": "South Pittsburgh",
+      "official_name": "Arlington Heights"
+    },
+    "Banksville": {
+      "region": "South Pittsburgh",
+      "official_name": "Banksville"
+    },
+    "Bedford Dwellings": {
+      "region": "Hill District",
+      "official_name": "Bedford Dwellings"
+    },
+    "Beechview": {
+      "region": "South Pittsburgh",
+      "official_name": "Beechview"
+    },
+    "Beltzhoover": {
+      "region": "South Pittsburgh",
+      "official_name": "Beltzhoover"
+    },
+    "Bloomfield": {
+      "region": "Upper East End",
+      "official_name": "Bloomfield"
+    },
+    "Bluff": {
+      "region": "Hill District",
+      "official_name": "Bluff"
+    },
+    "Bon Air": {
+      "region": "South Pittsburgh",
+      "official_name": "Bon Air"
+    },
+    "Brighton Heights": {
+      "region": "North Side",
+      "official_name": "Brighton Heights"
+    },
+    "Brookline": {
+      "region": "South Pittsburgh",
+      "official_name": "Brookline"
+    },
+    "California-Kirkbride": {
+      "region": "North Side",
+      "official_name": "California-Kirkbride"
+    },
+    "Carrick": {
+      "region": "South Pittsburgh",
+      "official_name": "Carrick"
+    },
+    "Central Business District": {
+      "region": "Central Pittsburgh",
+      "official_name": "Golden Triangle"
+    },
+    "Central Lawrenceville": {
+      "region": "Central Pittsburgh",
+      "official_name": "Central Lawrenceville"
+    },
+    "Central Northside": {
+      "region": "North Side",
+      "official_name": "Central Northside"
+    },
+    "Central Oakland": {
+      "region": "Lower East End",
+      "official_name": "Central Oakland"
+    },
+    "Chartiers City": {
+      "region": "West End",
+      "official_name": "Chartiers City"
+    },
+    "Chateau": {
+      "region": "North Side",
+      "official_name": "Chateau"
+    },
+    "Crafton Heights": {
+      "region": "West End",
+      "official_name": "Crafton Heights"
+    },
+    "Crawford-Roberts": {
+      "region": "Hill District",
+      "official_name": "Crawford-Roberts"
+    },
+    "Duquesne Heights": {
+      "region": "South Pittsburgh",
+      "official_name": "Duquesne Heights"
+    },
+    "East Allegheny": {
+      "region": "North Side",
+      "official_name": "East Allegheny"
+    },
+    "East Carnegie": {
+      "region": "West End",
+      "official_name": "East Carnegie"
+    },
+    "East Hills": {
+      "region": "Upper East End",
+      "official_name": "East Hills"
+    },
+    "East Liberty": {
+      "region": "Upper East End",
+      "official_name": "East Liberty"
+    },
+    "Elliott": {
+      "region": "West End",
+      "official_name": "Elliott"
+    },
+    "Esplen": {
+      "region": "West End",
+      "official_name": "Esplen"
+    },
+    "Fairywood": {
+      "region": "West End",
+      "official_name": "Fairywood"
+    },
+    "Fineview": {
+      "region": "North Side",
+      "official_name": "Fineview"
+    },
+    "Friendship": {
+      "region": "Upper East End",
+      "official_name": "Friendship"
+    },
+    "Garfield": {
+      "region": "Upper East End",
+      "official_name": "Garfield"
+    },
+    "Glen Hazel": {
+      "region": "Lower East End",
+      "official_name": "Glen Hazel"
+    },
+    "Greenfield": {
+      "region": "Lower East End",
+      "official_name": "Greenfield"
+    },
+    "Hays": {
+      "region": "Southeast Pittsburgh ",
+      "official_name": "Hays"
+    },
+    "Hazelwood": {
+      "region": "Lower East End",
+      "official_name": "Hazelwood"
+    },
+    "Highland Park": {
+      "region": "Upper East End",
+      "official_name": "Highland Park"
+    },
+    "Homewood North": {
+      "region": "Upper East End",
+      "official_name": "Homewood North"
+    },
+    "Homewood South": {
+      "region": "Upper East End",
+      "official_name": "Homewood South"
+    },
+    "Homewood West": {
+      "region": "Upper East End",
+      "official_name": "Homewood West"
+    },
+    "Knoxville": {
+      "region": "South Pittsburgh",
+      "official_name": "Knoxville"
+    },
+    "Larimer": {
+      "region": "Upper East End",
+      "official_name": "Larimer"
+    },
+    "Lincoln Place": {
+      "region": "Southeast Pittsburgh ",
+      "official_name": "Lincoln Place"
+    },
+    "Lincoln-Lemington-Belmar": {
+      "region": "Upper East End",
+      "official_name": "Lincoln-Lemington-Belmar"
+    },
+    "Lower Lawrenceville": {
+      "region": "Central Pittsburgh",
+      "official_name": "Lower Lawrenceville"
+    },
+    "Manchester": {
+      "region": "North Side",
+      "official_name": "Manchester"
+    },
+    "Marshall-Shadeland": {
+      "region": "North Side",
+      "official_name": "Marshall-Shadeland"
+    },
+    "Middle Hill": {
+      "region": "Hill District",
+      "official_name": "Middle Hill"
+    },
+    "Morningside": {
+      "region": "Upper East End",
+      "official_name": "Morningside"
+    },
+    "Mount Washington": {
+      "region": "South Pittsburgh",
+      "official_name": "Mount Washington"
+    },
+    "Mt. Oliver": {
+      "region": "South Pittsburgh",
+      "official_name": "Mount Oliver"
+    },
+    "New Homestead": {
+      "region": "Southeast Pittsburgh ",
+      "official_name": "New Homestead"
+    },
+    "North Oakland": {
+      "region": "Lower East End",
+      "official_name": "North Oakland"
+    },
+    "North Shore": {
+      "region": "North Side",
+      "official_name": "North Shore"
+    },
+    "Northview Heights": {
+      "region": "North Side",
+      "official_name": "Northview Heights"
+    },
+    "Oakwood": {
+      "region": "West End",
+      "official_name": "Oakwood"
+    },
+    "Overbrook": {
+      "region": "South Pittsburgh",
+      "official_name": "Overbrook"
+    },
+    "Perry North": {
+      "region": "North Side",
+      "official_name": "Perry North"
+    },
+    "Perry South": {
+      "region": "North Side",
+      "official_name": "Perry South"
+    },
+    "Point Breeze": {
+      "region": "Lower East End",
+      "official_name": "Point Breeze"
+    },
+    "Point Breeze North": {
+      "region": "Lower East End",
+      "official_name": "Point Breeze North"
+    },
+    "Polish Hill": {
+      "region": "Central Pittsburgh",
+      "official_name": "Polish Hill"
+    },
+    "Regent Square": {
+      "region": "Lower East End",
+      "official_name": "Regent Square"
+    },
+    "Ridgemont": {
+      "region": "West End",
+      "official_name": "Ridgemont"
+    },
+    "Shadyside": {
+      "region": "Lower East End",
+      "official_name": "Shadyside"
+    },
+    "Sheraden": {
+      "region": "West End",
+      "official_name": "Sheraden"
+    },
+    "South Oakland": {
+      "region": "Lower East End",
+      "official_name": "South Oakland"
+    },
+    "South Shore": {
+      "region": "South Pittsburgh",
+      "official_name": "South Shore"
+    },
+    "South Side Flats": {
+      "region": "South Pittsburgh",
+      "official_name": "South Side Flats"
+    },
+    "South Side Slopes": {
+      "region": "South Pittsburgh",
+      "official_name": "South Side Slopes"
+    },
+    "Spring Garden": {
+      "region": "North Side",
+      "official_name": "Spring Garden"
+    },
+    "Spring Hill-City View": {
+      "region": "North Side",
+      "official_name": "Spring Hill-City View"
+    },
+    "Squirrel Hill North": {
+      "region": "Lower East End",
+      "official_name": "Squirrel Hill North"
+    },
+    "Squirrel Hill South": {
+      "region": "Lower East End",
+      "official_name": "Squirrel Hill South"
+    },
+    "St. Clair": {
+      "region": "South Pittsburgh",
+      "official_name": "Saint Clair"
+    },
+    "Stanton Heights": {
+      "region": "Upper East End",
+      "official_name": "Stanton Heights"
+    },
+    "Strip District": {
+      "region": "Central Pittsburgh",
+      "official_name": "Strip District"
+    },
+    "Summer Hill": {
+      "region": "North Side",
+      "official_name": "Summer Hill"
+    },
+    "Swisshelm Park": {
+      "region": "Lower East End",
+      "official_name": "Swisshelm Park"
+    },
+    "Terrace Village": {
+      "region": "Hill District",
+      "official_name": "Terrace Village"
+    },
+    "Troy Hill": {
+      "region": "North Side",
+      "official_name": "Troy Hill"
+    },
+    "Upper Hill": {
+      "region": "Hill District",
+      "official_name": "Upper Hill"
+    },
+    "Upper Lawrenceville": {
+      "region": "Central Pittsburgh",
+      "official_name": "Upper Lawrenceville"
+    },
+    "West End": {
+      "region": "West End",
+      "official_name": "West End"
+    },
+    "West Oakland": {
+      "region": "Lower East End",
+      "official_name": "West Oakland"
+    },
+    "Westwood": {
+      "region": "West End",
+      "official_name": "Westwood"
+    },
+    "Windgap": {
+      "region": "West End",
+      "official_name": "Windgap"
+    }
+  },
+  "pittsburgh_regions": {
+    "North Side": [
+      "Allegheny Center",
+      "Allegheny West",
+      "Brighton Heights",
+      "California-Kirkbride",
+      "Central Northside",
+      "Chateau",
+      "East Allegheny",
+      "Fineview",
+      "Manchester",
+      "Marshall-Shadeland",
+      "North Shore",
+      "Northview Heights",
+      "Perry North",
+      "Perry South",
+      "Spring Garden",
+      "Spring Hill-City View",
+      "Summer Hill",
+      "Troy Hill"
+    ],
+    "South Pittsburgh": [
+      "Allentown",
+      "Arlington",
+      "Arlington Heights",
+      "Banksville",
+      "Beechview",
+      "Beltzhoover",
+      "Bon Air",
+      "Brookline",
+      "Carrick",
+      "Duquesne Heights",
+      "Knoxville",
+      "Mount Washington",
+      "Mt. Oliver",
+      "Overbrook",
+      "South Shore",
+      "South Side Flats",
+      "South Side Slopes",
+      "St. Clair"
+    ],
+    "Hill District": [
+      "Bedford Dwellings",
+      "Bluff",
+      "Crawford-Roberts",
+      "Middle Hill",
+      "Terrace Village",
+      "Upper Hill"
+    ],
+    "Upper East End": [
+      "Bloomfield",
+      "East Hills",
+      "East Liberty",
+      "Friendship",
+      "Garfield",
+      "Highland Park",
+      "Homewood North",
+      "Homewood South",
+      "Homewood West",
+      "Larimer",
+      "Lincoln-Lemington-Belmar",
+      "Morningside",
+      "Stanton Heights"
+    ],
+    "Central Pittsburgh": [
+      "Central Business District",
+      "Central Lawrenceville",
+      "Lower Lawrenceville",
+      "Polish Hill",
+      "Strip District",
+      "Upper Lawrenceville"
+    ],
+    "Lower East End": [
+      "Central Oakland",
+      "Glen Hazel",
+      "Greenfield",
+      "Hazelwood",
+      "North Oakland",
+      "Point Breeze",
+      "Point Breeze North",
+      "Regent Square",
+      "Shadyside",
+      "South Oakland",
+      "Squirrel Hill North",
+      "Squirrel Hill South",
+      "Swisshelm Park",
+      "West Oakland"
+    ],
+    "West End": [
+      "Chartiers City",
+      "Crafton Heights",
+      "East Carnegie",
+      "Elliott",
+      "Esplen",
+      "Fairywood",
+      "Oakwood",
+      "Ridgemont",
+      "Sheraden",
+      "West End",
+      "Westwood",
+      "Windgap"
+    ],
+    "Southeast Pittsburgh ": [
+      "Hays",
+      "Lincoln Place",
+      "New Homestead"
+    ]
+  },
+  "allegheny_county_municipalities": {
+    "ALEPPO": {
+      "official_name": "ALEPPO",
+      "full_name": "ALEPPO TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "ALEPPO",
+        "ALEPPO TOWNSHIP"
+      ]
+    },
+    "ASPINWALL": {
+      "official_name": "ASPINWALL",
+      "full_name": "ASPINWALL BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "ASPINWALL",
+        "ASPINWALL BOROUGH"
+      ]
+    },
+    "AVALON": {
+      "official_name": "AVALON",
+      "full_name": "AVALON BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "AVALON",
+        "AVALON BOROUGH"
+      ]
+    },
+    "BALDWIN": {
+      "official_name": "BALDWIN",
+      "full_name": "BALDWIN TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "South Hills",
+      "aliases": [
+        "BALDWIN",
+        "BALDWIN TOWNSHIP"
+      ]
+    },
+    "BELL ACRES": {
+      "official_name": "BELL ACRES",
+      "full_name": "BELL ACRES BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "BELL ACRES",
+        "BELL ACRES BOROUGH"
+      ]
+    },
+    "BELLEVUE": {
+      "official_name": "BELLEVUE",
+      "full_name": "BELLEVUE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "BELLEVUE",
+        "BELLEVUE BOROUGH"
+      ]
+    },
+    "BEN AVON": {
+      "official_name": "BEN AVON",
+      "full_name": "BEN AVON BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "BEN AVON",
+        "BEN AVON BOROUGH"
+      ]
+    },
+    "BEN AVON HEIGHTS": {
+      "official_name": "BEN AVON HEIGHTS",
+      "full_name": "BEN AVON HEIGHTS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "BEN AVON HEIGHTS",
+        "BEN AVON HEIGHTS BOROUGH"
+      ]
+    },
+    "BETHEL PARK": {
+      "official_name": "BETHEL PARK",
+      "full_name": "BETHEL PARK MUNICIPALI",
+      "type": "MUNICIPALI",
+      "sub_region": "South Hills",
+      "aliases": [
+        "BETHEL PARK",
+        "BETHEL PARK MUNICIPALI"
+      ]
+    },
+    "BLAWNOX": {
+      "official_name": "BLAWNOX",
+      "full_name": "BLAWNOX BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "BLAWNOX",
+        "BLAWNOX BOROUGH"
+      ]
+    },
+    "BRACKENRIDGE": {
+      "official_name": "BRACKENRIDGE",
+      "full_name": "BRACKENRIDGE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "BRACKENRIDGE",
+        "BRACKENRIDGE BOROUGH"
+      ]
+    },
+    "BRADDOCK": {
+      "official_name": "BRADDOCK",
+      "full_name": "BRADDOCK BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "BRADDOCK",
+        "BRADDOCK BOROUGH"
+      ]
+    },
+    "BRADDOCK HILLS": {
+      "official_name": "BRADDOCK HILLS",
+      "full_name": "BRADDOCK HILLS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "BRADDOCK HILLS",
+        "BRADDOCK HILLS BOROUGH"
+      ]
+    },
+    "BRADFORD WOODS": {
+      "official_name": "BRADFORD WOODS",
+      "full_name": "BRADFORD WOODS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "BRADFORD WOODS",
+        "BRADFORD WOODS BOROUGH"
+      ]
+    },
+    "BRENTWOOD": {
+      "official_name": "BRENTWOOD",
+      "full_name": "BRENTWOOD BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "South Hills",
+      "aliases": [
+        "BRENTWOOD",
+        "BRENTWOOD BOROUGH"
+      ]
+    },
+    "BRIDGEVILLE": {
+      "official_name": "BRIDGEVILLE",
+      "full_name": "BRIDGEVILLE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "BRIDGEVILLE",
+        "BRIDGEVILLE BOROUGH"
+      ]
+    },
+    "CARNEGIE": {
+      "official_name": "CARNEGIE",
+      "full_name": "CARNEGIE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "CARNEGIE",
+        "CARNEGIE BOROUGH"
+      ]
+    },
+    "CASTLE SHANNON": {
+      "official_name": "CASTLE SHANNON",
+      "full_name": "CASTLE SHANNON BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "South Hills",
+      "aliases": [
+        "CASTLE SHANNON",
+        "CASTLE SHANNON BOROUGH"
+      ]
+    },
+    "CHALFANT": {
+      "official_name": "CHALFANT",
+      "full_name": "CHALFANT BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "CHALFANT",
+        "CHALFANT BOROUGH"
+      ]
+    },
+    "CHESWICK": {
+      "official_name": "CHESWICK",
+      "full_name": "CHESWICK BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "CHESWICK",
+        "CHESWICK BOROUGH"
+      ]
+    },
+    "CHURCHILL": {
+      "official_name": "CHURCHILL",
+      "full_name": "CHURCHILL BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "CHURCHILL",
+        "CHURCHILL BOROUGH"
+      ]
+    },
+    "CLAIRTON": {
+      "official_name": "CLAIRTON",
+      "full_name": "CLAIRTON CITY",
+      "type": "CITY",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "CLAIRTON",
+        "CLAIRTON CITY"
+      ]
+    },
+    "COLLIER": {
+      "official_name": "COLLIER",
+      "full_name": "COLLIER TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "COLLIER",
+        "COLLIER TOWNSHIP"
+      ]
+    },
+    "CORAOPOLIS": {
+      "official_name": "CORAOPOLIS",
+      "full_name": "CORAOPOLIS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Ohio River Valley",
+      "aliases": [
+        "CORAOPOLIS",
+        "CORAOPOLIS BOROUGH"
+      ]
+    },
+    "CRAFTON": {
+      "official_name": "CRAFTON",
+      "full_name": "CRAFTON BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "CRAFTON",
+        "CRAFTON BOROUGH"
+      ]
+    },
+    "CRESCENT": {
+      "official_name": "CRESCENT",
+      "full_name": "CRESCENT TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "CRESCENT",
+        "CRESCENT TOWNSHIP"
+      ]
+    },
+    "DORMONT": {
+      "official_name": "DORMONT",
+      "full_name": "DORMONT BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "South Hills",
+      "aliases": [
+        "DORMONT",
+        "DORMONT BOROUGH"
+      ]
+    },
+    "DRAVOSBURG": {
+      "official_name": "DRAVOSBURG",
+      "full_name": "DRAVOSBURG BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "DRAVOSBURG",
+        "DRAVOSBURG BOROUGH"
+      ]
+    },
+    "DUQUESNE": {
+      "official_name": "DUQUESNE",
+      "full_name": "DUQUESNE CITY",
+      "type": "CITY",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "DUQUESNE",
+        "DUQUESNE CITY"
+      ]
+    },
+    "EAST DEER": {
+      "official_name": "EAST DEER",
+      "full_name": "EAST DEER TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "EAST DEER",
+        "EAST DEER TOWNSHIP"
+      ]
+    },
+    "EAST MCKEESPORT": {
+      "official_name": "EAST MCKEESPORT",
+      "full_name": "EAST MCKEESPORT BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "EAST MCKEESPORT",
+        "EAST MCKEESPORT BOROUGH"
+      ]
+    },
+    "EAST PITTSBURGH": {
+      "official_name": "EAST PITTSBURGH",
+      "full_name": "EAST PITTSBURGH BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "EAST PITTSBURGH",
+        "EAST PITTSBURGH BOROUGH"
+      ]
+    },
+    "EDGEWOOD": {
+      "official_name": "EDGEWOOD",
+      "full_name": "EDGEWOOD BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "EDGEWOOD",
+        "EDGEWOOD BOROUGH"
+      ]
+    },
+    "EDGEWORTH": {
+      "official_name": "EDGEWORTH",
+      "full_name": "EDGEWORTH BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "EDGEWORTH",
+        "EDGEWORTH BOROUGH"
+      ]
+    },
+    "ELIZABETH": {
+      "official_name": "ELIZABETH",
+      "full_name": "ELIZABETH TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "ELIZABETH",
+        "ELIZABETH TOWNSHIP"
+      ]
+    },
+    "EMSWORTH": {
+      "official_name": "EMSWORTH",
+      "full_name": "EMSWORTH BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "EMSWORTH",
+        "EMSWORTH BOROUGH"
+      ]
+    },
+    "ETNA": {
+      "official_name": "ETNA",
+      "full_name": "ETNA BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "ETNA",
+        "ETNA BOROUGH"
+      ]
+    },
+    "FAWN": {
+      "official_name": "FAWN",
+      "full_name": "FAWN TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "FAWN",
+        "FAWN TOWNSHIP"
+      ]
+    },
+    "FINDLAY": {
+      "official_name": "FINDLAY",
+      "full_name": "FINDLAY TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "FINDLAY",
+        "FINDLAY TOWNSHIP"
+      ]
+    },
+    "FOREST HILLS": {
+      "official_name": "FOREST HILLS",
+      "full_name": "FOREST HILLS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "FOREST HILLS",
+        "FOREST HILLS BOROUGH"
+      ]
+    },
+    "FORWARD": {
+      "official_name": "FORWARD",
+      "full_name": "FORWARD TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "FORWARD",
+        "FORWARD TOWNSHIP"
+      ]
+    },
+    "FOX CHAPEL": {
+      "official_name": "FOX CHAPEL",
+      "full_name": "FOX CHAPEL BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "FOX CHAPEL",
+        "FOX CHAPEL BOROUGH"
+      ]
+    },
+    "FRANKLIN PARK": {
+      "official_name": "FRANKLIN PARK",
+      "full_name": "FRANKLIN PARK BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "FRANKLIN PARK",
+        "FRANKLIN PARK BOROUGH"
+      ]
+    },
+    "FRAZER": {
+      "official_name": "FRAZER",
+      "full_name": "FRAZER TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "FRAZER",
+        "FRAZER TOWNSHIP"
+      ]
+    },
+    "GLASSPORT": {
+      "official_name": "GLASSPORT",
+      "full_name": "GLASSPORT BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "GLASSPORT",
+        "GLASSPORT BOROUGH"
+      ]
+    },
+    "GLEN OSBORNE": {
+      "official_name": "GLEN OSBORNE",
+      "full_name": "GLEN OSBORNE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "GLEN OSBORNE",
+        "GLEN OSBORNE BOROUGH"
+      ]
+    },
+    "GLENFIELD": {
+      "official_name": "GLENFIELD",
+      "full_name": "GLENFIELD BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "GLENFIELD",
+        "GLENFIELD BOROUGH"
+      ]
+    },
+    "GREEN TREE": {
+      "official_name": "GREEN TREE",
+      "full_name": "GREEN TREE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "GREEN TREE",
+        "GREEN TREE BOROUGH"
+      ]
+    },
+    "HAMPTON": {
+      "official_name": "HAMPTON",
+      "full_name": "HAMPTON TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "HAMPTON",
+        "HAMPTON TOWNSHIP"
+      ]
+    },
+    "HARMAR": {
+      "official_name": "HARMAR",
+      "full_name": "HARMAR TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "HARMAR",
+        "HARMAR TOWNSHIP"
+      ]
+    },
+    "HARRISON": {
+      "official_name": "HARRISON",
+      "full_name": "HARRISON TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "HARRISON",
+        "HARRISON TOWNSHIP"
+      ]
+    },
+    "HAYSVILLE": {
+      "official_name": "HAYSVILLE",
+      "full_name": "HAYSVILLE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "HAYSVILLE",
+        "HAYSVILLE BOROUGH"
+      ]
+    },
+    "HEIDELBERG": {
+      "official_name": "HEIDELBERG",
+      "full_name": "HEIDELBERG BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "HEIDELBERG",
+        "HEIDELBERG BOROUGH"
+      ]
+    },
+    "HOMESTEAD": {
+      "official_name": "HOMESTEAD",
+      "full_name": "HOMESTEAD BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "HOMESTEAD",
+        "HOMESTEAD BOROUGH"
+      ]
+    },
+    "INDIANA": {
+      "official_name": "INDIANA",
+      "full_name": "INDIANA TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "INDIANA",
+        "INDIANA TOWNSHIP"
+      ]
+    },
+    "INGRAM": {
+      "official_name": "INGRAM",
+      "full_name": "INGRAM BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "INGRAM",
+        "INGRAM BOROUGH"
+      ]
+    },
+    "JEFFERSON HILLS": {
+      "official_name": "JEFFERSON HILLS",
+      "full_name": "JEFFERSON HILLS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "South Hills",
+      "aliases": [
+        "JEFFERSON HILLS",
+        "JEFFERSON HILLS BOROUGH"
+      ]
+    },
+    "KENNEDY": {
+      "official_name": "KENNEDY",
+      "full_name": "KENNEDY TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "KENNEDY",
+        "KENNEDY TOWNSHIP"
+      ]
+    },
+    "KILBUCK": {
+      "official_name": "KILBUCK",
+      "full_name": "KILBUCK TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "KILBUCK",
+        "KILBUCK TOWNSHIP"
+      ]
+    },
+    "LEET": {
+      "official_name": "LEET",
+      "full_name": "LEET TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "LEET",
+        "LEET TOWNSHIP"
+      ]
+    },
+    "LEETSDALE": {
+      "official_name": "LEETSDALE",
+      "full_name": "LEETSDALE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "LEETSDALE",
+        "LEETSDALE BOROUGH"
+      ]
+    },
+    "LIBERTY": {
+      "official_name": "LIBERTY",
+      "full_name": "LIBERTY BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "LIBERTY",
+        "LIBERTY BOROUGH"
+      ]
+    },
+    "LINCOLN": {
+      "official_name": "LINCOLN",
+      "full_name": "LINCOLN BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "LINCOLN",
+        "LINCOLN BOROUGH"
+      ]
+    },
+    "MARSHALL": {
+      "official_name": "MARSHALL",
+      "full_name": "MARSHALL TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "MARSHALL",
+        "MARSHALL TOWNSHIP"
+      ]
+    },
+    "MCCANDLESS": {
+      "official_name": "MCCANDLESS",
+      "full_name": "MCCANDLESS TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "MCCANDLESS",
+        "MCCANDLESS TOWNSHIP"
+      ]
+    },
+    "MCDONALD": {
+      "official_name": "MCDONALD",
+      "full_name": "MCDONALD BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "MCDONALD",
+        "MCDONALD BOROUGH"
+      ]
+    },
+    "MCKEES ROCKS": {
+      "official_name": "MCKEES ROCKS",
+      "full_name": "MCKEES ROCKS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Ohio River Valley",
+      "aliases": [
+        "MCKEES ROCKS",
+        "MCKEES ROCKS BOROUGH"
+      ]
+    },
+    "MCKEESPORT": {
+      "official_name": "MCKEESPORT",
+      "full_name": "MCKEESPORT CITY",
+      "type": "CITY",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "MCKEESPORT",
+        "MCKEESPORT CITY"
+      ]
+    },
+    "MILLVALE": {
+      "official_name": "MILLVALE",
+      "full_name": "MILLVALE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "MILLVALE",
+        "MILLVALE BOROUGH"
+      ]
+    },
+    "MONROEVILLE": {
+      "official_name": "MONROEVILLE",
+      "full_name": "MONROEVILLE MUNICIPALI",
+      "type": "MUNICIPALI",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "MONROEVILLE",
+        "MONROEVILLE MUNICIPALI"
+      ]
+    },
+    "MOON": {
+      "official_name": "MOON",
+      "full_name": "MOON TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "MOON",
+        "MOON TOWNSHIP"
+      ]
+    },
+    "MOUNT LEBANON": {
+      "official_name": "MOUNT LEBANON",
+      "full_name": "MOUNT LEBANON TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "South Hills",
+      "aliases": [
+        "MOUNT LEBANON",
+        "MOUNT LEBANON TOWNSHIP"
+      ]
+    },
+    "MOUNT OLIVER": {
+      "official_name": "MOUNT OLIVER",
+      "full_name": "MOUNT OLIVER BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "South Pittsburgh",
+      "aliases": [
+        "MOUNT OLIVER",
+        "MOUNT OLIVER BOROUGH"
+      ]
+    },
+    "MUNHALL": {
+      "official_name": "MUNHALL",
+      "full_name": "MUNHALL BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "MUNHALL",
+        "MUNHALL BOROUGH"
+      ]
+    },
+    "NEVILLE": {
+      "official_name": "NEVILLE",
+      "full_name": "NEVILLE TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Ohio River Valley",
+      "aliases": [
+        "NEVILLE",
+        "NEVILLE TOWNSHIP"
+      ]
+    },
+    "NORTH BRADDOCK": {
+      "official_name": "NORTH BRADDOCK",
+      "full_name": "NORTH BRADDOCK BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "NORTH BRADDOCK",
+        "NORTH BRADDOCK BOROUGH"
+      ]
+    },
+    "NORTH FAYETTE": {
+      "official_name": "NORTH FAYETTE",
+      "full_name": "NORTH FAYETTE TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "NORTH FAYETTE",
+        "NORTH FAYETTE TOWNSHIP"
+      ]
+    },
+    "NORTH VERSAILLES": {
+      "official_name": "NORTH VERSAILLES",
+      "full_name": "NORTH VERSAILLES TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "NORTH VERSAILLES",
+        "NORTH VERSAILLES TOWNSHIP"
+      ]
+    },
+    "OAKDALE": {
+      "official_name": "OAKDALE",
+      "full_name": "OAKDALE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "OAKDALE",
+        "OAKDALE BOROUGH"
+      ]
+    },
+    "OAKMONT": {
+      "official_name": "OAKMONT",
+      "full_name": "OAKMONT BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "OAKMONT",
+        "OAKMONT BOROUGH"
+      ]
+    },
+    "O'HARA": {
+      "official_name": "O'HARA",
+      "full_name": "O'HARA TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "O'HARA",
+        "O'HARA TOWNSHIP"
+      ]
+    },
+    "OHIO": {
+      "official_name": "OHIO",
+      "full_name": "OHIO TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "OHIO",
+        "OHIO TOWNSHIP"
+      ]
+    },
+    "PENN HILLS": {
+      "official_name": "PENN HILLS",
+      "full_name": "PENN HILLS MUNICIPALI",
+      "type": "MUNICIPALI",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "PENN HILLS",
+        "PENN HILLS MUNICIPALI"
+      ]
+    },
+    "PENNSBURY VILLAGE": {
+      "official_name": "PENNSBURY VILLAGE",
+      "full_name": "PENNSBURY VILLAGE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "PENNSBURY VILLAGE",
+        "PENNSBURY VILLAGE BOROUGH"
+      ]
+    },
+    "PINE": {
+      "official_name": "PINE",
+      "full_name": "PINE TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "PINE",
+        "PINE TOWNSHIP"
+      ]
+    },
+    "PITCAIRN": {
+      "official_name": "PITCAIRN",
+      "full_name": "PITCAIRN BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "PITCAIRN",
+        "PITCAIRN BOROUGH"
+      ]
+    },
+    "PITTSBURGH": {
+      "official_name": "PITTSBURGH",
+      "full_name": "PITTSBURGH CITY",
+      "type": "CITY",
+      "sub_region": "Pittsburgh",
+      "aliases": [
+        "PITTSBURGH",
+        "PITTSBURGH CITY"
+      ]
+    },
+    "PLEASANT HILLS": {
+      "official_name": "PLEASANT HILLS",
+      "full_name": "PLEASANT HILLS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "South Hills",
+      "aliases": [
+        "PLEASANT HILLS",
+        "PLEASANT HILLS BOROUGH"
+      ]
+    },
+    "PLUM": {
+      "official_name": "PLUM",
+      "full_name": "PLUM BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "PLUM",
+        "PLUM BOROUGH"
+      ]
+    },
+    "PORT VUE": {
+      "official_name": "PORT VUE",
+      "full_name": "PORT VUE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "PORT VUE",
+        "PORT VUE BOROUGH"
+      ]
+    },
+    "RANKIN": {
+      "official_name": "RANKIN",
+      "full_name": "RANKIN BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "RANKIN",
+        "RANKIN BOROUGH"
+      ]
+    },
+    "RESERVE": {
+      "official_name": "RESERVE",
+      "full_name": "RESERVE TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "RESERVE",
+        "RESERVE TOWNSHIP"
+      ]
+    },
+    "RICHLAND": {
+      "official_name": "RICHLAND",
+      "full_name": "RICHLAND TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "RICHLAND",
+        "RICHLAND TOWNSHIP"
+      ]
+    },
+    "ROBINSON": {
+      "official_name": "ROBINSON",
+      "full_name": "ROBINSON TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "ROBINSON",
+        "ROBINSON TOWNSHIP"
+      ]
+    },
+    "ROSS": {
+      "official_name": "ROSS",
+      "full_name": "ROSS TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "ROSS",
+        "ROSS TOWNSHIP"
+      ]
+    },
+    "ROSSLYN FARMS": {
+      "official_name": "ROSSLYN FARMS",
+      "full_name": "ROSSLYN FARMS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "ROSSLYN FARMS",
+        "ROSSLYN FARMS BOROUGH"
+      ]
+    },
+    "SCOTT": {
+      "official_name": "SCOTT",
+      "full_name": "SCOTT TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "SCOTT",
+        "SCOTT TOWNSHIP"
+      ]
+    },
+    "SEWICKLEY": {
+      "official_name": "SEWICKLEY",
+      "full_name": "SEWICKLEY BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "SEWICKLEY",
+        "SEWICKLEY BOROUGH"
+      ]
+    },
+    "SEWICKLEY HEIGHTS": {
+      "official_name": "SEWICKLEY HEIGHTS",
+      "full_name": "SEWICKLEY HEIGHTS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "SEWICKLEY HEIGHTS",
+        "SEWICKLEY HEIGHTS BOROUGH"
+      ]
+    },
+    "SEWICKLEY HILLS": {
+      "official_name": "SEWICKLEY HILLS",
+      "full_name": "SEWICKLEY HILLS BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Northwest suburbs",
+      "aliases": [
+        "SEWICKLEY HILLS",
+        "SEWICKLEY HILLS BOROUGH"
+      ]
+    },
+    "SHALER": {
+      "official_name": "SHALER",
+      "full_name": "SHALER TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "SHALER",
+        "SHALER TOWNSHIP"
+      ]
+    },
+    "SHARPSBURG": {
+      "official_name": "SHARPSBURG",
+      "full_name": "SHARPSBURG BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "SHARPSBURG",
+        "SHARPSBURG BOROUGH"
+      ]
+    },
+    "SOUTH FAYETTE": {
+      "official_name": "SOUTH FAYETTE",
+      "full_name": "SOUTH FAYETTE TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "SOUTH FAYETTE",
+        "SOUTH FAYETTE TOWNSHIP"
+      ]
+    },
+    "SOUTH PARK": {
+      "official_name": "SOUTH PARK",
+      "full_name": "SOUTH PARK TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "South Hills",
+      "aliases": [
+        "SOUTH PARK",
+        "SOUTH PARK TOWNSHIP"
+      ]
+    },
+    "SOUTH VERSAILLES": {
+      "official_name": "SOUTH VERSAILLES",
+      "full_name": "SOUTH VERSAILLES TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "SOUTH VERSAILLES",
+        "SOUTH VERSAILLES TOWNSHIP"
+      ]
+    },
+    "SPRINGDALE": {
+      "official_name": "SPRINGDALE",
+      "full_name": "SPRINGDALE TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "SPRINGDALE",
+        "SPRINGDALE TOWNSHIP"
+      ]
+    },
+    "STOWE": {
+      "official_name": "STOWE",
+      "full_name": "STOWE TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Ohio River Valley",
+      "aliases": [
+        "STOWE",
+        "STOWE TOWNSHIP"
+      ]
+    },
+    "SWISSVALE": {
+      "official_name": "SWISSVALE",
+      "full_name": "SWISSVALE BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "SWISSVALE",
+        "SWISSVALE BOROUGH"
+      ]
+    },
+    "TARENTUM": {
+      "official_name": "TARENTUM",
+      "full_name": "TARENTUM BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Alle-Kiski Valley",
+      "aliases": [
+        "TARENTUM",
+        "TARENTUM BOROUGH"
+      ]
+    },
+    "THORNBURG": {
+      "official_name": "THORNBURG",
+      "full_name": "THORNBURG BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "West suburbs",
+      "aliases": [
+        "THORNBURG",
+        "THORNBURG BOROUGH"
+      ]
+    },
+    "TRAFFORD": {
+      "official_name": "TRAFFORD",
+      "full_name": "TRAFFORD BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "TRAFFORD",
+        "TRAFFORD BOROUGH"
+      ]
+    },
+    "TURTLE CREEK": {
+      "official_name": "TURTLE CREEK",
+      "full_name": "TURTLE CREEK BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "TURTLE CREEK",
+        "TURTLE CREEK BOROUGH"
+      ]
+    },
+    "UPPER ST. CLAIR": {
+      "official_name": "UPPER ST. CLAIR",
+      "full_name": "UPPER ST. CLAIR MUNICIPALI",
+      "type": "MUNICIPALI",
+      "sub_region": "South Hills",
+      "aliases": [
+        "UPPER ST. CLAIR",
+        "UPPER ST. CLAIR MUNICIPALI"
+      ]
+    },
+    "VERONA": {
+      "official_name": "VERONA",
+      "full_name": "VERONA BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "VERONA",
+        "VERONA BOROUGH"
+      ]
+    },
+    "VERSAILLES": {
+      "official_name": "VERSAILLES",
+      "full_name": "VERSAILLES BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "VERSAILLES",
+        "VERSAILLES BOROUGH"
+      ]
+    },
+    "WALL": {
+      "official_name": "WALL",
+      "full_name": "WALL BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WALL",
+        "WALL BOROUGH"
+      ]
+    },
+    "WEST DEER": {
+      "official_name": "WEST DEER",
+      "full_name": "WEST DEER TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "North Hills",
+      "aliases": [
+        "WEST DEER",
+        "WEST DEER TOWNSHIP"
+      ]
+    },
+    "WEST ELIZABETH": {
+      "official_name": "WEST ELIZABETH",
+      "full_name": "WEST ELIZABETH BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WEST ELIZABETH",
+        "WEST ELIZABETH BOROUGH"
+      ]
+    },
+    "WEST HOMESTEAD": {
+      "official_name": "WEST HOMESTEAD",
+      "full_name": "WEST HOMESTEAD BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WEST HOMESTEAD",
+        "WEST HOMESTEAD BOROUGH"
+      ]
+    },
+    "WEST MIFFLIN": {
+      "official_name": "WEST MIFFLIN",
+      "full_name": "WEST MIFFLIN BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WEST MIFFLIN",
+        "WEST MIFFLIN BOROUGH"
+      ]
+    },
+    "WEST VIEW": {
+      "official_name": "WEST VIEW",
+      "full_name": "WEST VIEW BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "North Hills",
+      "aliases": [
+        "WEST VIEW",
+        "WEST VIEW BOROUGH"
+      ]
+    },
+    "WHITAKER": {
+      "official_name": "WHITAKER",
+      "full_name": "WHITAKER BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WHITAKER",
+        "WHITAKER BOROUGH"
+      ]
+    },
+    "WHITE OAK": {
+      "official_name": "WHITE OAK",
+      "full_name": "WHITE OAK BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WHITE OAK",
+        "WHITE OAK BOROUGH"
+      ]
+    },
+    "WHITEHALL": {
+      "official_name": "WHITEHALL",
+      "full_name": "WHITEHALL BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "South Hills",
+      "aliases": [
+        "WHITEHALL",
+        "WHITEHALL BOROUGH"
+      ]
+    },
+    "WILKINS": {
+      "official_name": "WILKINS",
+      "full_name": "WILKINS TOWNSHIP",
+      "type": "TOWNSHIP",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WILKINS",
+        "WILKINS TOWNSHIP"
+      ]
+    },
+    "WILKINSBURG": {
+      "official_name": "WILKINSBURG",
+      "full_name": "WILKINSBURG BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "East suburbs",
+      "aliases": [
+        "WILKINSBURG",
+        "WILKINSBURG BOROUGH"
+      ]
+    },
+    "WILMERDING": {
+      "official_name": "WILMERDING",
+      "full_name": "WILMERDING BOROUGH",
+      "type": "BOROUGH",
+      "sub_region": "Mon Valley",
+      "aliases": [
+        "WILMERDING",
+        "WILMERDING BOROUGH"
+      ]
+    }
+  },
+  "allegheny_county_sub_regions": {
+    "Northwest suburbs": [
+      "ALEPPO",
+      "AVALON",
+      "BELL ACRES",
+      "BELLEVUE",
+      "BEN AVON",
+      "BEN AVON HEIGHTS",
+      "EDGEWORTH",
+      "EMSWORTH",
+      "GLEN OSBORNE",
+      "GLENFIELD",
+      "HAYSVILLE",
+      "KILBUCK",
+      "LEET",
+      "LEETSDALE",
+      "OHIO",
+      "SEWICKLEY",
+      "SEWICKLEY HEIGHTS",
+      "SEWICKLEY HILLS"
+    ],
+    "North Hills": [
+      "ASPINWALL",
+      "BLAWNOX",
+      "BRADFORD WOODS",
+      "ETNA",
+      "FOX CHAPEL",
+      "FRANKLIN PARK",
+      "HAMPTON",
+      "INDIANA",
+      "MARSHALL",
+      "MCCANDLESS",
+      "MILLVALE",
+      "O'HARA",
+      "PINE",
+      "RESERVE",
+      "RICHLAND",
+      "ROSS",
+      "SHALER",
+      "SHARPSBURG",
+      "WEST DEER",
+      "WEST VIEW"
+    ],
+    "South Hills": [
+      "BALDWIN",
+      "BALDWIN",
+      "BETHEL PARK",
+      "BRENTWOOD",
+      "CASTLE SHANNON",
+      "DORMONT",
+      "JEFFERSON HILLS",
+      "MOUNT LEBANON",
+      "PLEASANT HILLS",
+      "SOUTH PARK",
+      "UPPER ST. CLAIR",
+      "WHITEHALL"
+    ],
+    "Alle-Kiski Valley": [
+      "BRACKENRIDGE",
+      "CHESWICK",
+      "EAST DEER",
+      "FAWN",
+      "FRAZER",
+      "HARMAR",
+      "HARRISON",
+      "SPRINGDALE",
+      "SPRINGDALE",
+      "TARENTUM"
+    ],
+    "Mon Valley": [
+      "BRADDOCK",
+      "BRADDOCK HILLS",
+      "CHALFANT",
+      "CHURCHILL",
+      "CLAIRTON",
+      "DRAVOSBURG",
+      "DUQUESNE",
+      "EAST MCKEESPORT",
+      "EAST PITTSBURGH",
+      "ELIZABETH",
+      "ELIZABETH",
+      "FOREST HILLS",
+      "FORWARD",
+      "GLASSPORT",
+      "HOMESTEAD",
+      "LIBERTY",
+      "LINCOLN",
+      "MCKEESPORT",
+      "MUNHALL",
+      "NORTH BRADDOCK",
+      "NORTH VERSAILLES",
+      "PITCAIRN",
+      "PORT VUE",
+      "RANKIN",
+      "SOUTH VERSAILLES",
+      "SWISSVALE",
+      "TURTLE CREEK",
+      "VERSAILLES",
+      "WALL",
+      "WEST ELIZABETH",
+      "WEST HOMESTEAD",
+      "WEST MIFFLIN",
+      "WHITAKER",
+      "WHITE OAK",
+      "WILKINS",
+      "WILMERDING"
+    ],
+    "West suburbs": [
+      "BRIDGEVILLE",
+      "CARNEGIE",
+      "COLLIER",
+      "CRAFTON",
+      "CRESCENT",
+      "FINDLAY",
+      "GREEN TREE",
+      "HEIDELBERG",
+      "INGRAM",
+      "KENNEDY",
+      "MCDONALD",
+      "MOON",
+      "NORTH FAYETTE",
+      "OAKDALE",
+      "PENNSBURY VILLAGE",
+      "ROBINSON",
+      "ROSSLYN FARMS",
+      "SCOTT",
+      "SOUTH FAYETTE",
+      "THORNBURG"
+    ],
+    "Ohio River Valley": [
+      "CORAOPOLIS",
+      "MCKEES ROCKS",
+      "NEVILLE",
+      "STOWE"
+    ],
+    "East suburbs": [
+      "EDGEWOOD",
+      "MONROEVILLE",
+      "OAKMONT",
+      "PENN HILLS",
+      "PLUM",
+      "TRAFFORD",
+      "VERONA",
+      "WILKINSBURG"
+    ],
+    "South Pittsburgh": [
+      "MOUNT OLIVER"
+    ],
+    "Pittsburgh": [
+      "PITTSBURGH"
+    ]
+  },
+  "reviewed_neighborhood_data": {
+    "North Side": {
+      "sheet_data": [
+        {
+          "Article": "https://www.publicsource.org/community-garden-pittsburgh-manchester-north-side-affordable-housing/",
+          "Pub Date": "2024-11-04T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Manchester",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/public-service-guide-pittsburgh-activities-destress-stress-relief/",
+          "Pub Date": "2024-10-31T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "Randyland",
+          "Notes": "Not about the North Side, but features at least one location; This is the type of article I'd expect to appear on many community pages",
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-planning-commission-esplanade-chateau-manchester-development-piatt-ferris-wheel/",
+          "Pub Date": "2024-10-29T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Manchester; North shore",
+          "Tags": "Esplanade; Pittsburgh City Planning Commission",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-public-schools-closures-parents-community-driven-alternative-plan/",
+          "Pub Date": "2024-10-22T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Manchester",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/allegheny-county-emergency-winter-shelter-second-avenue-commons-homelessness/",
+          "Pub Date": "2024-10-21T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Perry South",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/gender-affirming-care-pittsburgh-trump-harris-election-2024/",
+          "Pub Date": "2024-10-21T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": "Not about North Side but tons of North Side sources, groups referenced.",
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/esplanade-development-north-shore-pittsburgh-city-planning-commission/",
+          "Pub Date": "2024-10-15T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "North Shore, Manchester",
+          "Tags": "Esplanade",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-housing-authority-evictions-district-judge-jehosha-wright-rent-help/",
+          "Pub Date": "2024-10-01T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/affordable-housing-home-ownership-pittsburgh-land-bank-charles-street-perry-south-north-side/",
+          "Pub Date": "2024-09-13T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Perry South",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/pps-facilities-plan-manchester-capa-closures-magnets/",
+          "Pub Date": "2024-09-09T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Manchester",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-planning-commission-esplanade-chateau-manchester-development-piatt-ferris-wheel/",
+          "Pub Date": "2024-08-29T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Manchester",
+          "Tags": "Esplanade",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/pps-facilities-closures-magnets-education-pittsburgh/",
+          "Pub Date": "2024-08-13T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Manchester",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/immigrant-owned-restaurants-pittsburgh-allegheny-county/",
+          "Pub Date": "2024-08-05T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Central North Side",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/allegheny-county-jail-suboxone-continuity-care-release-unity-recovery/",
+          "Pub Date": "2024-07-11T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": "Not about the northside, but features one treatment center there",
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/east-ohio-street-restaurant-row-pittsburgh-northside-leadership-conference-details/",
+          "Pub Date": "2024-06-13T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "East Ohio Street",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/east-ohio-street-north-side-pittsburgh-restaurants-development-gentrification/",
+          "Pub Date": "2024-06-03T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "East Ohio Street",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/perry-northside-pps-arts-education-safety-attendance-community/",
+          "Pub Date": "2024-05-09T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "Perry High School",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-north-side-fineview-zoning-attached-housing-city-council/",
+          "Pub Date": "2024-04-17T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Fineview",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/temporary-managed-communities-tiny-houses-pittsburgh-city-planning-commission-homelessness-housing/",
+          "Pub Date": "2024-02-20T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/pps-magnet-schools-capa-perry-westinghouse-uneven-scales-policy/",
+          "Pub Date": "2023-12-04T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "Perry High School",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-affordable-housing-preservation-ura-urban-redevelopment-authority-northside/",
+          "Pub Date": "2023-11-09T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "Urban Redevelopment Authority; YMCA",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/allegheny-general-hospital-pittsburgh-northside-expansion-planning-commission-helipad/",
+          "Pub Date": "2023-06-13T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "Allegheny General Hospital; Pittsburgh City Planning Commission",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-planning-commission-allegheny-general-hospital-master-plan-construction/",
+          "Pub Date": "2023-05-30T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Central North Side",
+          "Tags": "Allegheny General Hospital",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-trans-rights-university-transgender-protests-photo-essay/",
+          "Pub Date": "2023-05-05T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": "Not about the North Side, but prominent pictures",
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/education-supports-hcef-homelessness-propel-schools-mckinney-vento-tutoring/",
+          "Pub Date": "2023-04-11T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": "Not about the North Side, featuring a North Side family",
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/homelessness-pittsburgh-allegheny-county-stockton-encampment-camp-aclu-community-justice/",
+          "Pub Date": "2023-01-20T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/east-allegheny-pittsburgh-airbnb-sunoco-shooting-gun-violence-solutions/",
+          "Pub Date": "2022-12-19T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "East Allegheny",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/pittsburgh-scholar-house-generational-wealth-higher-ed-diamonte-walker/",
+          "Pub Date": "2022-10-15T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/podcast/pittsburgh-podcast-teen-youth-violence-jaia-harrison-deahmi-mobley/",
+          "Pub Date": "2022-10-12T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/shotspotter-pittsburgh-police-gun-crime-violence-supreme-court/",
+          "Pub Date": "2022-08-30T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/mass-shooting-at-airbnb-party-leaves-two-teens-dead-upends-small-north-side-neighborhood/",
+          "Pub Date": "2022-04-18T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "Natasha - Autosave more recent than current version?",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/allegheny-property-assessments-pittsburgh-mattress-factory-harrison-smith-unbalanced/",
+          "Pub Date": "2022-02-16T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": "Mattress Factory",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "no mention of \"North Side\""
+        },
+        {
+          "Article": "https://www.publicsource.org/east-allegheny-shooting-airbnb-pittsburgh-northside-gun-violence-trauma-emergency-department/",
+          "Pub Date": "2022-01-30T00:00:00",
+          "Category": "North Side",
+          "Sub-category": null,
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/california-kirkbride-charles-street-leaders-try-to-keep-community-plans-afloat-ahead-of-a-north-side-development-storm/",
+          "Pub Date": "2021-03-24T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "California-Kirkbride; Perry South",
+          "Tags": null,
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        },
+        {
+          "Article": "https://www.publicsource.org/garden-theater-development-north-side-new-construction/",
+          "Pub Date": "2021-01-28T00:00:00",
+          "Category": "North Side",
+          "Sub-category": "Central North Side",
+          "Tags": "Garden Theater Block",
+          "Notes": null,
+          "Complete": "x",
+          "Linked North Side in text": "x"
+        }
+      ],
+      "neighborhood_count": 35,
+      "description": "Reviewed neighborhood data for North Side region"
+    },
+    "South Pittsburgh": {
+      "sheet_data": [
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Allentown",
+          "Unnamed: 2": "no stories associated",
+          "Unnamed: 3": "site:https://publicsource.org \"brookline\" after:2024-01-01",
+          "Unnamed: 4": "15210"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Arlington",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15210"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Arlington Heights",
+          "Unnamed: 2": "no stories associated",
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15210"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Banksville",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15216, 15220"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Beechview",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15216"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Beltzhoover",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15210"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Bon Air",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15210, 15226"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Brookline",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15226"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Carrick",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15210, 15227"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Duquesne Heights",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15211"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Knoxville",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15210"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Mount Washington",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15211"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Mt. Oliver",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15210"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Overbrook",
+          "Unnamed: 2": "no stories associated",
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15227, 15234, 15210"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "South Shore",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15203"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "South Side Flats",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15203"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "South Side Slopes",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15203"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "St. Clair",
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": "15206"
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": null,
+          "Unnamed: 2": null,
+          "Unnamed: 3": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "South Pittsburgh": "Article link",
+          "Unnamed: 2": "Neighborhood",
+          "Unnamed: 3": "Yes / No / Maybe",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/allegheny-county-child-care-children-department-pittsburgh-tuition-staff-innamorato/",
+          "Unnamed: 2": "Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/allegheny-county-pennsylvania-voter-guide-ballot-election-2024/",
+          "Unnamed: 2": "Carrick, South Side Slopes",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/allegheny-county-pittsburgh-regional-transit-prt-bus-discounted-fare/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/awaiting-election-results-pennsylvania-allegheny-county-voting-counting/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/beaver-county-law-enforcement-conduct-joint-ice-immigration-arrests-pennsylvania/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/beechview-development-community-atlas-development-broadway-housing/",
+          "Unnamed: 2": "Beechview, Brookline",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/behind-pittsburgh-public-source-mission-to-deepen-journalism-empathy/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Internal"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/casa-san-jose-expands-latino-services-new-beechview-building/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/climate-resilient-urban-planning-pittsburgh-duluth/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single reference, but some relevance"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/corey-oconnor-pittsburgh-mayor-race-2025-ed-gainey-challenger/",
+          "Unnamed: 2": "Brookline",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single reference, but feels relevant"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/deaf-community-pittsburgh-worship-faith-religion-asl-sign-language/",
+          "Unnamed: 2": "Mount Washington, South Side Flats",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/donnys-place-gay-bar-historic-designation-polish-hill-planning-commission/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Single reference, not relevant"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/east-palestine-ohio-train-crash-toxic-fumes-pollution-disaster-evacuation/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Hard coded reference to another story"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/eviction-landlord-tenant-records-public-access-pennsylvania-pittsburgh/",
+          "Unnamed: 2": "South Side Slopes",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/federal-funding-cuts-impact-pittsburgh-arts-tech-nonprofits/",
+          "Unnamed: 2": "Arlington, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/food-banks-insecurity-supply-halal-kosher-meat-pittsburgh-oakland/",
+          "Unnamed: 2": "Beechview, Mount Washington",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Hard coded reference to another story"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/fracking-waste-landfill-radioactive-westmoreland-rostraver-plum-reinjection-well/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Hard coded reference to another story"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/gene-walker-career-path-to-public-education/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single reference, relevant topic"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/greenwood-plan-pittsburgh-black-business-economy-downtown-entrepreneurship/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Hard coded link to Beechview Points of Pride"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/immigrant-owned-restaurants-pittsburgh-allegheny-county/",
+          "Unnamed: 2": "Beechview, South Side Flats",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/immigration-labor-shortage-workers-pittsburgh-allegheny/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/immigration-pittsburgh-economy-growth-population-entrepreneurship/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/labor-government-pittsburgh-gainey-oconnor-trump-development-zoning-boards/",
+          "Unnamed: 2": "Carrick",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Single reference, other focuses"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/landslides-pittsburgh-mount-washington-federal-funds-mayor-gainey-traffic/",
+          "Unnamed: 2": "Duquesne Heights, Mount Washington, South Side Slopes",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/local-volunteers-track-ice-movements-raids-across-pittsburgh-region/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/mosquito-spraying-disease-west-nile-insects-ecosystem-environment-conservation-allegheny-county-pittsburgh/",
+          "Unnamed: 2": "Arlington, Beltzhoover, South Side Slopes",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pitt-cmu-professors-tenured-faculty-adjuncts-cost-of-living-pittsburgh/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "University of TN, Knoxville"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pitt-universities-higher-education-tuition-funding-pittsburgh-allegheny-county-pennsylvania/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "University of TN, Knoxville"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-allegheny-county-top-photos-social-media-posts-from-2024/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Single reference, repeated photo"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-bull-riding-rodeos-ban-pa-legislation-preemption/",
+          "Unnamed: 2": "Duquesne Heights",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Single reference, portrait location"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-businesses-day-without-immigrants-protest-trump-deportation/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-catholic-diocese-welcomes-new-bishop/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-city-steps-health-issues-essay/",
+          "Unnamed: 2": "South Side Slopes",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-college-university-higher-ed-enrollment-finances-carlow-duquesne-chatham/",
+          "Unnamed: 2": "Beechview, Knoxville",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Hard coded link to Beechview Points of Pride + Tenessee Reference"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-congregaciones-iglesias-latino-inmigracion-represion-ice/",
+          "Unnamed: 2": "Beechview, Knoxville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-congregations-churches-latino-immigration-crackdown-ice/",
+          "Unnamed: 2": "Beechview, Knoxville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-debates-gainey-inclusionary-zoning-proposal/",
+          "Unnamed: 2": "Beechview, Knoxville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-downtown-smithfield-street-homeless-shelter-retail-strip-restoration-plans/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Single reference, feels like primarily a downtown story"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-east-palestine-colorado-environment-roots-history/",
+          "Unnamed: 2": "Carrick, Mt. Oliver",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-garbage-olympics-artist-finds-treasure-in-trash/",
+          "Unnamed: 2": "Arlington, South Side Slopes",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-lower-hill-music-venue-live-nation-development-parking-garage/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-mayor-primary-election-results-2025/",
+          "Unnamed: 2": "Brookline, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-mobile-vet-clinic-harp-ahn-health-resources/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "There's a hard-coded link to Beechview points of pride"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-north-side-fineview-zoning-attached-housing-city-council/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single reference, but relevant connection"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-pedestrians-cars-motorists-roads-safety-jaywalking/",
+          "Unnamed: 2": "Mount Washington, South Shore",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-penn-plaza-evictions-10-years-later-timeline/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single reference, but I think the connection is good to include"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-feasibility-report-closures-superintendent/",
+          "Unnamed: 2": "Brookline, Arlington, Banksville, Bon Air, Carrick, Knoxville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-school-suspensions-discipline-black-white-disparity-iep/",
+          "Unnamed: 2": "Brookline, Arlington, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-board-election-primary-candidates-districts-closures-consolidation/",
+          "Unnamed: 2": "Arlington, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-building-closure-information/",
+          "Unnamed: 2": "Brookline, Arlington, Banksville ",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-closures-parents-community-driven-alternative-plan/",
+          "Unnamed: 2": "Arlington, Banksville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-facilities-plans-feasibility-report-closures/",
+          "Unnamed: 2": "Brookline, Arlington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-pps-ell-english-language-learners/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-pps-salaries-teachers-staffing-wage-gaps/",
+          "Unnamed: 2": "Brookline, Arlington, Banksville, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-pps-uneven-scales-uprep-perry-enrollment-success/",
+          "Unnamed: 2": "Brookline, Arlington, Banksville, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-public-schools-teachers-salaries/",
+          "Unnamed: 2": "Brookline, Arlington, Banksville, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-queer-history-landmark-preservation-review-commission-lgbtq-activists/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Single reference, feels like primarily a Polish Hill story"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-rainfall-record-flooding-vignettes-allegheny-washington-counties/",
+          "Unnamed: 2": "South Side Flats",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single reference, but relevant"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-regional-transit-budget-plans-service-cuts-2026/",
+          "Unnamed: 2": "Brookline, Banksville, Carrick, Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-sight-surgery-healing-blindness-health/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-trans-teen-gender-care-disruption-upmc-policy-federal-impacts/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-transformation-forty-year-high-school-reunion-essay/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single Mt. Washington reference but ok to include"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pittsburgh-union-officials-echo-la-protests-against-ice/",
+          "Unnamed: 2": "Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Single Carrick reference, but relevant to the region"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-boost-summer-learning-loss-king-arlington-ela-math/",
+          "Unnamed: 2": "Arlington, St. Clair",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-closures-pittsburgh-west-side-history-sheraden-crafton-heights-elliott/",
+          "Unnamed: 2": "Arlington, Beechview, Beltzhoover, Bon Air, Carrick, Knoxville, Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-facilities-closures-magnets-education-pittsburgh/",
+          "Unnamed: 2": "Brookline, Arlington, Banksville, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-facilities-plan-manchester-capa-closures-magnets/",
+          "Unnamed: 2": "Beltzhoover",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Single reference, primarily a North Side story"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-facilities-utilization-plan-closures-magnets-ers/",
+          "Unnamed: 2": "Brookline, Arlington, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-pittsburgh-2025-budget-proposal-summer-programming-esl-staffing/",
+          "Unnamed: 2": "Arlington",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Don't see the reference. Where is Dilworth?"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-safety-schools-pittsburgh-violations-ai-cameras/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "Reference in single photo"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/pps-west-liberty-fulton-school-closures-facilities-utilization-fci/",
+          "Unnamed: 2": "Brookline, Arlington, Carrick",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/prt-pittsburgh-allegheny-county-bus-routes-redesign-feedback/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "One refence, but relevant"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/prt-pittsburgh-regional-transit-bus-route-cuts-funding-state-budget/",
+          "Unnamed: 2": "Brookline, Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/prt-pittsburgh-regional-transit-bus-service-cuts-fare-hikes-budget/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "One refence in photo caption"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/prt-pittsburgh-regional-transit-fiscal-cliff-2025/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Don't see the reference"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/public-service-guide-pittsburgh-activities-destress-stress-relief/",
+          "Unnamed: 2": "South Side Flats",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/publicsource-org-pps-school-closures-delayed-pittsburgh/",
+          "Unnamed: 2": "Brookline",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/republican-national-convention-rnc-election-denialism-delegates-pittsburgh-allegheny/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/talking-to-journalists-what-you-need-know-resource-reporters-immigrants-define-american/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "Internal"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/teacher-shortage-staffing-pittsburgh-emerging-educators-labor-work/",
+          "Unnamed: 2": "Banksville, Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Needs more sub-categories for other South neighborhoods based on locations of the schools"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/temporary-managed-communities-tiny-houses-pittsburgh-city-planning-commission-homelessness-housing/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "One reference, but revelvance is stronger"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/trump-budget-cuts-pittsburgh-allegheny-grants/",
+          "Unnamed: 2": "Mount Washington",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Reference in a single photo caption, but feels relevant"
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/trump-presidency-potential-changes-pittsburgh-immigration-abortion-environment-infrastructure/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "*",
+          "Unnamed: 4": "single mention"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/voluntarios-locales-rastrean-actividad-ice-pittsburgh/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": "Other Neighborhoods outside of SPGH? "
+        },
+        {
+          "Unnamed: 0": "0.0",
+          "South Pittsburgh": "https://www.publicsource.org/what-is-an-endowment-university-pitt-cmu-pittsburgh-how-do-endowments-work/",
+          "Unnamed: 2": "Knoxville",
+          "Unnamed: 3": "No",
+          "Unnamed: 4": "This is Knoxville, TN"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/white-poverty-black-pittsburgh-allegheny-county-research-disparities/",
+          "Unnamed: 2": "Carrick, Brookline, Knoxville",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "South Pittsburgh": "https://www.publicsource.org/zebra-swallowtail-butterfly-effect-pawpaw-trees-history-return-pittsburgh/",
+          "Unnamed: 2": "Beechview",
+          "Unnamed: 3": "x",
+          "Unnamed: 4": null
+        }
+      ],
+      "neighborhood_count": 107,
+      "description": "Reviewed neighborhood data for South Pittsburgh region"
+    },
+    "Lower East End": {
+      "sheet_data": [
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Central Oakland",
+          "Unnamed: 2": "15213",
+          "Stats:": "62 hit the mark",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Glen Hazel",
+          "Unnamed: 2": null,
+          "Stats:": "41 single mentions of which about 9 are still pretty strong relevance",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Greenfield",
+          "Unnamed: 2": null,
+          "Stats:": "Would also just want to go through Maddy's stories that may not always explicitly mention Oakland, Squirrel Hill but those that deal with Pitt, CMU and some others in that area should be marked for inclusion.",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Hazelwood",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "North Oakland",
+          "Unnamed: 2": null,
+          "Stats:": "total is 84 entries after culling and adding from higher ed work",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Point Breeze",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Point Breeze North",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Regent Square",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Shadyside",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "South Oakland",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Squirrel Hill North",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Squirrel Hill South",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Swisshelm Park",
+          "Unnamed: 2": "no stories associated",
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "West Oakland",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": null,
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Article link",
+          "Unnamed: 2": "Neighborhood",
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/affordable-housing-pittsburgh-allegheny-county-downtown-hacp-acha/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/ai-tech-defense-housing-pittsburgh-walnutcapital-eastliberty/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/allegheny-county-child-care-children-department-pittsburgh-tuition-staff-innamorato/",
+          "Unnamed: 2": "Point Breeze, Point Breeze North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/allegheny-county-child-care-crisis-executive-sara-innamorato-subsidized-affordable-pittsburgh/",
+          "Unnamed: 2": "Point Breeze, Point Breeze North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/allegheny-county-jail-suboxone-medication-opioid-use-disorder-assisted-treatment/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/allegheny-county-pennsylvania-voter-guide-ballot-election-2024/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/allegheny-county-senior-living-aging-activity-dance-bike-hike-pickleball/",
+          "Unnamed: 2": "Greenfield, Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/allegheny-general-hospital-renovation-seeks-shorter-er-wait-times/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/bakery-square-expansion-vote-pushed-back-again/",
+          "Unnamed: 2": "Hazelwood, Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/bakery-square-pittsburgh-east-liberty-walnut-capital-zoning-development/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/central-park-pittsburgh-west-oakland-gentrification/",
+          "Unnamed: 2": "West Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/cmu-carnegie-mellon-university-defense-department-military-research-ai-drone/",
+          "Unnamed: 2": "Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/conservatorship-case-north-side-east-hills-pittsburgh-rising-tide-partners-superior-court/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/conservatorship-pennsylvania-pittsburgh-nonprofits-superior-court-key-takeaways/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/dementia-caregivers-pittsburgh-university-essay-alzheimers-association/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/design-pittsburgh-future-architects-trust/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/esplanade-city-planning-commission-approval-manchester-chateau-ferris-wheel/",
+          "Unnamed: 2": "Central Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/food-banks-insecurity-supply-halal-kosher-meat-pittsburgh-oakland/",
+          "Unnamed: 2": "South Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/future-kings-mentoring-pittsburgh-youth-gun-violence-education-nonprofit/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/hazelwood-grocery-store-co-op-plan-food-desert/",
+          "Unnamed: 2": "Hazelwood, Point Breeze, Point Breeze North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/immigrant-owned-restaurants-pittsburgh-allegheny-county/",
+          "Unnamed: 2": "Shadyside, Squirrel Hill South",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/medical-bill-invoice-errors-reimbursement-letters-ceos-pittsburgh/",
+          "Unnamed: 2": "Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/more-pittsburgh-bridges-rated-poor-post-fern-hollow/",
+          "Unnamed: 2": "South Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/national-day-action-higher-education-university-pittsburgh-rally-academic-freedom/",
+          "Unnamed: 2": "Central Oakland, Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/oakland-mckee-place-redevelopment-zoning-apartments-affordable-housing-pittsburgh/",
+          "Unnamed: 2": "Central Oakland, Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/oakland-zoning-walnut-capital-apartments-pittsburgh-planning-commission/",
+          "Unnamed: 2": "Central Oakland, Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pedestrian-deaths-pitt-safety/",
+          "Unnamed: 2": "West Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pennsylvania-allegheny-pittsburgh-primary-results-2024-election/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pennsylvania-nonprofit-reading-intervention-tutoring-dyslexia-proficiency/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pitt-cmu-fossil-fuels-offshore-investments-transperancy-divestment/",
+          "Unnamed: 2": "Squirrel Hill North, Central Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pitt-student-enrollment-oakland-housing-challenges/",
+          "Unnamed: 2": "North Oakland, Central Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-allegheny-county-air-quality-lindy-paving-asphalt-permit-uptown/",
+          "Unnamed: 2": "South Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-city-planning-commission-bakery-square-expansion-hazelwood-green/",
+          "Unnamed: 2": "Hazelwood, Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-development-faces-uncertainty-in-growing-economic-turmoil/",
+          "Unnamed: 2": "Hazelwood, Shaydside",
+          "Stats:": "X",
+          "Unnamed: 4": "single mention but relevance is strong"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-election-reaction-donald-trump-kamala-harris-republican-democrat/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": "like with some others, single mention but in a compilation of voices"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-kinship-program-grandparents-raising-grandchildren-jada-house-international/",
+          "Unnamed: 2": "Glen Hazel, Hazelwood",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-mayor-primary-electoral-data-map/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but relevance is strong"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-mayoral-primary-2025-candidate-highlights-achievements-endorsements-corey-oconnor/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-native-american-indigneous-culture-history-art-identity/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-new-york-boomerang-mom-arts-culture-community/",
+          "Unnamed: 2": "Greenfield, Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-pedestrians-cars-motorists-roads-safety-jaywalking/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but relevance is strong"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-peru-artist-painter-rediscovering-roots-essay/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-public-feasibility-report-closures-superintendent/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but PPS relevance"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-public-schools-board-election-primary-candidates-districts-closures-consolidation/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but PPS relevance"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-public-schools-closures-parents-community-driven-alternative-plan/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but PPS relevance"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-public-schools-facilities-plans-feasibility-report-closures/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but PPS relevance"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-public-schools-pps-uneven-scales-uprep-perry-enrollment-success/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but PPS relevance"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-public-schools-teachers-salaries/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but PPS relevance"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-racially-restrictive-covenants-barring-black-buyers-suburbs-subdivisions-racism/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-rainfall-record-flooding-vignettes-allegheny-washington-counties/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-regional-transit-budget-plans-service-cuts-2026/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": "single mention but relevance is strong"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-responses-to-medicaid-cuts/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-ura-avenues-hope-ross-street-affordable-housing-homewood/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-water-sewer-floods-wet-weather-four-mile-run-greenfield-climate-change/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pps-facilities-closures-magnets-education-pittsburgh/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": "single mention but relevance is strong"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pps-facilities-utilization-plan-closures-magnets-ers/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": "single mention but relevance is strong"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/prt-pittsburgh-regional-transit-bus-route-cuts-funding-state-budget/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": "single mention but relevance is strong"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/public-service-guide-pittsburgh-activities-destress-stress-relief/",
+          "Unnamed: 2": "Point Breeze, Regent Square",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/research-funding-grant-nih-health-university-pittsburgh-pitt-trump/",
+          "Unnamed: 2": "South Oakland, Central Oakland, Squirrel Hill North, North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/richard-cyert-carnegie-mellon-university-president-trailblazer-fox-chapel-orphan-train/",
+          "Unnamed: 2": "Shadyside, Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/science-research-funding-trump-administration-protests-pitt-cmu-writers/",
+          "Unnamed: 2": "Central Oakland, Point Breeze",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/snap-cuts-affect-college-student-food-security/",
+          "Unnamed: 2": "Hazelwood, South Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/spotted-laternfly-invasive-science-citizens-environment-pittsburgh-pennsylvania/",
+          "Unnamed: 2": "Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/student-loan-debt-loan-repayment-pittsburgh-pennsylvania/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention but overall student related"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/the-glimpse-iftar-ramadan-pittsburgh-turkish-cultural-islam-muslim-breaking-fast-eid/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/trump-big-bill-medicaid-cuts-worry-pittsburgh-recipients/",
+          "Unnamed: 2": "Point Breeze North, Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/veterans-affairs-pittsburgh-health-care-system-staff-cuts-services-trump-musk/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/violence-prevention-symposium-highlights-pittsburgh-youth-voices/",
+          "Unnamed: 2": "West Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": "it is a single mention, but of a highlighted voice in the story"
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/westinghouse-winchester-thurston-students-build-accessibilty-tech-tools/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/zebra-swallowtail-butterfly-effect-pawpaw-trees-history-return-pittsburgh/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/zebra-swallowtail-butterfly-pittsburgh-pawpaw-diversity/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pitt-graduate-students-union-bid-united-steelworkers-2024/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/chatham-university-faculty-unionization-efforts-paused-nlrb-donald-trump/",
+          "Unnamed: 2": "Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pittsburgh-international-students-college-university-donald-trump-executive-order-fears/",
+          "Unnamed: 2": "North Oakland, Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/university-pittsburgh-internet-web-diversity-dei-removal-scrub-dear-colleague-letter-trump/",
+          "Unnamed: 2": "North Oakland, Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/pitt-cmu-carnegie-mellon-enrollment-race-conscious-affirmative-action/",
+          "Unnamed: 2": "North Oakland, Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/national-day-action-higher-education-university-pittsburgh-rally-academic-freedom/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/ncaa-settlement-pitt-student-athletes/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/college-athlete-pay-ncaa-settlement-nil-impact/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/trump-mccormick-visit-cmu-energy-innovation-summit-pittsburgh/",
+          "Unnamed: 2": "North Oakland, Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/cmu-students-create-new-fence-to-highlight-campus-free-speech/",
+          "Unnamed: 2": "Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/jpitt-palestine-club-can-resume-activities-judge-rules/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/historic-pittsburgh-university-academic-freedom-struggles/",
+          "Unnamed: 2": "North Oakland, Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": "1.0",
+          "Lower East End": "https://www.publicsource.org/trump-administration-higher-education-funding-orders-university-pittsburgh-pitt-cmu-timeline/",
+          "Unnamed: 2": "North Oakland, Squirrel Hill North",
+          "Stats:": "X",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": null,
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": null,
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "Pitched for lack of relevance despite mention:",
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": null,
+          "Unnamed: 2": null,
+          "Stats:": null,
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/allegheny-county-homelessness-shelter-stakes-winter-housing-timeline/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/allegheny-county-jail-medical-surgery-health-care-ahn-sara-innamorato/",
+          "Unnamed: 2": "South Oakland",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/allegheny-county-jail-suboxone-continuity-care-release-unity-recovery/",
+          "Unnamed: 2": "North Oakland",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/allegheny-county-officials-clear-air-quality-risks-after-clairton-explosion/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/allegheny-county-pittsburgh-regional-transit-prt-bus-discounted-fare/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/car-free-living-pittsburgh-prt-transit-buses-allegheny-county-cuts/",
+          "Unnamed: 2": "Shadyside, South Oakland, Squirrel Hill",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/corey-oconnor-pittsburgh-mayor-race-2025-ed-gainey-challenger/",
+          "Unnamed: 2": "Hazelwood, Point Breeze",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/donald-trump-white-house-return-pittsburgh-education-evironment-politics/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/ed-gainey-corey-oconnor-campaign-fundraising-pittsburgh-mayor-race-2025/",
+          "Unnamed: 2": "Hazelwood, Point Breeze",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/govpack_profiles/james-hayes/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/jewish-womens-foundation-pittsburgh-grandmothers-grandmas/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/maia-williams-reflects-on-career-moves-as-black-professional/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/mosquito-spraying-disease-west-nile-insects-ecosystem-environment-conservation-allegheny-county-pittsburgh/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-allegheny-county-top-photos-social-media-posts-from-2024/",
+          "Unnamed: 2": "South Oakland",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-bull-riding-rodeos-ban-pa-legislation-preemption/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-city-steps-health-issues-essay/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-debates-gainey-inclusionary-zoning-proposal/",
+          "Unnamed: 2": "Greenfield, Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-development-plans-gainey-administration-progress/",
+          "Unnamed: 2": "Greenfield",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-mayor-election-2025-affordable-housing-pittsburgh-mayor-ed-gainey-corey-oconnor/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-mayor-election-2025-oconnor-gainey-developers-walnut-capital/",
+          "Unnamed: 2": "Greenfield, Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-mayoral-election-2025-gainey-oconnor-upmc-pilot/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-nonprofit-pilot-peduto-gainey-oconnor-2025-election/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-mayoral-election-2025-gainey-oconnor-upmc-pilot/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": "photo locations only"
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-nonprofit-pilot-peduto-gainey-oconnor-2025-election/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-transit-prt-landlords-housing-assistance-inconvenience/",
+          "Unnamed: 2": "Point Breeze North, Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pittsburgh-water-utility-proposes-rate-increase-2026/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/place-based-healing-affinity-circles-mckees-rocks-pittsburgh-health/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pps-closures-pittsburgh-west-side-history-sheraden-crafton-heights-elliott/",
+          "Unnamed: 2": "Regent Square",
+          "Stats:": "*",
+          "Unnamed: 4": null
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/pps-pittsburgh-chronic-school-absenteeism-decreasing-attendance-improvements/",
+          "Unnamed: 2": "Squirrel Hill South",
+          "Stats:": "*",
+          "Unnamed: 4": "it's where something was announced but not central to story"
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/property-tax-reassessment-appeals-allegheny-county-assessments-innamorato-fitzgerald/",
+          "Unnamed: 2": "Point Breeze",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention"
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/racial-disparities-involuntary-mental-health-care/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": "single mention to hospital lead source was in"
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/winter-homeless-shelter-perry-south-pittsburgh-human-relations-concerns/",
+          "Unnamed: 2": "Shadyside",
+          "Stats:": "*",
+          "Unnamed: 4": "quote single mention, saying shelters aren't going to Shadyside"
+        },
+        {
+          "Unnamed: 0": null,
+          "Lower East End": "https://www.publicsource.org/work-pittsburgh-labor-unions-diversity-dei-carpenters-construct-funeral-directors-jobs/",
+          "Unnamed: 2": "Hazelwood",
+          "Stats:": "*",
+          "Unnamed: 4": "photo caption single mention, related visual of the topic of the story"
+        }
+      ],
+      "neighborhood_count": 137,
+      "description": "Reviewed neighborhood data for Lower East End region"
+    }
+  },
+  "geographic_hierarchy": {
+    "level_1": "Pittsburgh Neighborhoods",
+    "level_2": "Pittsburgh Regions",
+    "level_3": "Allegheny County Sub-Regions",
+    "level_4": "Allegheny County Municipalities"
+  },
+  "context_validation": {
+    "positive_keywords": [
+      "Pennsylvania",
+      "PA",
+      "Pittsburgh",
+      "Allegheny County",
+      "near Pittsburgh",
+      "Pittsburgh area",
+      "western Pennsylvania",
+      "southwestern PA",
+      "greater Pittsburgh"
+    ],
+    "negative_keywords": [
+      "Tennessee",
+      "TN",
+      "University of Tennessee",
+      "Knoxville TN",
+      "Texas",
+      "TX",
+      "California",
+      "CA",
+      "New York",
+      "NY",
+      "Florida",
+      "FL",
+      "Ohio",
+      "OH"
+    ],
+    "ambiguous_places": {
+      "Knoxville": {
+        "pennsylvania": "Knoxville, Pittsburgh neighborhood",
+        "tennessee": "Knoxville, Tennessee (EXCLUDE)",
+        "validation_required": true
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FileText, Home, Upload, Search, BarChart3, LogOut } from 'lucide-react';
+import { FileText, Home, Upload, Search, BarChart3, Brain, LogOut } from 'lucide-react';
 
 const NavigationHeader = ({ onLogout }) => {
   const location = useLocation();
@@ -9,7 +9,8 @@ const NavigationHeader = ({ onLogout }) => {
     { path: '/', icon: Home, label: 'Dashboard' },
     { path: '/upload', icon: Upload, label: 'Upload' },
     { path: '/keyword-search', icon: Search, label: 'Search' },
-    { path: '/stats', icon: BarChart3, label: 'Analytics' }
+    { path: '/stats', icon: BarChart3, label: 'Analytics' },
+    { path: '/ai-analytics', icon: Brain, label: 'AI Strategy' }
   ];
 
   return (

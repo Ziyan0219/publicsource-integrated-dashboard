@@ -3,6 +3,7 @@ import { Search, Filter, FileText, MapPin, Building, Home } from 'lucide-react';
 import StaticStoryCard from './StaticStoryCard';
 import StaticFilterPanel from './StaticFilterPanel';
 import UploadButton from './UploadButton';
+import SitemapImportButton from './SitemapImportButton';
 import PittsburghMap from './PittsburghMap';
 import NavigationHeader from './NavigationHeader';
 
@@ -106,11 +107,16 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
       {/* Main Content Container - Now takes full remaining height */}
       <div className="flex-1 overflow-auto">
         <div className="max-w-full px-4 sm:px-6 lg:px-8 xl:max-w-7xl 2xl:max-w-full mx-auto py-4 space-y-4">
-          {/* Upload Button - Moved to top of dashboard content */}
+          {/* Upload and Import Buttons */}
           <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
             <div className="flex justify-center">
               <UploadButton onUploadSuccess={handleUploadSuccess} />
             </div>
+          </div>
+
+          {/* Sitemap Import Button */}
+          <div className="animate-fade-in" style={{ animationDelay: '150ms' }}>
+            <SitemapImportButton onImportSuccess={handleUploadSuccess} />
           </div>
 
           {/* Pittsburgh Map */}

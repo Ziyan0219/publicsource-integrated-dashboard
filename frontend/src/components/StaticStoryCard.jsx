@@ -14,7 +14,19 @@ const StaticStoryCard = ({ story, onHover, onLeave }) => {
   const handleMouseEnter = () => {
     setIsHovered(true);
     const areas = parseGeographicAreas(story.geographic_area);
-    const neighborhoods = story.neighborhoods ? story.neighborhoods.split(/[,;/|]/).map(n => n.trim()).filter(n => n) : [];
+
+    // Handle neighborhoods - support both string and array formats
+    let neighborhoods = [];
+    if (story.neighborhoods) {
+      if (Array.isArray(story.neighborhoods)) {
+        neighborhoods = story.neighborhoods.flatMap(n =>
+          typeof n === 'string' ? n.split(/[,;/|]/).map(v => v.trim()).filter(v => v) : []
+        );
+      } else if (typeof story.neighborhoods === 'string') {
+        neighborhoods = story.neighborhoods.split(/[,;/|]/).map(n => n.trim()).filter(n => n);
+      }
+    }
+
     const allAreas = [...areas, ...neighborhoods];
     if (onHover && allAreas.length > 0) {
       onHover(allAreas);
@@ -45,7 +57,22 @@ const StaticStoryCard = ({ story, onHover, onLeave }) => {
     return colors[Math.abs(hash) % colors.length];
   };
 
-  const neighborhoods = story.neighborhoods ? story.neighborhoods.split(',').map(n => n.trim()) : [];
+  // Parse neighborhoods - support both string and array formats
+  const parseNeighborhoods = () => {
+    if (!story.neighborhoods) return [];
+
+    if (Array.isArray(story.neighborhoods)) {
+      return story.neighborhoods.flatMap(n =>
+        typeof n === 'string' ? n.split(/[,;/|]/).map(v => v.trim()).filter(v => v) : []
+      );
+    } else if (typeof story.neighborhoods === 'string') {
+      return story.neighborhoods.split(/[,;/|]/).map(n => n.trim()).filter(n => n);
+    }
+
+    return [];
+  };
+
+  const neighborhoods = parseNeighborhoods();
   
   // Extract title from URL if empty
   const getTitle = () => {
