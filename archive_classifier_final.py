@@ -531,8 +531,13 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str=None):
             neighborhoods = [p for p in found_places if p in geo_db.pittsburgh_neighborhoods]
             municipalities = [p for p in found_places if p in geo_db.allegheny_municipalities]
 
+            # Put both neighborhoods AND municipalities in the Neighborhoods field
+            # Prioritize Pittsburgh neighborhoods, but include municipalities if no neighborhoods found
             if neighborhoods:
                 df.at[idx, "Neighborhoods"] = ", ".join(neighborhoods)
+            elif municipalities:
+                # If no Pittsburgh neighborhoods found, use municipalities as neighborhoods
+                df.at[idx, "Neighborhoods"] = ", ".join(municipalities)
 
             # Set geographic areas based on found places
             regions = []
@@ -545,8 +550,11 @@ def pipeline(stories:Path, neigh:Path, muni:Path, out:Path, api_key:str=None):
 
             # Set umbrella region
             if is_empty(row["Umbrella"]):
-                if municipalities:
-                    df.at[idx, "Umbrella"] = municipalities[0]
+                # If we have municipalities but NO neighborhoods, municipality went to Neighborhoods field
+                # so Umbrella should be Allegheny County
+                if municipalities and not neighborhoods:
+                    df.at[idx, "Umbrella"] = "Allegheny County"
+                # If we have both or only neighborhoods, look for county in regions
                 elif any("county" in r.lower() for r in regions):
                     df.at[idx, "Umbrella"] = next(r for r in regions if "county" in r.lower())
                 else:
