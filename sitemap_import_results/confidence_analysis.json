@@ -1,0 +1,792 @@
+{
+  "story_confidence_scores": [
+    {
+      "Allegheny County": 1.0,
+      "Pennsylvania": 1.0,
+      "Central Lawrenceville": 1.0,
+      "Strip District": 1.0,
+      "Pittsburgh": 1.0,
+      "Mount Washington": 1.0,
+      "Central Business District": 1.0
+    },
+    {
+      "Point Breeze North": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "Mount Washington": 1.0,
+      "HOMESTEAD": 1.0,
+      "Pittsburgh": 1.0,
+      "Central Oakland": 1.0,
+      "Shadyside": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0
+    },
+    {
+      "Mount Washington": 1.0,
+      "Pittsburgh": 1.0,
+      "Lower Lawrenceville": 1.0,
+      "Allegheny County": 1.0,
+      "Point Breeze": 1.0,
+      "BETHEL PARK": 1.0,
+      "Strip District": 0.9500000000000001
+    },
+    {
+      "East Liberty": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "Homewood North": 1.0,
+      "Garfield": 1.0,
+      "ETNA": 1.0,
+      "West Oakland": 1.0
+    },
+    {
+      "Bon Air": 1.0,
+      "Central Oakland": 1.0,
+      "CARNEGIE": 1.0,
+      "Pennsylvania": 1.0,
+      "INDIANA": 1.0,
+      "Pittsburgh": 1.0,
+      "East Carnegie": 1.0,
+      "Allegheny Center": 1.0,
+      "Mount Washington": 1.0,
+      "HOMESTEAD": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Central Oakland": 1.0,
+      "Pittsburgh": 1.0,
+      "Crafton Heights": 1.0,
+      "Beechview": 1.0,
+      "CHURCHILL": 1.0,
+      "BETHEL PARK": 1.0,
+      "MCKEES ROCKS": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "MCKEESPORT": 1.0,
+      "Pittsburgh": 1.0
+    },
+    {
+      "Central Oakland": 1.0,
+      "Allegheny County": 1.0,
+      "Pennsylvania": 1.0,
+      "Marshall-Shadeland": 1.0,
+      "Pittsburgh": 1.0,
+      "South Oakland": 1.0,
+      "Bon Air": 1.0,
+      "Hazelwood": 1.0,
+      "Allegheny West": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Mount Washington": 1.0,
+      "MOUNT LEBANON": 1.0,
+      "JEFFERSON HILLS": 1.0,
+      "Allegheny County": 1.0,
+      "DUQUESNE": 1.0,
+      "South Side Flats": 1.0
+    },
+    {
+      "Pittsburgh": 1.0
+    },
+    {
+      "CARNEGIE": 1.0,
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Bon Air": 1.0,
+      "Central Oakland": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "OAKDALE": 1.0,
+      "Pittsburgh": 1.0,
+      "NORTH FAYETTE": 1.0,
+      "SOUTH FAYETTE": 1.0,
+      "Allegheny County": 1.0,
+      "BRIDGEVILLE": 1.0
+    },
+    {
+      "ROSS": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Bon Air": 1.0,
+      "Allegheny County": 1.0,
+      "Pennsylvania": 0.8999999999999999
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Central Oakland": 1.0,
+      "OHIO": 1.0,
+      "East Allegheny": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "EMSWORTH": 1.0,
+      "Duquesne Heights": 1.0,
+      "Allegheny County": 1.0,
+      "North Shore": 1.0,
+      "DUQUESNE": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "Central Oakland": 1.0,
+      "RESERVE": 1.0,
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "OHIO": 1.0,
+      "Central Business District": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "East Liberty": 1.0,
+      "Knoxville": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Bloomfield": 1.0,
+      "Pittsburgh": 1.0,
+      "Shadyside": 1.0,
+      "Bon Air": 1.0,
+      "Allegheny County": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "CARNEGIE": 1.0,
+      "Central Oakland": 1.0,
+      "Bon Air": 1.0,
+      "LINCOLN": 1.0,
+      "Lincoln-Lemington-Belmar": 1.0,
+      "EMSWORTH": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "Highland Park": 1.0,
+      "Mount Washington": 1.0,
+      "PITTSBURGH": 1.0,
+      "ROSS": 1.0,
+      "DUQUESNE": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0,
+      "MCCANDLESS": 1.0,
+      "Marshall-Shadeland": 1.0,
+      "CARNEGIE": 1.0,
+      "Bloomfield": 1.0,
+      "Central Lawrenceville": 1.0,
+      "Beechview": 1.0,
+      "East Liberty": 1.0,
+      "Central Northside": 0.9500000000000001
+    },
+    {
+      "Central Lawrenceville": 1.0,
+      "Central Oakland": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "Marshall-Shadeland": 1.0,
+      "South Side Flats": 1.0,
+      "CARNEGIE": 1.0,
+      "Bloomfield": 1.0,
+      "Pennsylvania": 1.0,
+      "East Liberty": 1.0,
+      "GLASSPORT": 1.0,
+      "Duquesne Heights": 1.0,
+      "Central Northside": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Marshall-Shadeland": 1.0,
+      "Pennsylvania": 1.0,
+      "VERONA": 1.0,
+      "Central Northside": 1.0,
+      "SEWICKLEY": 1.0,
+      "Allegheny County": 1.0,
+      "ROBINSON": 1.0,
+      "MONROEVILLE": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Marshall-Shadeland": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "VERONA": 1.0,
+      "Central Northside": 1.0,
+      "Mount Washington": 1.0,
+      "SEWICKLEY": 1.0,
+      "Central Lawrenceville": 1.0,
+      "South Side Slopes": 0.9500000000000001
+    },
+    {
+      "O'HARA": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Windgap": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Squirrel Hill North": 1.0,
+      "MOON": 1.0,
+      "Pennsylvania": 1.0,
+      "Lincoln Place": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Central Oakland": 1.0,
+      "CARNEGIE": 1.0,
+      "DUQUESNE": 1.0,
+      "Allegheny County": 1.0,
+      "MCKEES ROCKS": 1.0
+    },
+    {
+      "Mount Washington": 1.0,
+      "Pittsburgh": 1.0,
+      "CARNEGIE": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "OAKDALE": 1.0,
+      "Perry South": 1.0,
+      "BRADDOCK": 1.0,
+      "SHARPSBURG": 1.0,
+      "MCKEES ROCKS": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "VERONA": 1.0,
+      "Allegheny County": 1.0,
+      "Beechview": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0,
+      "WILKINSBURG": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0,
+      "Central Business District": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "East Allegheny": 1.0,
+      "Allegheny Center": 1.0,
+      "Pennsylvania": 1.0,
+      "East Liberty": 1.0,
+      "Fineview": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Beechview": 1.0,
+      "Allegheny County": 1.0,
+      "Bon Air": 0.9500000000000001
+    },
+    {
+      "DUQUESNE": 1.0,
+      "Bedford Dwellings": 1.0,
+      "Pittsburgh": 1.0,
+      "SCOTT": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "BRIDGEVILLE": 1.0,
+      "Allegheny County": 1.0,
+      "South Side Flats": 1.0,
+      "MCKEES ROCKS": 1.0,
+      "Pennsylvania": 0.8999999999999999
+    },
+    {
+      "CLAIRTON": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "EMSWORTH": 1.0,
+      "BRADDOCK": 1.0,
+      "Allegheny West": 1.0,
+      "LIBERTY": 1.0,
+      "WEST MIFFLIN": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "DUQUESNE": 1.0
+    },
+    {
+      "CLAIRTON": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "NORTH BRADDOCK": 1.0,
+      "BRADDOCK": 1.0,
+      "WEST MIFFLIN": 1.0,
+      "Pennsylvania": 1.0,
+      "Homewood North": 1.0,
+      "MCKEES ROCKS": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "South Side Flats": 1.0,
+      "Manchester": 1.0,
+      "Pennsylvania": 1.0,
+      "Hazelwood": 1.0,
+      "Highland Park": 1.0,
+      "Stanton Heights": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "WEST MIFFLIN": 1.0,
+      "Highland Park": 1.0,
+      "Pittsburgh": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "Central Oakland": 1.0,
+      "Pennsylvania": 1.0,
+      "PLEASANT HILLS": 1.0,
+      "PLUM": 1.0,
+      "Mount Washington": 1.0
+    },
+    {
+      "CLAIRTON": 1.0,
+      "Windgap": 1.0,
+      "Mount Washington": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Bon Air": 1.0,
+      "CARNEGIE": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "WILKINSBURG": 1.0,
+      "WILKINS": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "DUQUESNE": 1.0,
+      "Allegheny County": 1.0,
+      "Shadyside": 1.0,
+      "MCKEESPORT": 1.0,
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "MCKEES ROCKS": 1.0,
+      "Homewood North": 1.0,
+      "Chartiers City": 1.0,
+      "Central Business District": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0,
+      "INDIANA": 1.0,
+      "Central Lawrenceville": 1.0,
+      "Mount Washington": 1.0
+    },
+    {
+      "Central Oakland": 1.0,
+      "Pittsburgh": 1.0,
+      "CARNEGIE": 1.0,
+      "California-Kirkbride": 1.0,
+      "Allegheny County": 1.0,
+      "Pennsylvania": 0.8999999999999999
+    },
+    {
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "NORTH VERSAILLES": 1.0,
+      "Pennsylvania": 1.0,
+      "BRIDGEVILLE": 1.0,
+      "TURTLE CREEK": 1.0,
+      "MONROEVILLE": 1.0,
+      "WILKINSBURG": 1.0,
+      "FOREST HILLS": 1.0,
+      "PENN HILLS": 1.0,
+      "East Allegheny": 1.0,
+      "CARNEGIE": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Perry South": 1.0,
+      "Bloomfield": 1.0,
+      "Northview Heights": 1.0,
+      "Central Lawrenceville": 1.0,
+      "Bedford Dwellings": 1.0,
+      "CARNEGIE": 1.0,
+      "Homewood North": 1.0,
+      "Allegheny Center": 1.0,
+      "Spring Hill-City View": 1.0,
+      "Troy Hill": 1.0,
+      "Allegheny County": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "CLAIRTON": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "Central Lawrenceville": 1.0,
+      "DUQUESNE": 1.0,
+      "MCKEESPORT": 1.0,
+      "Pennsylvania": 1.0,
+      "Upper Hill": 1.0,
+      "Central Northside": 1.0,
+      "HOMESTEAD": 1.0,
+      "PENN HILLS": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Central Oakland": 1.0,
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "Central Business District": 1.0,
+      "CARNEGIE": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Bon Air": 1.0,
+      "Pennsylvania": 1.0,
+      "OHIO": 1.0,
+      "Allegheny County": 1.0,
+      "HAMPTON": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "Central Oakland": 1.0,
+      "CARNEGIE": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "EMSWORTH": 1.0,
+      "Mount Washington": 1.0,
+      "Allegheny County": 1.0,
+      "MCKEES ROCKS": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "CORAOPOLIS": 1.0,
+      "CLAIRTON": 1.0,
+      "Mount Washington": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Bon Air": 1.0,
+      "Allegheny County": 1.0,
+      "MCKEES ROCKS": 1.0
+    },
+    {
+      "Central Oakland": 1.0,
+      "Pennsylvania": 1.0,
+      "North Oakland": 1.0,
+      "Pittsburgh": 1.0,
+      "HAMPTON": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Windgap": 1.0,
+      "Pittsburgh": 1.0,
+      "Mount Washington": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "CARNEGIE": 1.0,
+      "Marshall-Shadeland": 1.0,
+      "California-Kirkbride": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Bon Air": 1.0,
+      "Pennsylvania": 1.0,
+      "CARNEGIE": 1.0,
+      "Central Oakland": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "South Side Slopes": 1.0,
+      "Arlington": 1.0,
+      "BETHEL PARK": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Windgap": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Central Oakland": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 0.8999999999999999
+    },
+    {
+      "Knoxville": 1.0,
+      "Pittsburgh": 1.0,
+      "Bloomfield": 1.0,
+      "ELIZABETH": 1.0,
+      "Hazelwood": 1.0,
+      "Central Lawrenceville": 1.0,
+      "Central Oakland": 1.0,
+      "Sheraden": 1.0,
+      "Manchester": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "Larimer": 1.0,
+      "Bon Air": 1.0,
+      "CARNEGIE": 1.0,
+      "Windgap": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Central Business District": 1.0,
+      "SWISSVALE": 1.0,
+      "Pennsylvania": 1.0,
+      "SCOTT": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Hazelwood": 1.0,
+      "Pittsburgh": 1.0,
+      "New Homestead": 1.0,
+      "CARNEGIE": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "DUQUESNE": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Bon Air": 1.0,
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "California-Kirkbride": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "DUQUESNE": 1.0,
+      "Allegheny County": 1.0,
+      "NORTH FAYETTE": 0.9500000000000001
+    },
+    {
+      "Pittsburgh": 1.0,
+      "CARNEGIE": 1.0,
+      "Central Oakland": 1.0,
+      "LINCOLN": 1.0,
+      "ROSS": 1.0,
+      "Lincoln-Lemington-Belmar": 1.0,
+      "EMSWORTH": 1.0,
+      "Shadyside": 1.0,
+      "Strip District": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "CARNEGIE": 1.0,
+      "Pennsylvania": 1.0,
+      "DUQUESNE": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "Allegheny Center": 1.0,
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "ROSS": 1.0,
+      "DORMONT": 1.0,
+      "Squirrel Hill North": 1.0,
+      "RESERVE": 1.0,
+      "Central Northside": 1.0,
+      "BALDWIN": 1.0
+    },
+    {
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Bedford Dwellings": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "North Shore": 1.0,
+      "Allegheny County": 1.0,
+      "Central Lawrenceville": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0,
+      "Pennsylvania": 1.0,
+      "SWISSVALE": 1.0,
+      "Duquesne Heights": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0,
+      "CARNEGIE": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Brookline": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Hazelwood": 1.0,
+      "Pittsburgh": 1.0,
+      "Shadyside": 1.0,
+      "Mount Washington": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Shadyside": 1.0,
+      "Larimer": 1.0,
+      "Pittsburgh": 1.0,
+      "California-Kirkbride": 1.0,
+      "Bon Air": 1.0,
+      "CARNEGIE": 1.0,
+      "Allegheny County": 1.0,
+      "Pennsylvania": 0.8999999999999999
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Bon Air": 1.0,
+      "Allegheny County": 1.0,
+      "Central Northside": 1.0,
+      "NEVILLE": 1.0,
+      "Pittsburgh": 1.0,
+      "BALDWIN": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Bon Air": 1.0,
+      "Allegheny County": 1.0,
+      "Pennsylvania": 1.0,
+      "Pittsburgh": 1.0,
+      "BALDWIN": 1.0,
+      "CARNEGIE": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Allegheny County": 1.0,
+      "HOMESTEAD": 1.0,
+      "WEST HOMESTEAD": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Carrick": 1.0,
+      "BALDWIN": 1.0,
+      "Allegheny County": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "RESERVE": 1.0,
+      "Allegheny County": 1.0,
+      "NORTH FAYETTE": 1.0,
+      "INDIANA": 1.0,
+      "UPPER ST. CLAIR": 1.0,
+      "Pittsburgh": 1.0
+    },
+    {
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0,
+      "Pittsburgh": 1.0,
+      "INDIANA": 1.0
+    },
+    {
+      "Pittsburgh": 1.0,
+      "Mount Washington": 1.0,
+      "Allegheny County": 1.0
+    },
+    {
+      "MILLVALE": 1.0,
+      "Pittsburgh": 1.0,
+      "Pennsylvania": 1.0,
+      "Allegheny County": 1.0
+    }
+  ],
+  "summary": {
+    "total_stories": 99,
+    "stories_with_places": 99,
+    "avg_confidence": 0.9987179487179487
+  }
+}

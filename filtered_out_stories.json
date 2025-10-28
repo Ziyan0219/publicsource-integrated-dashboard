@@ -1,0 +1,1591 @@
+{
+  "filtered_count": 113,
+  "filter_stats": {
+    "Empty or invalid title (scraping failure)": 82,
+    "Non-news URL: About page": 2,
+    "Non-news URL: Editorial policy page": 1,
+    "Non-news URL: Contact page": 2,
+    "Non-news URL: Corrections page": 2,
+    "Non-news URL: Jobs page": 1,
+    "Non-news URL: Newsletter page": 3,
+    "Non-news URL: 404 error page": 1,
+    "Non-news URL: 403 error page": 1,
+    "Non-news URL: Navigation page": 1,
+    "Non-news URL: Guidelines page": 1,
+    "Non-news URL: Donation page": 2,
+    "Non-news URL: Error page": 1,
+    "Non-news URL: Funders page": 1,
+    "Non-news URL: Subscription page": 1,
+    "Non-news URL: Confirmation page": 1,
+    "Non-news URL: Unsubscribe page": 1,
+    "Non-news URL: Form page": 1,
+    "Non-news URL: Volunteer page": 1,
+    "Non-news URL: Thank you page": 5,
+    "Non-news URL: Staff page": 1,
+    "Non-news URL: Advertising page": 2,
+    "Non-news URL: Cart page": 2
+  },
+  "filtered_stories": [
+    {
+      "id": 79,
+      "url": "https://www.publicsource.org/prt-pittsburgh-regional-transit-bus-service-cuts-fare-hikes-budget/",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "South Pittsburgh, Mon Valley, North Hills",
+      "neighborhoods": "Troy Hill, Spring Garden, East Allegheny, Marshall-Shadeland, Brighton Heights, Bellevue, Avalon, Ben Avon, Manchester, Allegheny West, , Emsworth, Sheraden, Kennedy Township, McKees Rocks, Elliott, Crafton, Ingram, Westwood, Robinson Township, Carnegie, Banksville, Dormont, Mt. Lebanon, Green Tree, Brookline, Beechview, Mount Washington, Duquesne Heights, Scott Township, Bridgeville, , Allentown, Carrick, Overbrook, West Mifflin, Munhall, West Homestead, Homestead, Greenfield, Squirrel Hill South, Squirrel Hill, Shaler, Etna",
+      "social_abstract": "Explore how the biggest cuts to Allegheny County bus and T service in 25 years could affect you. Will fare hikes and state funding shortages drive PRT out of business?",
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 80,
+      "url": "https://www.publicsource.org/conservatorship-case-north-side-east-hills-pittsburgh-rising-tide-partners-superior-court/",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "Upper East End, North Side, Mon Valley",
+      "neighborhoods": "East Hills, Spring Garden, East Liberty, Homewood North, East Allegheny",
+      "social_abstract": "Explore Pittsburgh's tug of war over property conservatorship. Who wins when developers and nonprofits clash? Discover how this case impacts our local housing economy.",
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 81,
+      "url": "https://www.publicsource.org/pittsburgh-neighborhoods-youtube-videos-portland-oregon/",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "South Hills, North Side, North Hills, Upper East End, Mon Valley",
+      "neighborhoods": "Dormont, Manchester, Sharpsburg",
+      "social_abstract": "Discover why a local filmmaker who celebrated Pittsburgh's gritty neighborhoods swapped his camera's focus to Portland, Oregon. What made him leave the 'higgledy piggledy' hillsides behind?",
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 82,
+      "url": "https://www.publicsource.org/prt-pittsburgh-regional-transit-bus-route-cuts-funding-state-budget/",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "Mon Valley, North Hills, Northwest Suburbs, South Pittsburgh",
+      "neighborhoods": "Troy Hill, Spring Garden, East Allegheny, Marshall-Shadeland, Brighton Heights, Bellevue, Avalon, Ben Avon, Manchester, Allegheny West, , Emsworth, Sheraden, Kennedy Township, McKees Rocks, Elliott, Crafton, Ingram, Westwood, Robinson Township, Carnegie, Banksville, Dormont, Mt. Lebanon, Green Tree, Brookline, Beechview, Mount Washington, Duquesne Heights, Scott Township, Bridgeville, , Allentown, Carrick, Overbrook, West Mifflin, Munhall, West Homestead, Homestead, Greenfield, Squirrel Hill South, Squirrel Hill, Shaler, Etna",
+      "social_abstract": "Will your bus line disappear? Without state funding, Pittsburgh Regional Transit may cut 41 routes. Explore the potential impact on our community and your commute.",
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 83,
+      "url": "https://www.publicsource.org/summer-lee-pittsburgh-town-hall-meeting-democrats-donald-trump-elon-musk/",
+      "umbrella": "Allegheny County",
+      "geographic_area": "Mon Valley",
+      "neighborhoods": "SWISSVALE, WALL, CLAIRTON",
+      "social_abstract": "Discover Rep. Summer Lee's call for bold Democratic action in a charged Pittsburgh town hall. How will Trump's policies impact local education, housing, and environment?",
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 96,
+      "url": "https://www.publicsource.org/pittsburgh-crime-statistics-2010-2013/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 106,
+      "url": "https://www.publicsource.org/state-police-discipline-facts-and-figures/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 107,
+      "url": "https://www.publicsource.org/troubled-kids-powerful-drugs/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 112,
+      "url": "https://www.publicsource.org/about-publicsource/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "About Pittsburgh’s Public Source",
+      "author": "",
+      "date": "2025-07-16T16:19:32+00:00",
+      "filter_reasons": [
+        "Non-news URL: About page"
+      ]
+    },
+    {
+      "id": 113,
+      "url": "https://www.publicsource.org/our-editorial-policies/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "About Pittsburgh’s Public Source",
+      "author": "",
+      "date": "2025-07-16T16:19:32+00:00",
+      "filter_reasons": [
+        "Non-news URL: Editorial policy page"
+      ]
+    },
+    {
+      "id": 114,
+      "url": "https://www.publicsource.org/contact-us/",
+      "social_abstract": "",
+      "umbrella": "INDIANA",
+      "geographic_area": "North Hills, Central Pittsburgh, Mon Valley, Ohio River Valley, North Side",
+      "neighborhoods": "['Strip District', 'Manchester']",
+      "title": "Meet and contact the staff of Pittsburgh's Public Source",
+      "author": "DS Fleegleemail",
+      "date": "2025-09-25T20:22:58+00:00",
+      "filter_reasons": [
+        "Non-news URL: Contact page"
+      ]
+    },
+    {
+      "id": 115,
+      "url": "https://www.publicsource.org/corrections/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Corrections and clarifications",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Non-news URL: Corrections page"
+      ]
+    },
+    {
+      "id": 116,
+      "url": "https://www.publicsource.org/jobs/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Jobs at Pittsburgh’s Public Source",
+      "author": "",
+      "date": "2025-07-16T14:57:11+00:00",
+      "filter_reasons": [
+        "Non-news URL: Jobs page"
+      ]
+    },
+    {
+      "id": 124,
+      "url": "https://www.publicsource.org/newsletter-signup/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Stay connected",
+      "author": "",
+      "date": "2025-07-16T13:18:01+00:00",
+      "filter_reasons": [
+        "Non-news URL: Newsletter page"
+      ]
+    },
+    {
+      "id": 127,
+      "url": "https://www.publicsource.org/404-page-not-found/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "404 - Page not found",
+      "author": "",
+      "date": "Sorry but we were unable to find the page you were looking for. Please consider using the search bar to navigate the site, or if you believe that there may be an error with the site, please contact Alexandra Kanik at alexandra[at]publicsource.org.",
+      "filter_reasons": [
+        "Non-news URL: 404 error page"
+      ]
+    },
+    {
+      "id": 128,
+      "url": "https://www.publicsource.org/403-restricted-access/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "403 - Restricted access",
+      "author": "",
+      "date": "Sorry but you do not have permission to access this page.But the good news is, you’ve got a couple of options! You can:login here,return to the homepageand browse the rest of the site,or contact our web developer if you think there is a problem with the site.PublicSource web developer: Alexandra Kanik, 412.315.0264, alexandra[at]publicsource.org.",
+      "filter_reasons": [
+        "Non-news URL: 403 error page"
+      ]
+    },
+    {
+      "id": 138,
+      "url": "https://www.publicsource.org/explore-more/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Explore more:",
+      "author": "",
+      "date": "Use the links below to explore the Pittsburgh region’s light-rail system.",
+      "filter_reasons": [
+        "Non-news URL: Navigation page"
+      ]
+    },
+    {
+      "id": 148,
+      "url": "https://www.publicsource.org/commenting-guidelines/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Commenting guidelines",
+      "author": "",
+      "date": "PublicSource loves to hear from youWe’re here to help you understand important issues in Pennsylvania, and we want to know how we’re doing. We rely on you to give us constructive, insightful feedback on our stories and on how they effect you and your community. We also want you to keep our coverage fresh by sharing your own insights and experiences with the community PublicSource readers.To help facilitate the conversation, we’ve put together some guidelines so you’ll know what we think is harmful or inappropriate. Harmful, inappropriate content will be removed and repeat offenders can be banned from contributing in the future.These guidelines apply to comments and reactions on any PublicSource site or platform including social media platforms.We also reserve the right to delete any and all posts that we feel are inappropriate.No foul language.Foul language includes but is not limited to swear words, racial slurs, sexist talk or homophobic outbursts. Also, please don’t slightly misspell swear words to get them past our filtering. We might not catch you right away, but we will catch you eventually and we will not be pleased.Aggressive behavior.Please don’t try and harm others with your comments. We consider it aggressive and harmful to disclose personal information about other people. We also consider terroristic threats against PublicSource, our sources, our media partners or any other person or organization to be unacceptable. Smear tactics will not be tolerated either.Self promotion.Don’t use our commenting section to promote your business. Unless your business is something that directly relates to one of our stories and your post is about public service or helping others, it will be deemed spam, and removed.Excessive and off-topic commenting.If you post too frequently, if your posts are extremely long or if your comments are off topic, you might receive a warning from us. If you fail to respect our request, we reserve the right to ban you.Respect.Show it. Receive it. Spread it around.Thanks for reading and if you have any questions, please feel free to contact Alexandra Kanik at alexandra@publicsource.org.",
+      "filter_reasons": [
+        "Non-news URL: Guidelines page"
+      ]
+    },
+    {
+      "id": 149,
+      "url": "https://www.publicsource.org/donate-to-publicsource-1/thanks-for-donating/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Thank you!",
+      "author": "",
+      "date": "2023-11-21T18:13:24+00:00",
+      "filter_reasons": [
+        "Non-news URL: Donation page"
+      ]
+    },
+    {
+      "id": 150,
+      "url": "https://www.publicsource.org/was-it-something-we-said/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Was it something we said?",
+      "author": "",
+      "date": "We noticed that you didn’t complete your donation to PublicSource and we wanted to know if there was anything we can do to help you finish. Remember that PublicSource does not charge for its content because we are dedicated to providing Pennsylvanians with information everyone should see.Without the contributions of loyal viewers like you, we would not be able to bring you in-depth news about crucial issues.If you have any questions or comments, please feel free to contact PublicSource editor, Sharon Walsh at swalsh@publicsource.org.",
+      "filter_reasons": [
+        "Non-news URL: Error page"
+      ]
+    },
+    {
+      "id": 151,
+      "url": "https://www.publicsource.org/funders/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Non-news URL: Funders page",
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 152,
+      "url": "https://www.publicsource.org/almost-finished/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Non-news URL: Subscription page",
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 153,
+      "url": "https://www.publicsource.org/youre-all-set/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "You’re all set!",
+      "author": "",
+      "date": "Congratulations! You will now receive PublicSource’s latest stories as soon as they are available.Manage your preferences*To update your profile, click the link above, enter your email address on the following page, click “Subscribe to list”, then click the “Click here to update your profile” link.",
+      "filter_reasons": [
+        "Non-news URL: Confirmation page"
+      ]
+    },
+    {
+      "id": 154,
+      "url": "https://www.publicsource.org/so-sorry-to-see-you-go/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "So sorry to see you go",
+      "author": "",
+      "date": "You have been successfully removed from the PublicSource newsletter list.You will receive one final email to confirm that we unsubscribed you.",
+      "filter_reasons": [
+        "Non-news URL: Unsubscribe page"
+      ]
+    },
+    {
+      "id": 155,
+      "url": "https://www.publicsource.org/air-sensor-form/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Air sensor form",
+      "author": "",
+      "date": "Loading…Loading…",
+      "filter_reasons": [
+        "Non-news URL: Form page"
+      ]
+    },
+    {
+      "id": 157,
+      "url": "https://www.publicsource.org/volunteer/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Volunteer",
+      "author": "",
+      "date": "If you’re a fan of the in-depth newsPublicSourceprovides, volunteering is a great way to support our work and get to know us. If you’re interested in becoming a volunteer, please email Stephanie Roman atsroman@publicsource.org.Include yourname, email address and phone numberin your email so we can contact you when we need volunteers. And let us know which of these opportunities you’re interested in.Here are some of the things you might be able to help us with:*Events.PublicSourcehas events to discuss the subjects of our stories — usually with panelists who are experts on the issue — and engage the community about their questions. On event day we need help with taking tickets, readying the space for the event, picking up necessary items and helping sign attendees up for our newsletter.*Ambassadors. Are you going to a meeting or lecture where you might be able to tell people aboutPublicSourceand its work? Could you take a sign-up sheet and invite them to sign up for our free newsletter?*Fundraisers. Events where we raise money for the work ofPublicSourceare lots of fun. But we may need help picking up items that have been donated for our silent auction or taking tickets at the door or making sure the band setup goes smoothly.*Administrative support. Do you have a special talent? Like helping send our stories out on social media or making phone calls to people who might want to sign up for membership?If you have a few hours to spare and can help out as aPublicSourcevolunteer, contact Stephanie Roman atsroman@publicsource.orgwith your name, email address and phone number.We look forward to meeting you!",
+      "filter_reasons": [
+        "Non-news URL: Volunteer page"
+      ]
+    },
+    {
+      "id": 166,
+      "url": "https://www.publicsource.org/new-investigative-website-kicks-off/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 168,
+      "url": "https://www.publicsource.org/coming-home-pa/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 174,
+      "url": "https://www.publicsource.org/ravenstahl-and-fair-representation-reports/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 175,
+      "url": "https://www.publicsource.org/publicsource-portfolio-review/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 179,
+      "url": "https://www.publicsource.org/leah-samuel-talks-about-economic-development-money/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 181,
+      "url": "https://www.publicsource.org/photographer-lynn-johnson-wins-national-geographic-award/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 186,
+      "url": "https://www.publicsource.org/notebooks-and-cameras-capture-new-initiative/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 188,
+      "url": "https://www.publicsource.org/recognition-for-publicsource-staff-members/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 190,
+      "url": "https://www.publicsource.org/internet-security-government-transparency-and-stealing-secrets/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 474,
+      "url": "https://www.publicsource.org/corrections-chief-increased-drug-treatment-means-fewer-pa-inmates/",
+      "social_abstract": "",
+      "umbrella": "Allegheny County",
+      "geographic_area": "Mon Valley",
+      "neighborhoods": "WALL, CLAIRTON",
+      "title": "Corrections chief: Increased drug treatment means fewer PA inmates",
+      "author": "Jeffrey Benzing",
+      "date": "2015-05-07T17:10:34-04:00",
+      "filter_reasons": [
+        "Non-news URL: Corrections page"
+      ]
+    },
+    {
+      "id": 998,
+      "url": "https://www.publicsource.org/thanks-to-bad-philly-drivers-pittsburgh-gets-300k-to-fix-an-intersection/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "Lower East End, Central Pittsburgh, Mon Valley",
+      "neighborhoods": "['North Oakland', 'Strip District']",
+      "title": "Thanks to bad Philly drivers, Pittsburgh gets $300K to fix an intersection",
+      "author": "Iain Oldman",
+      "date": "2016-05-20T14:30:38-04:00",
+      "filter_reasons": [
+        "Non-news URL: Thank you page"
+      ]
+    },
+    {
+      "id": 1023,
+      "url": "https://www.publicsource.org/penn-state-scandal-may-mean-change-for-open-records-law/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1024,
+      "url": "https://www.publicsource.org/f-block-investigation-begins-with-requests-for-protective-custody/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1029,
+      "url": "https://www.publicsource.org/pas-corruption-grade-doesnt-reflect-its-history/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1030,
+      "url": "https://www.publicsource.org/did-investigation-of-prison-guards-go-too-far/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1031,
+      "url": "https://www.publicsource.org/pas-stand-your-ground-law-mirrors-floridas/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1032,
+      "url": "https://www.publicsource.org/no-win-for-anybody/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1033,
+      "url": "https://www.publicsource.org/jasiri-x-creates-rap-song-about-trayvon/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1039,
+      "url": "https://www.publicsource.org/returning-vets-are-fighting-for-jobs/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1041,
+      "url": "https://www.publicsource.org/sierra-club-helps-veterans-overcome-post-combat-issues-through-activity/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "Northwest Suburbs, South Hills, North Hills, Lower East End, North Side, West End, South Pittsburgh, Hill District, Central Pittsburgh, Upper East End",
+      "neighborhoods": "['Squirrel Hill North', 'Central Northside', 'Central Business District', 'Oakwood', 'Regent Square', 'Beechview', 'Beltzhoover', 'Bedford Dwellings', 'Central Lawrenceville', 'Allentown', 'Terrace Village', 'Bloomfield']",
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1042,
+      "url": "https://www.publicsource.org/amid-shale-rush-health-questions/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1046,
+      "url": "https://www.publicsource.org/shepherds-heart-helping-returning-vets-find-their-way/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1047,
+      "url": "https://www.publicsource.org/blacks-see-benefit-of-military-service/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1050,
+      "url": "https://www.publicsource.org/will-pa-use-vouchers-and-grants-for-higher-education/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1051,
+      "url": "https://www.publicsource.org/advisory-commission-members/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1052,
+      "url": "https://www.publicsource.org/zimmerman-child-sex-abuse-case-shows-importance-of-reporting/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1058,
+      "url": "https://www.publicsource.org/marcellus-shales-accidental-activists/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1060,
+      "url": "https://www.publicsource.org/advocacy-group-for-homeless-veterans-asking-government-for-more-help/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1064,
+      "url": "https://www.publicsource.org/update-riverdale-residents-face-deadline/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1065,
+      "url": "https://www.publicsource.org/one-familys-journey-with-marcellus-shale/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1069,
+      "url": "https://www.publicsource.org/landscapes-and-faces/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1070,
+      "url": "https://www.publicsource.org/for-disabled-veterans-awaiting-benefits-decisions-location-matters/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1075,
+      "url": "https://www.publicsource.org/peduto-says-public-works-retaliated-for-criticism/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1076,
+      "url": "https://www.publicsource.org/top-pennsylvanians-influencing-elections-with-money/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1085,
+      "url": "https://www.publicsource.org/new-online-tool-reveals-grades-of-pennsylvania-nursing-homes/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1087,
+      "url": "https://www.publicsource.org/city-towing-license-still-not-hooked-up/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1088,
+      "url": "https://www.publicsource.org/briny-water-flows-into-southwestern-pa-streams/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1089,
+      "url": "https://www.publicsource.org/old-diesel-equipment-still-spewing-soot-into-pittsburghs-air/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1091,
+      "url": "https://www.publicsource.org/lottery-losers/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1093,
+      "url": "https://www.publicsource.org/big-projects-no-retrofitting-requirements/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1095,
+      "url": "https://www.publicsource.org/former-coach-with-troubled-past-works-with-teens-again/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1096,
+      "url": "https://www.publicsource.org/pa-investigates-former-teacher-14-years-after-charges/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1101,
+      "url": "https://www.publicsource.org/after-guns-and-grenades-pa-veterans-claims-delayed/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1107,
+      "url": "https://www.publicsource.org/gas-rush-stories-openness-and-transparency-about-marcellus-shale/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1108,
+      "url": "https://www.publicsource.org/pittsburgh-allegheny-county-experience-critical-shortage-of-public-housing/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1110,
+      "url": "https://www.publicsource.org/update-hearing-will-examine-secretive-pittsburgh-nonprofit/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1116,
+      "url": "https://www.publicsource.org/state-has-no-record-of-safety-inspections-for-conneaut-lake-amusement-park/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1119,
+      "url": "https://www.publicsource.org/pa-amusement-park-regulators-must-do-better-job-officials-say/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1120,
+      "url": "https://www.publicsource.org/va-workers-received-bonuses-while-disabled-vets-waited/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1123,
+      "url": "https://www.publicsource.org/women-veterans-fight-for-jobs-services-acceptance/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1124,
+      "url": "https://www.publicsource.org/most-port-authority-pay-stations-faring-well-publicsource-survey-finds/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1134,
+      "url": "https://www.publicsource.org/armed-forces-scale-back-pa-young-people-often-disappointed/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1135,
+      "url": "https://www.publicsource.org/successful-recruits/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1460,
+      "url": "https://www.publicsource.org/thank-you-for-subscribing/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "Lower East End, South Pittsburgh, Mon Valley",
+      "neighborhoods": "Central Oakland, Brookline",
+      "title": "Thank you for subscribing",
+      "author": "Rich Lord",
+      "date": "2025-10-04T07:00:00-04:00",
+      "filter_reasons": [
+        "Non-news URL: Thank you page"
+      ]
+    },
+    {
+      "id": 1712,
+      "url": "https://www.publicsource.org/staff/",
+      "social_abstract": "",
+      "umbrella": "INDIANA",
+      "geographic_area": "North Hills, Central Pittsburgh, Mon Valley, Ohio River Valley, North Side",
+      "neighborhoods": "['Strip District', 'Manchester']",
+      "title": "Meet and contact the staff of Pittsburgh's Public Source",
+      "author": "DS Fleegleemail",
+      "date": "2025-09-25T20:22:58+00:00",
+      "filter_reasons": [
+        "Non-news URL: Staff page"
+      ]
+    },
+    {
+      "id": 1909,
+      "url": "https://www.publicsource.org/member-benefits/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 1910,
+      "url": "https://www.publicsource.org/donate-to-publicsource/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Non-news URL: Donation page",
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2035,
+      "url": "https://www.publicsource.org/newsletters/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Stay connected",
+      "author": "",
+      "date": "2025-07-16T13:18:01+00:00",
+      "filter_reasons": [
+        "Non-news URL: Newsletter page"
+      ]
+    },
+    {
+      "id": 2119,
+      "url": "https://www.publicsource.org/low-wage-living/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2121,
+      "url": "https://www.publicsource.org/low-wage-living-keanna-weathers-loss-and-instability-with-three-children-by-her-side/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2124,
+      "url": "https://www.publicsource.org/low-wage-living-joey-a-deaf-man-struggles-to-advance-in-the-workforce/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2125,
+      "url": "https://www.publicsource.org/low-wage-living-an-illustrated-look-at-data-on-labor-and-poverty-in-pittsburgh-and-beyond/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2126,
+      "url": "https://www.publicsource.org/low-wage-living-a-job-is-no-longer-enough-jordans-cycle-of-low-wage-jobs-and-his-aspirations-to-buck-poverty-risk-factors/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2127,
+      "url": "https://www.publicsource.org/low-wage-living-raising-minimum-wage-in-pa-how-can-we-make-progress-even-if-our-state-legislature-doesnt/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2133,
+      "url": "https://www.publicsource.org/low-wage-living-amy-balances-coping-with-crisis-and-piecing-together-a-future/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2142,
+      "url": "https://www.publicsource.org/low-wage-living-shaylas-leap-of-faith-leads-to-a-raise-and-a-union-job/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2145,
+      "url": "https://www.publicsource.org/low-wage-living-as-workers-age-health-savings-and-fear-of-being-overlooked-become-top-issues/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2147,
+      "url": "https://www.publicsource.org/low-wage-living-pennsylvanias-minimum-wage-isnt-rising-what-that-means-for-pittsburghs-restaurant-workers/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2163,
+      "url": "https://www.publicsource.org/five-threats-to-the-livelihoods-of-low-wage-workers-in-pennsylvania/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 2187,
+      "url": "https://www.publicsource.org/advertisements-and-sponsorships/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Advertise with us",
+      "author": "Contemporary Craft",
+      "date": "2025-07-16T14:52:30+00:00",
+      "filter_reasons": [
+        "Non-news URL: Advertising page"
+      ]
+    },
+    {
+      "id": 3016,
+      "url": "https://www.publicsource.org/cart/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Cart",
+      "author": "",
+      "date": "Your cart is currently empty.Return to shop",
+      "filter_reasons": [
+        "Non-news URL: Cart page"
+      ]
+    },
+    {
+      "id": 3021,
+      "url": "https://www.publicsource.org/contact-us-2/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "contact us",
+      "author": "",
+      "date": "",
+      "filter_reasons": [
+        "Non-news URL: Contact page"
+      ]
+    },
+    {
+      "id": 3023,
+      "url": "https://www.publicsource.org/advertise-with-us/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Advertise with us",
+      "author": "Contemporary Craft",
+      "date": "2025-07-16T14:52:30+00:00",
+      "filter_reasons": [
+        "Non-news URL: Advertising page"
+      ]
+    },
+    {
+      "id": 3697,
+      "url": "https://www.publicsource.org/newsletter-subscribe/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Care about Pittsburgh? So do we. Let’s connect.",
+      "author": "",
+      "date": "2025-07-24T16:36:17+00:00",
+      "filter_reasons": [
+        "Non-news URL: Newsletter page"
+      ]
+    },
+    {
+      "id": 3765,
+      "url": "https://www.publicsource.org/thanksgiving-pittsburgh-alone-callout-publicsource-turkey-day/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "Lower East End, Mon Valley",
+      "neighborhoods": "Central Oakland",
+      "title": "Alone on Turkey Day? We want to hear from you about it.",
+      "author": "More by Rich Lord",
+      "date": "2023-11-06T11:52:42-05:00",
+      "filter_reasons": [
+        "Non-news URL: Thank you page"
+      ]
+    },
+    {
+      "id": 3788,
+      "url": "https://www.publicsource.org/thanksgiving-alone-pittsburgh-allegheny-county-holidays-publicsource-callout/",
+      "social_abstract": "",
+      "umbrella": "Allegheny County",
+      "geographic_area": "Mon Valley",
+      "neighborhoods": "CLAIRTON",
+      "title": "Pittsburghers share experiences of joy and isolation on Thanksgivings alone",
+      "author": "More by Stephanie Mirah",
+      "date": "2023-11-20T05:30:00-05:00",
+      "filter_reasons": [
+        "Non-news URL: Thank you page"
+      ]
+    },
+    {
+      "id": 3789,
+      "url": "https://www.publicsource.org/thanksgiving-pittsburgh-events-alternative-community/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "Northwest Suburbs, Upper East End, North Hills, Mon Valley, North Side, South Hills",
+      "neighborhoods": "['Highland Park', 'Chateau', 'East Allegheny', 'Central Northside', 'St. Clair']",
+      "title": "There are communal alternatives to the Thanksgiving table",
+      "author": "Christine Graziano",
+      "date": "2023-11-20T05:30:00-05:00",
+      "filter_reasons": [
+        "Non-news URL: Thank you page"
+      ]
+    },
+    {
+      "id": 3919,
+      "url": "https://www.publicsource.org/about/",
+      "social_abstract": "",
+      "umbrella": "Pittsburgh, Allegheny County",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "About Pittsburgh’s Public Source",
+      "author": "",
+      "date": "2025-07-16T16:19:32+00:00",
+      "filter_reasons": [
+        "Non-news URL: About page"
+      ]
+    },
+    {
+      "id": 4246,
+      "url": "https://www.publicsource.org/cart-2/",
+      "social_abstract": "",
+      "umbrella": "",
+      "geographic_area": "",
+      "neighborhoods": [],
+      "title": "Cart",
+      "author": "",
+      "date": "2025-02-21T22:48:11+00:00",
+      "filter_reasons": [
+        "Non-news URL: Cart page"
+      ]
+    },
+    {
+      "id": 4493,
+      "url": "https://www.publicsource.org/lawrenceville-development-gentrification-affordable-housing/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 4494,
+      "url": "https://www.publicsource.org/homewood-pittsburgh-neighborhood-investment-community-development/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 4495,
+      "url": "https://www.publicsource.org/shadyside-business-district-pittsburgh-retail-development/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 4496,
+      "url": "https://www.publicsource.org/pittsburgh-lawrenceville-affordable-housing-development-gentrification/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 4497,
+      "url": "https://www.publicsource.org/homewood-pittsburgh-affordable-housing-community-development-black-neighborhood/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 4498,
+      "url": "https://www.publicsource.org/pittsburgh-downtown-office-vacancy-real-estate-market/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 4499,
+      "url": "https://www.publicsource.org/south-side-pittsburgh-bars-nightlife-noise-complaints/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    },
+    {
+      "id": 4500,
+      "url": "https://www.publicsource.org/wilkinsburg-pennsylvania-borough-merger-pittsburgh-allegheny-county/",
+      "social_abstract": "nan",
+      "umbrella": "Nan",
+      "geographic_area": "Nan",
+      "neighborhoods": "['nan']",
+      "filter_reasons": [
+        "Empty or invalid title (scraping failure)"
+      ]
+    }
+  ]
+}

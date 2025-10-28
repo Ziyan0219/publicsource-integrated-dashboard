@@ -1,0 +1,54 @@
+
+======================================================================
+DATA CLEANING REPORT
+======================================================================
+
+Date: 2025-10-15 21:09:53
+
+SUMMARY
+-------
+Original story count: 4500
+Stories kept: 4387 (97.5%)
+Stories filtered: 113 (2.5%)
+
+FILTER REASONS BREAKDOWN
+-------------------------
+Empty or invalid title (scraping failure): 82
+Non-news URL: Thank you page: 5
+Non-news URL: Newsletter page: 3
+Non-news URL: About page: 2
+Non-news URL: Contact page: 2
+Non-news URL: Corrections page: 2
+Non-news URL: Donation page: 2
+Non-news URL: Advertising page: 2
+Non-news URL: Cart page: 2
+Non-news URL: Editorial policy page: 1
+Non-news URL: Jobs page: 1
+Non-news URL: 404 error page: 1
+Non-news URL: 403 error page: 1
+Non-news URL: Navigation page: 1
+Non-news URL: Guidelines page: 1
+Non-news URL: Error page: 1
+Non-news URL: Funders page: 1
+Non-news URL: Subscription page: 1
+Non-news URL: Confirmation page: 1
+Non-news URL: Unsubscribe page: 1
+Non-news URL: Form page: 1
+Non-news URL: Volunteer page: 1
+Non-news URL: Staff page: 1
+
+IMPACT ON DATA QUALITY
+----------------------
+- Removed non-news infrastructure pages (About, Jobs, etc.)
+- Removed error pages (404, 403)
+- Removed failed page fetches (empty titles)
+- Removed conversion/utility pages (Donate, Newsletter, etc.)
+- Retained all legitimate news articles with valid content
+
+NEXT STEPS
+----------
+1. Review filtered_out_stories.json for any false positives
+2. Use the cleaned stories.json for production
+3. Regenerate Excel exports with clean data
+
+======================================================================

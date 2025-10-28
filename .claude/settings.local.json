@@ -17,7 +17,24 @@
       "Bash(git checkout:*)",
       "WebFetch(domain:github.com)",
       "Bash(findstr:*)",
-      "WebFetch(domain:localhost)"
+      "WebFetch(domain:localhost)",
+      "Bash(git push:*)",
+      "Bash(pip install:*)",
+      "Bash(start http://localhost:5173)",
+      "WebFetch(domain:www.publicsource.org)",
+      "Bash(timeout:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "Read(//c/tmp/quick_test/output/**)",
+      "Bash(move:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(copy:*)",
+      "Bash(tree:*)",
+      "Read(//c/Users/32044/Desktop/agents/**)"
     ],
     "deny": []
   }

@@ -59,7 +59,7 @@ const AIStrategicDashboard = ({ onLogout }) => {
               coverage_gap_percentage: 65,
               affected_population: 15000
             },
-            recommendation: 'Assign dedicated reporter to Hill District/Homewood beat',
+            recommendation: 'Consider assigning a dedicated reporter to Hill District/Homewood beat',
             confidence: 0.9
           },
           {
@@ -76,7 +76,7 @@ const AIStrategicDashboard = ({ onLogout }) => {
               gap_percentage: 40,
               missed_opportunities: 8
             },
-            recommendation: 'Implement weekend rotation schedule',
+            recommendation: 'Consider implementing a weekend rotation schedule',
             confidence: 0.8
           }
         ],
@@ -95,7 +95,7 @@ const AIStrategicDashboard = ({ onLogout }) => {
               community_impact: 'High',
               policy_relevance: 95
             },
-            recommendation: 'Launch investigative series on affordable housing',
+            recommendation: 'Consider launching an investigative series on affordable housing',
             confidence: 0.85
           },
           {
@@ -112,7 +112,7 @@ const AIStrategicDashboard = ({ onLogout }) => {
               community_impact: 'Medium',
               policy_relevance: 75
             },
-            recommendation: 'Coordinate with transportation beat reporter',
+            recommendation: 'Consider coordinating with transportation beat reporter',
             confidence: 0.78
           }
         ],
@@ -121,14 +121,14 @@ const AIStrategicDashboard = ({ onLogout }) => {
             type: 'immediate_action',
             priority: 'high',
             title: 'Address Coverage Equity Gap',
-            description: 'Immediate action needed for underserved neighborhoods',
+            description: 'Attention recommended for underserved neighborhoods',
             impact_score: 92,
             effort_level: 'Medium',
             timeline: '2-4 weeks',
             actions: [
-              'Assign dedicated reporter to Hill District/Homewood beat',
-              'Establish community partnerships in underserved areas',
-              'Create mobile reporting schedule for weekend coverage'
+              'Consider assigning a dedicated reporter to Hill District/Homewood beat',
+              'Explore establishing community partnerships in underserved areas',
+              'Develop a mobile reporting schedule for weekend coverage'
             ],
             expected_impact: 'Improved community engagement and coverage equity',
             metrics: {
@@ -146,9 +146,9 @@ const AIStrategicDashboard = ({ onLogout }) => {
             effort_level: 'High',
             timeline: '4-8 weeks',
             actions: [
-              'Cross-train housing policy reporter for multi-neighborhood coverage',
-              'Create transportation beat covering eastern neighborhoods',
-              'Develop community liaison program'
+              'Consider cross-training housing policy reporter for multi-neighborhood coverage',
+              'Explore creating a transportation beat covering eastern neighborhoods',
+              'Consider developing a community liaison program'
             ],
             expected_impact: 'Better coverage efficiency and community relevance',
             metrics: {
