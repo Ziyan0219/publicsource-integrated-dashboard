@@ -24,7 +24,11 @@ const PittsburghMap = ({ highlightedAreas = [], stories = [], isAnalyticsMode = 
 
       // Count by neighborhoods
       if (story.neighborhoods) {
-        const neighborhoods = story.neighborhoods.split(/[,;/|]/).map(n => n.trim());
+        let neighborhoodList = story.neighborhoods;
+        if (Array.isArray(neighborhoodList)) {
+          neighborhoodList = neighborhoodList.join(',');
+        }
+        const neighborhoods = neighborhoodList.split(/[,;/|]/).map(n => n.trim());
         neighborhoods.forEach(neighborhood => {
           if (neighborhood) {
             counts[neighborhood] = (counts[neighborhood] || 0) + 1;

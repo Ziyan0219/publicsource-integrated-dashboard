@@ -4,7 +4,7 @@ import StaticStoryCard from './StaticStoryCard';
 import StaticFilterPanel from './StaticFilterPanel';
 import UploadButton from './UploadButton';
 import SitemapImportButton from './SitemapImportButton';
-import PittsburghMap from './PittsburghMap';
+import MapContainer from './MapContainer';
 import NavigationHeader from './NavigationHeader';
 
 const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
@@ -119,9 +119,9 @@ const Dashboard = ({ stories, filters, onLogout, onDataUpdate }) => {
             <SitemapImportButton onImportSuccess={handleUploadSuccess} />
           </div>
 
-          {/* Pittsburgh Map */}
+          {/* Interactive Map with Smart Switching */}
           <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <PittsburghMap highlightedAreas={hoveredStoryAreas} stories={stories} />
+            <MapContainer highlightedAreas={hoveredStoryAreas} stories={stories} />
           </div>
 
           {/* Search and Filter Bar */}

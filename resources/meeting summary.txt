@@ -1,0 +1,27 @@
+Hi there! I'm writing to summarize the key discussion points and action items from our meeting:
+
+1. Required Resources from Your Team
+
+We need the following materials to proceed with the map system integration:
+
+Two images representing Pittsburgh and county respectively
+Official names of the 8 regions you are currently using in your system
+Once we receive these materials, I will make the corresponding modifications to our map system.
+
+2. Backend Performance Issues
+
+I've identified a performance issue with our backend system. While it remains functional, the processing speed is significantly slower than expected. I suspect this may be related to the backend service host configuration, and I'm currently investigating the root cause.
+
+3. Proposed Solution
+
+To expedite the process, I suggest we explore the possibility of downloading the complete program from the GitHub repository I provided and running it locally. I can also provide an Excel spreadsheet to facilitate direct data matching.
+
+4. AI Application Development
+
+Our team is actively brainstorming potential AI applications for this project. We're excited to present some innovative ideas at our next meeting.
+
+Please let me know if you have any questions or need clarification on any of these points. I look forward to receiving the requested materials at your earliest convenience.
+
+Best regards,
+
+Ziyan Xin

@@ -16,7 +16,7 @@ import {
   RefreshCw
 } from 'lucide-react';
 import NavigationHeader from './NavigationHeader';
-import PittsburghMap from './PittsburghMap';
+import MapContainer from './MapContainer';
 import { TimeSeriesChart, BarChart, PieChart } from './ChartWidgets';
 import pittsburghNeighborhoods from '../data/pittsburgh_neighborhoods.json';
 
@@ -725,7 +725,7 @@ const AnalyticsDashboard = ({ stories = [], filters = {}, onLogout, onDataRefres
           <TabsContent value="geographic" className="space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="lg:col-span-2">
-                <PittsburghMap
+                <MapContainer
                   stories={filteredStories}
                   isAnalyticsMode={true}
                   highlightedAreas={geographicFilter !== 'all' ? [geographicFilter] : []}

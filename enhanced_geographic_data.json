@@ -149,7 +149,7 @@
       "official_name": "Greenfield"
     },
     "Hays": {
-      "region": "Southeast Pittsburgh ",
+      "region": "Southeast Pittsburgh",
       "official_name": "Hays"
     },
     "Hazelwood": {
@@ -181,7 +181,7 @@
       "official_name": "Larimer"
     },
     "Lincoln Place": {
-      "region": "Southeast Pittsburgh ",
+      "region": "Southeast Pittsburgh",
       "official_name": "Lincoln Place"
     },
     "Lincoln-Lemington-Belmar": {
@@ -217,7 +217,7 @@
       "official_name": "Mount Oliver"
     },
     "New Homestead": {
-      "region": "Southeast Pittsburgh ",
+      "region": "Southeast Pittsburgh",
       "official_name": "New Homestead"
     },
     "North Oakland": {
@@ -463,7 +463,7 @@
       "Westwood",
       "Windgap"
     ],
-    "Southeast Pittsburgh ": [
+    "Southeast Pittsburgh": [
       "Hays",
       "Lincoln Place",
       "New Homestead"
@@ -1194,7 +1194,7 @@
       "official_name": "MOUNT OLIVER",
       "full_name": "MOUNT OLIVER BOROUGH",
       "type": "BOROUGH",
-      "sub_region": "South Pittsburgh",
+      "sub_region": "South Hills",
       "aliases": [
         "MOUNT OLIVER",
         "MOUNT OLIVER BOROUGH"
@@ -1885,12 +1885,6 @@
       "TRAFFORD",
       "VERONA",
       "WILKINSBURG"
-    ],
-    "South Pittsburgh": [
-      "MOUNT OLIVER"
-    ],
-    "Pittsburgh": [
-      "PITTSBURGH"
     ]
   },
   "reviewed_neighborhood_data": {

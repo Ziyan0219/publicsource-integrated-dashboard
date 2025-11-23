@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Slider } from './ui/slider';
 import NavigationHeader from './NavigationHeader';
-import PittsburghMap from './PittsburghMap';
+import MapContainer from './MapContainer';
 
 const StatsPage = ({ stories = [], onLogout }) => {
   // Updated state for absolute date ranges (2022-now approach)
@@ -562,8 +562,9 @@ const StatsPage = ({ stories = [], onLogout }) => {
         </Card>
 
         {/* Geographic Map */}
-        <PittsburghMap 
-          highlightedAreas={selectedGeographicArea === 'all' ? [] : [selectedGeographicArea]} 
+        <MapContainer
+          highlightedAreas={selectedGeographicArea === 'all' ? [] : [selectedGeographicArea]}
+          stories={stories}
         />
       </div>
     </div>
